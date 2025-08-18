@@ -1,0 +1,94 @@
+{
+    "$id": "bibtex.schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Dataset Bibtex Entry",
+    "description": "Schema for a full bibtex reference.",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["article", "book", "inproceedings", "misc", "techreport", "phdthesis", "mastersthesis", "incollection"]
+      },
+      "key": {
+        "type": "string",
+        "description": "Unique citation key for the entry"
+      },
+      "author": {
+        "type": "string",
+        "description": "Author(s) of the work"
+      },
+      "title": {
+        "type": "string",
+        "description": "Title of the work"
+      },
+      "month": {
+        "type": "string",
+        "enum": ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"],
+        "description": "Month of publication"
+      },
+      "year": {
+        "type": "integer",
+        "description": "Year of publication"
+      },
+      "journal": {
+        "type": "string",
+        "description": "Journal name (for articles)"
+      },
+      "publisher": {
+        "type": "string",
+        "description": "Publisher (for books)"
+      },
+      "booktitle": {
+        "type": "string",
+        "description": "Book title (for inproceedings)"
+      },
+      "volume": {
+        "type": "string",
+        "description": "Volume of the journal or book"
+      },
+      "number": {
+        "type": "string",
+        "description": "Issue number of the journal"
+      },
+      "pages": {
+        "type": "string",
+        "description": "Page range"
+      },
+      "doi": {
+        "type": "string",
+        "format": "uri",
+        "description": "Digital Object Identifier"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL to access the work"
+      },
+      "editor": { 
+        "type": "string", 
+        "description": "The editor(s) of the work, separated by ' and '." 
+      },
+      "issn": { 
+        "type": "string", 
+        "description": "International Standard Serial Number." 
+      },
+      "series": { 
+        "type": "string", 
+        "description": "The series or collection of books the work belongs to." 
+      },
+      "address": { 
+        "type": "string", 
+        "description": "Publisher's address." 
+      },
+      "edition": { 
+        "type": "string", 
+        "description": "The edition of a book." 
+      },
+      "isbn": { 
+        "type": "string", 
+        "description": "International Standard Book Number." 
+      }      
+    },
+    "required": ["type", "key", "author", "title", "year"]
+  }
+  

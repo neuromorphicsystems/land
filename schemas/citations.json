@@ -1,0 +1,37 @@
+{
+    "$id": "citations.schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Dataset Citations List",
+    "description": "Schema for the list of the number of citations for a given dataset",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+                "source": {
+                    "type": "string",
+                    "description": "The source of the citation count (e.g., Crossref, Google Scholar, etc.)."
+                },
+                "count": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "The number of citations reported by this source."
+                },
+                "updated": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The timestamp when the citation information was last updated from this source (ISO 8601 format)."
+                },
+                "comment": {
+                    "type": "string",
+                    "description": "Optional comments or additional information about the citation source.",
+                    "minLength": 0
+                }
+            },
+            "required": [
+                "source",
+                "count",
+                "updated"
+            ],
+            "additionalProperties": false
+    }
+}

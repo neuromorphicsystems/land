@@ -1,0 +1,33 @@
+{
+    "$id": "paper.schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Dataset Paper Entry",
+    "description": "Schema for the referenced paper for a dataset.",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "Title of the paper."
+        },
+        "doi": {
+            "type": "string",
+            "format": "uri",
+            "description": "Digital Object Identifier (DOI) of the paper."
+        },
+        "authors": {
+            "type": "array",
+            "description": "List of authors of the paper.",
+            "items": { "type": "string" },
+            "uniqueItems": true
+        },
+        "abstract": {
+            "type": "string",
+            "description": "Abstract of the paper."
+        },
+        "open_access": {
+            "type": "boolean",
+            "description": "Indicates if the paper is open access."
+        }
+    },
+    "required": ["title", "doi", "authors", "abstract", "open_access"]
+}

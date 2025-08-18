@@ -1,0 +1,117 @@
+{
+    "$id": "dataset_properties.schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Dataset Paper Entry",
+    "description": "Schema for the properties of each dataset.",
+    "type": "object",
+    "properties": {
+        "available_online": {
+            "type": "boolean",
+            "description": "Indicates if the dataset is available for download or access online."
+        },
+        "has_real_data": {
+            "type": "boolean",
+            "description": "Indicates if the dataset contains real-world (non-simulated) data."
+        },
+        "has_simulated_data": {
+            "type": "boolean",
+            "description": "Indicates if the dataset contains simulated data."
+        },
+        "has_ground_truth": {
+            "type": "boolean",
+            "description": "Indicates if the dataset includes ground truth labels or annotations."
+        },
+        "has_frames": {
+            "type": "boolean",
+            "description": "Indicates if the dataset also contains frames (or non-neuromorphic data)."
+        },
+        "has_biases": {
+            "type": "boolean",
+            "description": "Indicates if the dataset specifies the bias values used for the sensors."
+        },
+        "distribution_methods": {
+            "type": "array",
+            "description": "The method by which the dataset is distributed (e.g., Dropbox, GitHub, etc.).",
+            "items": { 
+                "type": "string" 
+            },
+            "uniqueItems": true
+        },
+        "file_formats": {
+            "type": "array",
+            "description": "The file formats in which the dataset is available (e.g., Binary File, CSV, etc.).",
+            "items": { 
+                "type": "string" 
+            },
+            "uniqueItems": true
+        },
+        "availability_comment": {
+            "type": "string",
+            "description": "Optional comments or additional information about the dataset distribution or characteristics.",
+            "minLength": 0
+        },
+        "size_gb": {
+            "type": "number",
+            "description": "The size of the dataset in gigabytes.",
+            "minimum": 0
+        },
+        "size_type": {
+            "type": "string",
+            "description": "Describes how the size_gb is measured (e.g., compressed or uncompressed).",
+            "enum": [
+                "Compressed",
+                "Uncompressed"
+            ]
+        },
+        "dataset_links": {
+            "type": "array",
+            "description": "Download links for the dataset.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the link (e.g., 'GitHub', 'Dropbox')."
+                    },
+                    "url": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "URL to access the dataset."
+                    },
+                    "format": {
+                        "type": "string",
+                        "description": "Format of the dataset available at the link (e.g., 'AEDAT', 'HDF5')."
+                    },
+                    "doi": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Digital Object Identifier (DOI) for the dataset link, if available."
+                    },
+                    "available": {
+                        "type": "boolean",
+                        "description": "Indicates if the dataset is available at this link."
+                    },
+                    "comment": {
+                        "type": "string",
+                        "description": "Optional comment about the link (e.g., 'Primary source', 'Requires Login').",
+                        "minLength": 0
+                    }
+                },
+                "required": ["name", "url", "available"],
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": [
+        "available_online",
+        "has_real_data",
+        "has_simulated_data",
+        "has_ground_truth",
+        "has_frames",
+        "has_biases"
+    ],
+    "dependentRequired": {
+        "size_gb": ["size_type"]
+    },
+    "additionalProperties": false
+}

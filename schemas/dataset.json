@@ -1,0 +1,127 @@
+{
+    "$id": "dataset.schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Dataset Entry Schema",
+    "description": "Schema describing the required information and formatting for a neuromorphic dataset entry.",
+    "type": "object",
+    "properties": {
+        "name": { 
+            "type": "string",
+            "description": "The name of the dataset.",
+            "minLength": 1
+        },
+        "aliases": { 
+            "type": "array",
+            "description": "Alternative names or aliases for the dataset.",
+            "items": { "type": "string" },
+            "minItems": 0,
+            "uniqueItems": true
+        },        
+        "full_name": { 
+            "type": "string",
+            "description": "The full name of the dataset (if provided)."
+        },
+        "modality": { 
+            "type": "array",
+            "items": { 
+                "type": "string",
+                "enum": ["Vision", "Audio", "Tactile", "Olfactory", "Spike", "Other"]
+            },
+            "description": "The modality of the specified dataset.",
+            "minItems": 1
+        },
+        "year": { 
+            "type": "integer",
+            "description": "The year the dataset was created or published.",
+            "exclusiveMinimum": 1980            
+        },
+        "sensors": { 
+            "type": "array",
+            "description": "The sensors used to collect the dataset.",
+            "items": { "type": "string" },
+            "uniqueItems": true
+        },
+        "other_sensors": { 
+            "type": "array",
+            "description": "Other sensors used to collect the dataset.",
+            "items": { "type": "string" },
+            "uniqueItems": true
+        },
+        "category": {
+            "type": "string",
+            "description": "The category of the dataset"
+        },
+        "subcategory": {
+            "type": "array",
+            "description": "Subcategories of the dataset.",
+            "items": { "type": "string" },
+            "minItems": 0,
+            "uniqueItems": true
+        },
+        "task": {
+            "type": "string",
+            "description": "A short description of the task the dataset addresses."
+        },
+        "links": {
+            "type": "array",
+            "description": "Links to the dataset, including project pages, papers, and repositories.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "preprint",
+                            "paper",
+                            "project_page",
+                            "github_page",
+                            "other"
+                        ],
+                        "description": "Name of the link (e.g., 'arXiv', 'Paper', 'Project', 'GitHub')."
+                    },
+                    "url": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "URL of the link."
+                    }
+                },
+                "required": ["type", "url"],
+                "additionalProperties": false
+            }
+        },
+        "paper":{ 
+            "description": "The paper associated with the dataset.",
+            "$ref": "paper.schema"
+        },
+        "citation_counts": {
+            "description": "Citation Count for the dataset.",
+            "$ref": "citations.schema"
+        },
+        "dataset_properties": {
+            "description": "Properties of the dataset, such as availability, size, and distribution methods.",
+            "$ref": "dataset_properties.schema"
+        },
+        "bibtex": {
+            "description": "Citation for the dataset in bibtext.",
+            "$ref": "bibtex.schema"
+        },
+        "additional_metadata": {
+            "type": "object",
+            "description": "Additional metadata for the dataset, such as custom fields or notes.",
+            "additionalProperties": true
+        },
+        "connected_datasets": {
+            "type": "array",
+            "description": "Datasets that are connected or related to this dataset. Usually this occurs when multiple datasets are introduced in a single paper",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "dependentRequired": {
+        "subcategory": ["category"],
+        "sensors": ["modality"],
+        "other_sensors": ["modality"]
+    },
+    "required": ["name", "year", "category", "modality"]
+}
