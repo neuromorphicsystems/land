@@ -174,7 +174,7 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Dataset contains approximately 20 minutes of recordings
 -

@@ -267,11 +267,10 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains Spanish sign language of animals
-- Stored as aedat  files
+- Stored as aedat files
 - Recorded using an S-DVS with a resolution of 128 x 128
 - Dataset contains 1100 recordings
 - 58 subjects

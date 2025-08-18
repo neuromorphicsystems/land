@@ -104,10 +104,8 @@
 }
 ---
 
-
-
 ### Dataset structure
 
-The dataset contains 45, with 480 seconds of data per subject captured over 4 blinking sessions. The dataset was collected in an indoor environment during daytime, with an average light intensity of 1200 Lux. 
+The dataset contains 45, with 480 seconds of data per subject captured over 4 blinking sessions. The dataset was collected in an indoor environment during daytime, with an average light intensity of 1200 Lux.
 
 The compressed size of the database is 11.8 Gb. The dataset is hosted on Weiyun, an online file sharing tool that requires either a `WeChat` or `QQ` account to download the file. The data is distributed as a single zip file. The files are stored as aedat files.

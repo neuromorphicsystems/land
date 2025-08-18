@@ -347,7 +347,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset was recorded with 2 DAVIS346 sensors, one for each eye. Each camera had 25 mm f/1.4 VIS-NIR C-mount lenses (EO-#67-715) lens and a UV/VIS cut-off filters (EO-#89-834)filter. Both cameras were synchronised and recorded both frames and events. The dataset contains data from 27 people and contains data from two different eye experiments; random saccades and smooth pursuit.

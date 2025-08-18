@@ -283,8 +283,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains data from 40 subjects
-- Purpose of dataset was "Eye Movement Tracking" (in contrast to [[Ev-Eye]] )
+- Purpose of dataset was "Eye Movement Tracking" (in contrast to \[[Ev-Eye]\] )

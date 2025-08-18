@@ -209,15 +209,14 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 This dataset is a large-scale synthetic event camera voxel 3D reconstruction dataset, comprising over 39,739 simulated event camera 3D object scans from 13 different object categories. Each entry in the dataset contains a 0.5-second, 240fps high frame rate RGB video scan, simulated event camera data, the original 3D model, and a converted 32x32x32 voxel model.
 
-The 3D models used in this dataset are from ShapeNet (Link: [https://shapenet.org/)](https://shapenet.org/\)).
+The 3D models used in this dataset are from ShapeNet (Link: [https://shapenet.org/)](<https://shapenet.org/)>).
 
 Although this dataset only provides voxel representation for ground truth, obtaining other types of representation such as point cloud as ground truth will be trivial with the provided gltf 3D model. We hope that by publishing this dataset, we can accelerate the advancement of event-based 3D reconstruction.
 
-Note:  The provided dataset is called SynthEVox3D-Tiny dataset, and is a 32 GB subset of the full dataset, which is around 1.2 TB in size. The creators are willing to make the full dataset available, if someone would be able to provide a hosting provider. Contact haodong.chen@sydney.edu.au if you are able to provide hosting for the full dataset.
+Note: The provided dataset is called SynthEVox3D-Tiny dataset, and is a 32 GB subset of the full dataset, which is around 1.2 TB in size. The creators are willing to make the full dataset available, if someone would be able to provide a hosting provider. Contact haodong.chen@sydney.edu.au if you are able to provide hosting for the full dataset.
 
 Adapted from https://www.kaggle.com/datasets/hche8927/synthevox3d/data.

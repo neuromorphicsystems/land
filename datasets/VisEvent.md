@@ -474,20 +474,20 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains 820 recordings
 - Contains 17 different types of recordings
 
+### Comparison Table
 
-### Comparison Table 
 The following table was extracted from the paper:
 
-| Datasets                   | Year | No. Videos | No. Frames | Resolution | N0. Attributes | Aim        |
-| -------------------------- | ---- | ---------- | ---------- | ---------- | -------------- | ---------- |
-| [[VOT-DVS]] ([[DVSACT16]]) | 2016 | 60         |            | 240 × 180  |                | Eval       |
-| [[TD-DVS]] ([[DVSACT16]])  | 2016 |            |            | 240 × 180  |                | Eval       |
-| [[ULSTER]]                 | 2016 | 1          |            | 240 × 180  |                | Eval       |
-| [[EED]]                    | 2018 | 7          |            | 240 × 180  |                | Eval       |
-| [[FE108]]       | 2021 | 108        | 208,672    | 346 × 260  |                | Train/Eval |
-| VisEvent                   | 2023 | 820        | 371,127    | 346 × 260  | 17             | Train/Eval |
+| Datasets                       | Year | No. Videos | No. Frames | Resolution | N0. Attributes | Aim        |
+| ------------------------------ | ---- | ---------- | ---------- | ---------- | -------------- | ---------- |
+| \[[VOT-DVS]\] (\[[DVSACT16]\]) | 2016 | 60         |            | 240 × 180  |                | Eval       |
+| \[[TD-DVS]\] (\[[DVSACT16]\])  | 2016 |            |            | 240 × 180  |                | Eval       |
+| \[[ULSTER]\]                   | 2016 | 1          |            | 240 × 180  |                | Eval       |
+| \[[EED]\]                      | 2018 | 7          |            | 240 × 180  |                | Eval       |
+| \[[FE108]\]                    | 2021 | 108        | 208,672    | 346 × 260  |                | Train/Eval |
+| VisEvent                       | 2023 | 820        | 371,127    | 346 × 260  | 17             | Train/Eval |

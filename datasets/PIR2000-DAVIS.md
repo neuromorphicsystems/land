@@ -180,12 +180,10 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 19 scenes
-
 
 The resolutions of the event camera and high-speed camera are different. Then you'd better crop the clear images from the high-speed camera for their correspondence. The cropped boxes can be set as [26, 21, 282, 245].

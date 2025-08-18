@@ -393,18 +393,18 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-- Contains  6840 recordings from 30 subjects ([27] males and 3 females). 
+- Contains 6840 recordings from 30 subjects ([27] males and 3 females).
 - The dataset was recorded during daytime.
 
 The dataset consists of three sub-datasets:
+
 1. Driver Drowsiness Dataset
 2. Driver Gaze-Zone Dataset
 3. Driver Hand-Gesture Dataset
 
-The dataset contains 540 DVS samples from the Driver Drowsiness Dataset, 1500 samples from the Driver Gaze-Zone dataset, and 4800 samples from the Driver Hand-Gesture dataset. 
+The dataset contains 540 DVS samples from the Driver Drowsiness Dataset, 1500 samples from the Driver Gaze-Zone dataset, and 4800 samples from the Driver Hand-Gesture dataset.
 
 The RealSense D435i has a resolution of 640 x 360 pixels.
 

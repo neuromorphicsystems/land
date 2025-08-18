@@ -291,9 +291,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-- Total recording time  is approximately 30 minutes
+- Total recording time is approximately 30 minutes
 - Up to 3 independently moving objects objects
 - Multiple types of scenes (varying backgrounds and motion speeds)

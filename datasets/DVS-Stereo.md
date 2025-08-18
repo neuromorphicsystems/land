@@ -381,9 +381,6 @@
 }
 ---
 
-
-### Dataset Structure 
-
-
+### Dataset Structure
 
 - Dataset contains 12 sequences

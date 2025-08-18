@@ -230,8 +230,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains over 51 hours of driving data
 - Collected over 4000 km in USA
 - Data is stored in HDF5 format

@@ -109,8 +109,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains more than 1354 sequences
 - Contains 90 different classes
 - Contains 17 different types of recordings

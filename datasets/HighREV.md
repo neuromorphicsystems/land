@@ -291,7 +291,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The HighREV dataset consists of 30 sequences with a total of 28589 sharp images and corresponding events. We use 19934 images for training/fine-tuning and 8655 images for evaluation. The size of each RGB image is 1632 × 1224. The events and images are spatially aligned in the sensor. Each event has only one channel (intensity), with pixel coordinates, timestamp and polarity. 70% of the video sequences are used for training and 30% for testing and we keep the ratio of indoor and outdoor scenes approximately the same in each subset. For the collection of the dataset, the exposure time of the camera is set to 15ms and the f-stop of the lens is set to 2. The frame rate of the APS image is set to 25

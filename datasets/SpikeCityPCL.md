@@ -97,7 +97,7 @@
 }
 ---
 
-
 ### Dataset Structure
+
 - Contains 248 different recordings
 - Camera resolution is 400 × 250

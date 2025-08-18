@@ -187,8 +187,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains data from 20 subjects.
 - Contains 7 different micro-expressions, each recorded 6 times.

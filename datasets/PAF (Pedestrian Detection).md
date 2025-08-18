@@ -252,7 +252,7 @@
 }
 ---
 
-### Dataset Structure 
+### Dataset Structure
 
 - Pedestrian Detection Dataset
   - Contains 12 recordings, each 30 seconds long and containing 4670 labelled frames

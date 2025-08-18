@@ -109,16 +109,16 @@
 }
 ---
 
-
 ### Dataset Structure
-- Contains 180 recordings  from 15 (11 males and 4)
+
+- Contains 180 recordings from 15 (11 males and 4)
 - Contains 21 different actions
 
-| Dataset             | Sequences | Sub | Frame Pose |     | Shape | Poorly-lit Env. |
-| ------------------- | --------- | --- | ---------- | --- | ----- | --------------- |
-| [[DHP19]]           | 33        | 17  | 87k        | Yes | No    | No              |
-| [[YeLan]] Synthetic | 8         | 10  | 4M         | Yes | No    | Yes             |
-| [[YeLan]] Real      | 4         | 9   | 446k       | Yes | No    | Yes             |
-| [[EventCap]]        | 2         | 6   | N/A        | N/A | N/A   | N/A             |
-| [[EventHPE]]        | 12        | 15  | 240k       | Yes | Yes   | No              |
-| [[EPMD]]            | 16        | 3   | 228k       | Yes | Yes   | Yes             |
+| Dataset               | Sequences | Sub | Frame Pose |     | Shape | Poorly-lit Env. |
+| --------------------- | --------- | --- | ---------- | --- | ----- | --------------- |
+| \[[DHP19]\]           | 33        | 17  | 87k        | Yes | No    | No              |
+| \[[YeLan]\] Synthetic | 8         | 10  | 4M         | Yes | No    | Yes             |
+| \[[YeLan]\] Real      | 4         | 9   | 446k       | Yes | No    | Yes             |
+| \[[EventCap]\]        | 2         | 6   | N/A        | N/A | N/A   | N/A             |
+| \[[EventHPE]\]        | 12        | 15  | 240k       | Yes | Yes   | No              |
+| \[[EPMD]\]            | 16        | 3   | 228k       | Yes | Yes   | Yes             |

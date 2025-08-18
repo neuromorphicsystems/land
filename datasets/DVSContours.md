@@ -231,10 +231,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-
-The dataset consists of 7 recordings taken with a DVS128. The data is provided as Matlab files. 
+The dataset consists of 7 recordings taken with a DVS128. The data is provided as Matlab files.
 
 Code is provided to load the data in the project page.

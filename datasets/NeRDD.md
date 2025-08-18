@@ -100,7 +100,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Total duration 3.5 hours

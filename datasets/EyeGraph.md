@@ -99,19 +99,18 @@
 }
 ---
 
-
 ### Dataset Structure
-- Contains data from 40 (28 male and 12 female)
 
+- Contains data from 40 (28 male and 12 female)
 
 ### Comparison Table
 
-| **Feature**  | **Tracking End Goal** | **Representation** | **Learning** | **Grayscale / RGB data** | **Is data from human participants?** | **Is Monocular?** | **Is Multi-modal?** | **Number of participants** | **Is head-movement allowed?** | **Accounts lighting changes?** | **Accounts participant** |
-| ------------ | --------------------- | ------------------ | ------------ | ------------------------ | ------------------------------------ | ----------------- | ------------------- | -------------------------- | ----------------------------- | ------------------------------ | ------------------------ |
-| [[EBVEYE]]   | Gaze                  | 2D frame           | supervised   | Y                        | Y                                    | N                 | Y                   | 24                         | N                             | N                              | N                        |
-| [[Ev-Eye]]   | Gaze                  | 2D frame           | supervised   | Y                        | Y                                    | N                 | Y                   | 48                         | N                             | N                              | N                        |
-| [[3ET]]      | Pupil                 | 2D frame           | supervised   | N                        | N                                    | N/A               | N                   | N/A                        | N/A                           | N                              | N/A                      |
-| [[3ET+]]     | Pupil                 | 2D frame           | supervised   | N                        | Y                                    | Y                 | N                   | 13                         | N                             | N                              | N                        |
-| [[EyeGraph]] | Pupil                 | Graph              | unsupervised | Y                        | Y                                    | Y                 | Y                   | 40                         | Y                             | Y                              | Y                        |
+| **Feature**    | **Tracking End Goal** | **Representation** | **Learning** | **Grayscale / RGB data** | **Is data from human participants?** | **Is Monocular?** | **Is Multi-modal?** | **Number of participants** | **Is head-movement allowed?** | **Accounts lighting changes?** | **Accounts participant** |
+| -------------- | --------------------- | ------------------ | ------------ | ------------------------ | ------------------------------------ | ----------------- | ------------------- | -------------------------- | ----------------------------- | ------------------------------ | ------------------------ |
+| \[[EBVEYE]\]   | Gaze                  | 2D frame           | supervised   | Y                        | Y                                    | N                 | Y                   | 24                         | N                             | N                              | N                        |
+| \[[Ev-Eye]\]   | Gaze                  | 2D frame           | supervised   | Y                        | Y                                    | N                 | Y                   | 48                         | N                             | N                              | N                        |
+| \[[3ET]\]      | Pupil                 | 2D frame           | supervised   | N                        | N                                    | N/A               | N                   | N/A                        | N/A                           | N                              | N/A                      |
+| \[[3ET+]\]     | Pupil                 | 2D frame           | supervised   | N                        | Y                                    | Y                 | N                   | 13                         | N                             | N                              | N                        |
+| \[[EyeGraph]\] | Pupil                 | Graph              | unsupervised | Y                        | Y                                    | Y                 | Y                   | 40                         | Y                             | Y                              | Y                        |
 
 ^8c93ba

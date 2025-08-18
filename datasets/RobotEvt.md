@@ -305,7 +305,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 The RobotEvt dataset contains sequences under different motion models, speeds and brightness from a static scene, specifically

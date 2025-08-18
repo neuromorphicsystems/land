@@ -209,7 +209,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 NeuroMorse is a neuromorphic dataset that emphasises temporal hierarchical features. This dataset only contains two channels representing 'dots' and 'dashes' from Morse code. The training set consists of the top 50 most common words in the english language converted into Morse spike sequences, whilst the test set is a corpus of 50,441 Wikipedia articles converted into Morse spike sequences. The goal is to identify instances in the test set where classes in the training set appear.

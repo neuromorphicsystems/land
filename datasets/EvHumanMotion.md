@@ -93,10 +93,10 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset contains:
+
 - **Total sequences**: 113
 - **Participants**: 20 (10 male, 10 female)
 - **Duration**: ~10 seconds per video

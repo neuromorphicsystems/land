@@ -200,7 +200,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Dataset contains 10 hours of data.

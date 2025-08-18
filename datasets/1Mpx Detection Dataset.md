@@ -104,14 +104,12 @@
 }
 ---
 
-
-
 ### Dataset Structure
 
 - Contains 14.65 hours of recordings
 - Contains 3 different classes of objects (car / pedestrian / two-wheeler)
 
-The dataset is split between train, test and val folders. 
+The dataset is split between train, test and val folders.
 
 Files consist of 60 seconds recordings that were cut from longer recording sessions. Cuts from a single recording session are all in the same training split.
 

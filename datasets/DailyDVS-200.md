@@ -325,17 +325,17 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset contains:
+
 - 200 event-specific action categories
 - 47 subjects
 - 22046 video recordings
--  Recorded with a DVXplorer sensor with a resolution of 320x240
+- Recorded with a DVXplorer sensor with a resolution of 320x240
 - `14` attributes are labeled
 
-The data is provided in aedat4 files. 
+The data is provided in aedat4 files.
 
 ## DailyDVS-200 Dataset Format:
 

@@ -208,20 +208,20 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-	The EventMM HPE dataset is recorded by the Prophesee EVK3 GEN4.1 event camera, with a 1280×720 pixels dynamic vision sensor (DVS). The simultaneous RGB images are recorded by a high-frame-rate camera LUCID ATLAS10 at 120FPS. The Vicon motion capture system with a high sampling rate (up to 330Hz) and sub-millimeter precision, records the 3D coordinates of the subject’s 17 marked joints, which are identified by markers located on the head, neck, spine, left/right shoulders and left/right feet. The synchronization method for all three devices is the same as in DHP19
+```
+The EventMM HPE dataset is recorded by the Prophesee EVK3 GEN4.1 event camera, with a 1280×720 pixels dynamic vision sensor (DVS). The simultaneous RGB images are recorded by a high-frame-rate camera LUCID ATLAS10 at 120FPS. The Vicon motion capture system with a high sampling rate (up to 330Hz) and sub-millimeter precision, records the 3D coordinates of the subject’s 17 marked joints, which are identified by markers located on the head, neck, spine, left/right shoulders and left/right feet. The synchronization method for all three devices is the same as in DHP19
+```
 
 - Contains 76 recordings from 7 subjects
 - Contains 21 different classes
 
-
 ### Dataset Comparison
 
-| Dataset         | Actions | Scenes  | Resolution | Frames | Annotation rate |
-| --------------- | ------- | ------- | ---------- | ------ | --------------- |
-| [[DHP19]]       | 33      | Indoor  | 344X260    | 87k    | 100Hz           |
-| [[EventHPE]]    | 12      | Indoor  | 1280x800   | 240k   | 15Hz            |
-| [[CDEHP]]       | 25      | Outdoor | 1280x800   | 82k    | 60Hz            |
-| [[EventMM HPE]] | 21      | Indoor  | 1280X720   | 1,296k | 240Hz           |
+| Dataset           | Actions | Scenes  | Resolution | Frames | Annotation rate |
+| ----------------- | ------- | ------- | ---------- | ------ | --------------- |
+| \[[DHP19]\]       | 33      | Indoor  | 344X260    | 87k    | 100Hz           |
+| \[[EventHPE]\]    | 12      | Indoor  | 1280x800   | 240k   | 15Hz            |
+| \[[CDEHP]\]       | 25      | Outdoor | 1280x800   | 82k    | 60Hz            |
+| \[[EventMM HPE]\] | 21      | Indoor  | 1280X720   | 1,296k | 240Hz           |

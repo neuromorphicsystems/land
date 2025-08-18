@@ -271,10 +271,9 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-The dataset contains 48 from 10 and contains a total of 248 blinks. 
+The dataset contains 48 from 10 and contains a total of 248 blinks.
 
 The data was captured using a static camera and contains five different categories of recordings:
 
@@ -285,5 +284,5 @@ The data was captured using a static camera and contains five different categori
 5. A single face changing orientation with respect to the camera for occlusion detection (2 recordings)
 
 The uncompressed size of the dataset is 1.8 Gb.
-The files are stored as EventStream files. 
+The files are stored as EventStream files.
 The events are stored as tuples of (x, y, t, p), with (0, 1) and `t` has a us.

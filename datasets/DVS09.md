@@ -247,7 +247,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 This event camera dataset is from the first practical event camera, the DVS128 from the Sensors Group.

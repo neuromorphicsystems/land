@@ -122,8 +122,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 This deep learning dataset was developed for research on biologically plausible error-backpropagation and deep learning in spiking neural networks. It serves as an alternative to e.g. the MNIST dataset providing the following advantages:
 

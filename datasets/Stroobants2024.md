@@ -278,23 +278,21 @@
 }
 ---
 
-
 ### Dataset Structure
 
-
-| Filename         | Size        | MD5                                      | Download Link |
-|------------------|-------------|------------------------------------------|----------------|
-| README.md        | 1.6 KB      | 97d9fc9753a23a3c34c6da9628f7eada         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/README.md) |
-| log00.csv        | 51.2 MB     | 19c21d24de02053047f77a534575e22b         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log00.csv) |
-| log01.csv        | 65.7 MB     | 462418d415f508e7872c2e2bec04c34f         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log01.csv) |
-| log02.csv        | 40.0 MB     | 3f18d5d86bfee1ee2f447d78cc35d710         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log02.csv) |
-| log02_snn.csv    | 21.4 MB     | 1d06d03349b75cd3b8b80057a6933d3a         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log02_snn.csv) |
-| log03.csv        | 77.6 MB     | 719d7d7d8e6ed682d6a82d663c23a3b8         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log03.csv) |
-| log03_snn.csv    | 15.2 MB     | afee512627a4cb4599f36edd18e5b97b         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log03_snn.csv) |
-| log04.csv        | 77.7 MB     | e7eea0b27e0181f8516ebc95843468f0         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log04.csv) |
-| log05.csv        | 63.8 MB     | 78e43056706cd46aa98a653b6992c007         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log05.csv) |
-| log05_snn.csv    | 23.5 MB     | 6f53aff20785bba6e72be99eb8c22646         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log05_snn.csv) |
-| log06.csv        | 43.3 MB     | fd83a5bd25e3b08275f35c1ae1206409         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log06.csv) |
-| log06_snn.csv    | 11.4 MB     | 60b73a2d548017377272d52247e5b1cd         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log06_snn.csv) |
-| log07.csv        | 36.6 MB     | 619fd135704cb2a511ec195af5c18a69         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log07.csv) |
-| log08.csv        | 59.7 MB     | 5080000c9bb3d03d486341340c2ab3ae         | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log08.csv) |
+| Filename      | Size    | MD5                              | Download Link                                                                            |
+| ------------- | ------- | -------------------------------- | ---------------------------------------------------------------------------------------- |
+| README.md     | 1.6 KB  | 97d9fc9753a23a3c34c6da9628f7eada | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/README.md)     |
+| log00.csv     | 51.2 MB | 19c21d24de02053047f77a534575e22b | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log00.csv)     |
+| log01.csv     | 65.7 MB | 462418d415f508e7872c2e2bec04c34f | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log01.csv)     |
+| log02.csv     | 40.0 MB | 3f18d5d86bfee1ee2f447d78cc35d710 | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log02.csv)     |
+| log02_snn.csv | 21.4 MB | 1d06d03349b75cd3b8b80057a6933d3a | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log02_snn.csv) |
+| log03.csv     | 77.6 MB | 719d7d7d8e6ed682d6a82d663c23a3b8 | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log03.csv)     |
+| log03_snn.csv | 15.2 MB | afee512627a4cb4599f36edd18e5b97b | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log03_snn.csv) |
+| log04.csv     | 77.7 MB | e7eea0b27e0181f8516ebc95843468f0 | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log04.csv)     |
+| log05.csv     | 63.8 MB | 78e43056706cd46aa98a653b6992c007 | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log05.csv)     |
+| log05_snn.csv | 23.5 MB | 6f53aff20785bba6e72be99eb8c22646 | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log05_snn.csv) |
+| log06.csv     | 43.3 MB | fd83a5bd25e3b08275f35c1ae1206409 | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log06.csv)     |
+| log06_snn.csv | 11.4 MB | 60b73a2d548017377272d52247e5b1cd | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log06_snn.csv) |
+| log07.csv     | 36.6 MB | 619fd135704cb2a511ec195af5c18a69 | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log07.csv)     |
+| log08.csv     | 59.7 MB | 5080000c9bb3d03d486341340c2ab3ae | [Download](https://data.4tu.nl/files/f474ef0a-6ef1-4ea1-a958-4827c4eadf60/log08.csv)     |

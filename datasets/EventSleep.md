@@ -116,8 +116,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset consists of a total of 1,016 clips, acquired as part of 42 trials (14 participants under 3 different configurations). Each trial contains over 20 action clips, each lasting about 5 seconds. There are separate training (744 activity clips, from 10 subjects, 3 trials each) and test (272 activity clips, from 4 other subjects not included in training, 3 trials each) sets. The training and test set were built to increase diversity and minimize biases, such as sex or appearance. The test set also includes the untrimmed recordings for each subject, to facilitate online action recognition proposals evaluation.
 

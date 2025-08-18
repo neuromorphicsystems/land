@@ -279,7 +279,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The MNIST-DVS database consists of a set of 30,000 DVS recordings of different handwritten digits. A total of 10,000 original 28x28 pixel handwritten digit images from MNIST ([http://yann.lecun.com/exdb/mnist](http://yann.lecun.com/exdb/mnist) were upscaled using smoothing interpolation algorithms to three different scales. Each upscaled digit was then displayed on an LCD monitor with slow motion and a 128x128 pixel DVS (Dynamic Vision Sensor) was used to record the moving digits. The DVS used is a high sensitive DVS.

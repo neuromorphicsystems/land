@@ -419,33 +419,36 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 NCER dataset includes:
+
 - Blurry Images (png)
-- Sharp (GT) Images (png) 
+- Sharp (GT) Images (png)
 - Corresponding Raw Events (npz)
-    
 
 The directory of dataset is as follows:
+
 - Images:
-    - {root}{mode}/{split}/{sequence}/{class}/{name}.png
+  - {root}{mode}/{split}/{sequence}/{class}/{name}.png
 - Events:
-    - {root}{mode}/{split}/{sequence}/{class}/{name}.npz
-    - 
+  - {root}{mode}/{split}/{sequence}/{class}/{name}.npz
+  -
+
 The meaning of the individual directory levels is:
+
 - root : the root directory where the dataset is stored.
 - split : train, test.
 - sequence : the sequence name.
 - class : blur image, gt image, events.
 - name : index of the data.
-    
+
 The single event npz file contains the raw events (x,y,p,t) in the time range of the exposure time of the blurry image.
 
 Training dataset:
+
 - URL: https://drive.google.com/file/d/16IdoPpBLjOmtDbrUigst5ee6wlOPnxkO
 - Size: 17 Gb
-Testing dataset: 
+  Testing dataset:
 - URL: https://drive.google.com/file/d/1PtkN5mk9DOGIap_K2Mt9OzUgQ7_M2YUq
 - Size 14 Gb

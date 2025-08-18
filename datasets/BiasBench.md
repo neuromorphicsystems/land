@@ -79,10 +79,9 @@
 }
 ---
 
-
 ### Dataset Structure
 
 - Dataset contains three different sets of data
-	- Spinning Dot
-	- Blinking LED Board
-	- Visual Odometry
+  - Spinning Dot
+  - Blinking LED Board
+  - Visual Odometry

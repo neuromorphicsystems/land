@@ -100,8 +100,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains over 12 hours of driving data over 6 days.
 - Recorded 1000 km in Switzerland and Germany

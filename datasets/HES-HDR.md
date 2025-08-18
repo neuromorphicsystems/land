@@ -329,7 +329,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 20 sequences, 10 from the DAVIS346 sensor and 10 from the Vidar sensor.

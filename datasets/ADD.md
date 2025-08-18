@@ -103,8 +103,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains over 39 hours of driving recordings
 - Dataset contains 121 recordings

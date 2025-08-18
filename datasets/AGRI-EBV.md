@@ -202,10 +202,10 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Dataset contains 21 sequences of agricultural scenes in autumn.
-- There is an additional set of summer recordings 
+- There is an additional set of summer recordings
 
 In total, there are 11 data sequences in 6 different scenarios for the winter season and 31 data sequences in 14 different scenarios for the spring/summer season. Each data sequence is accompanied by a video demonstrating its content and a detailed description, including known issues
 
@@ -224,6 +224,7 @@ The archive `<..sequence_id..>_data.tar.gz` contains the following files and f
 - `./recording/lidar/` - Lidar point clouds and IMU data
 - `./recording/realsense/` - Realsense camera RGB, Depth frames, and IMU data
 - `./recording/sensorboard/` - environmental sensors data (temperature, humidity, air pressure)
+
 ### Dataset Files
 
 | Name                          | Time    | Attempt No. | No. Events |
@@ -236,7 +237,7 @@ The archive `<..sequence_id..>_data.tar.gz` contains the following files and f
 | Winter rapeseed field         | 167 sec | 2           | 36M        |
 | Plantation                    | 189 sec | 1           | 48M        |
 | Plantation                    | 194 sec |             | 51M        |
-| Plantation (water*)           | 337 sec | 1           | 99M        |
+| Plantation (water\*)          | 337 sec | 1           | 99M        |
 | Cattle farm                   | 209 sec | 1           | 36M        |
 | Cattle farm                   | 201 sec |             | 44M        |
 | Cattle farm feed table        | 149 sec | 1           | 16M        |
@@ -248,4 +249,4 @@ The archive `<..sequence_id..>_data.tar.gz` contains the following files and f
 | Winter cereal field           | 175 sec | 2           | 17M        |
 | Field with a cow              | 270 sec | 1           | 63M        |
 | Field with a cow              | 271 sec | 2           | 179M       |
-| Asphalt road (dark*)          | 155 sec | 1           | 4M         |
+| Asphalt road (dark\*)         | 155 sec | 1           | 4M         |

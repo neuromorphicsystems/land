@@ -293,10 +293,10 @@
 }
 ---
 
-
-
 ### Dataset Description
 
 The EOD dataset consists of 5317 event streams captured in various scenes, where each event stream is a collection of events within 33 ms. The dataset includes 3722 event streams for training, 530 event streams for validation, and 1065 event streams for testing, and contains six categories: car, bus, pedestrian, two-wheel, boat, and ship.
-### Dataset Structure 
+
+### Dataset Structure
+
 - Contains 317 recordings in 6 categories

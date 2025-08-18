@@ -338,19 +338,21 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 Converted from the Sun360 dataset
 
 Training dataset:
-- URL: http://rpg.ifi.uzh.ch/data/snn_angular_velocity/dataset/train.tar.zst 
+
+- URL: http://rpg.ifi.uzh.ch/data/snn_angular_velocity/dataset/train.tar.zst
 - Size: 48.8 Gb
 
 Validation dataset:
+
 - URL: http://rpg.ifi.uzh.ch/data/snn_angular_velocity/dataset/val.tar.zst
 - Size: 2.7 Gb
 
 Test dataset:
+
 - URL: http://rpg.ifi.uzh.ch/data/snn_angular_velocity/dataset/test.tar.zst
 - Size: 2.2 Gb

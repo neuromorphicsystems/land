@@ -103,16 +103,15 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Dataset contains [1200] recordings
 - Dataset contains [100] different scenes
 - Dataset is divided into 2 difference scenarios:
-	- D-END: Daytime recordings: - 12 Gb in size.
-		- [D-END.zip - Google Drive](https://drive.google.com/file/d/1ZatTSewmb-j6RsrJxMWEQIE3Sm1yraK-/view)
-	- N-END: Nighttime recordings: 10 Gb in size 
-		-  [N-END.zip - Google Drive](https://drive.google.com/file/d/17ZDhuYdtHui9nqJAfiYYX27omPY7Rpl9/view)
-
+  - D-END: Daytime recordings: - 12 Gb in size.
+    - [D-END.zip - Google Drive](https://drive.google.com/file/d/1ZatTSewmb-j6RsrJxMWEQIE3Sm1yraK-/view)
+  - N-END: Nighttime recordings: 10 Gb in size
+    - [N-END.zip - Google Drive](https://drive.google.com/file/d/17ZDhuYdtHui9nqJAfiYYX27omPY7Rpl9/view)
 
 The above datasets have the following folder structure:
 
@@ -137,16 +136,17 @@ The above datasets have the following folder structure:
 │   ├── ...
 ├── ...
 ```
-Source:  https://github.com/KugaMaxx/cuke-emlb
+
+Source: https://github.com/KugaMaxx/cuke-emlb
 
 ### Comparison Table
 
-| Datasets       | Camera    | Resolution | APS  | IMU | Scenes | Sequences | Capture/s | DoF  |
-| -------------- | --------- | ---------- | ---- | --- | ------ | --------- | --------- | ---- |
-| [[DVSNOISE20]] | DAVIS 346 | 346 × 260  | Gray | Y   | 16     | 48        | 807       | Cam. |
-| [[RGB-DAVIS]]  | DAVIS 240 | 190 × 180  | RGB  |     | 20     | 20        | 122       | All. |
-| [[EventNFS]]   | DAVIS 346 | 224 × 125  |      |     | 1      | 100       | 4238      | Obj. |
-| [[DND21]]      | DAVIS 346 | 346 × 260  |      |     |        | 8         |           | All. |
-| [[END]]      | DAVIS 346 | 346 x 260  | Gray | Y   | 100    | 1200      | 7300      | All. |
+| Datasets         | Camera    | Resolution | APS  | IMU | Scenes | Sequences | Capture/s | DoF  |
+| ---------------- | --------- | ---------- | ---- | --- | ------ | --------- | --------- | ---- |
+| \[[DVSNOISE20]\] | DAVIS 346 | 346 × 260  | Gray | Y   | 16     | 48        | 807       | Cam. |
+| \[[RGB-DAVIS]\]  | DAVIS 240 | 190 × 180  | RGB  |     | 20     | 20        | 122       | All. |
+| \[[EventNFS]\]   | DAVIS 346 | 224 × 125  |      |     | 1      | 100       | 4238      | Obj. |
+| \[[DND21]\]      | DAVIS 346 | 346 × 260  |      |     |        | 8         |           | All. |
+| \[[END]\]        | DAVIS 346 | 346 x 260  | Gray | Y   | 100    | 1200      | 7300      | All. |
 
 ^749332

@@ -111,14 +111,11 @@
 }
 ---
 
-
-### Dataset Structure 
-
-
+### Dataset Structure
 
 - Contains 106 sequences including 50 indoor, 40 outdoor, and 16 backflip sequences.
 - Dataset size:
-	- Indoor Sequences: The total size of the indoor sequences is 375.78 GB.
-	- Outdoor Sequences: The total size of the outdoor sequences is 1085.85 GB.
-	- Backflip Sequences: The total size of the backflip sequences is 39.98 GB.
-	- The total size of all the download links in the provided web pages is 1491.61 Gb.
+  - Indoor Sequences: The total size of the indoor sequences is 375.78 GB.
+  - Outdoor Sequences: The total size of the outdoor sequences is 1085.85 GB.
+  - Backflip Sequences: The total size of the backflip sequences is 39.98 GB.
+  - The total size of all the download links in the provided web pages is 1491.61 Gb.

@@ -372,8 +372,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 ### Dataset
 
@@ -381,13 +380,13 @@ The N-SOD dataset consists of 3 objects with sample varying length in time (20s)
 
 The dataset is divided by Train and Test folders, using the split employed for the PCA-RECT object tracking and detection system (https://github.com/nusneuromorphic/PCA-RECT).
 
-The data is composed of binary files. 
+The data is composed of binary files.
 
 To read them, the MATLAB AER Vision Functions are needed (https://github.com/gorchard/Matlab_AER_vision_functions). After downloading these, use the following steps:
 
 - Add the AER vision functions to the MATLAB path.
 
-- Load a file using the "read_linux" function. 
+- Load a file using the "read_linux" function.
   e.g. td = read_linux('../N-SOD Dataset/Train/Thumper/thumper1_train.bin');
 
 - Visualize the data using the ShowTD function.

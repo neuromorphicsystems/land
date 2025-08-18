@@ -348,17 +348,14 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-- Note: Not a vision dataset! 
+- Note: Not a vision dataset!
 - Contains 35 datasets of 100 seconds each.
 - 11 datasets contained real-world data and 24 were simulated data
 
 This data was used in the publication "Neuromorphic computing for attitude estimation onboard quadrotors" in the Neuromorphic Computing and Engineering journal.
 
 The PX4 files contain the gathered .ulg files, the converted .csv files and the associated logged optitrack data.
-
-  
 
 The simulation files contain the gathered .bag files and the converted .csv files.

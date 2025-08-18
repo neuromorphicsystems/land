@@ -108,8 +108,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset contains 1623 characters in 50 languages, and each character consists of an aedata4 file and a CSV file.
 

@@ -275,11 +275,10 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
+The POKER-DVS database consists of a set of 131 poker pip symbols tracked and extracted from 3 separate DVS recordings, while browsing very quickly poker cards.
 
- The POKER-DVS database consists of a set of 131 poker pip symbols tracked and extracted from 3 separate DVS recordings, while browsing very quickly poker cards.
- 
-Original DVS recorded files are 128x128 pixel and can be displayed with jAER (available from: [http://sourceforge.net/p/jaer/wiki/Home](http://sourceforge.net/p/jaer/wiki/Home)). MatlabTMscripts are provided to track and extract individual poker pip symbols as they cross the screen and extract them as 32x32 pixel event streams, each of which can also be visualized with jAER. The extracted symbols are readily available (no need to run the MatlabTM scripts). 
+Original DVS recorded files are 128x128 pixel and can be displayed with jAER (available from: [http://sourceforge.net/p/jaer/wiki/Home](http://sourceforge.net/p/jaer/wiki/Home)). MatlabTMscripts are provided to track and extract individual poker pip symbols as they cross the screen and extract them as 32x32 pixel event streams, each of which can also be visualized with jAER. The extracted symbols are readily available (no need to run the MatlabTM scripts).
 
 A more detailed description of the recording procedure and the database can be found in

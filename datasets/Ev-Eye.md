@@ -103,11 +103,8 @@
 }
 ---
 
-
-### Dataset Structure 
-
-
+### Dataset Structure
 
 The dataset contains recordings from 48 subjects. The dataset contains both frames and events from two synchronised DAVIS346 cameras. In addition, the dataset also contains scene images and reference data captured using a Tobii Pro Glasses 3 eye tracker. The dataset contains approximately 1.5m grayscale images alongside the event-based data. The total size of the dataset is approximately 124 Gb containing `.rar` files for each user).
 
-The event data is provided in Numpy format, with each line corresponding to a single event. These  events are stored as(t, x, y, p) vectors, with (0, 1) and `t` has a us. Alongside the event data, a separate directory contains the grayscale images recorded alongside the events from the DAVIS346 sensors. Note that there is a `frames` and `events` folder for the left and the right cameras for each user.
+The event data is provided in Numpy format, with each line corresponding to a single event. These events are stored as(t, x, y, p) vectors, with (0, 1) and `t` has a us. Alongside the event data, a separate directory contains the grayscale images recorded alongside the events from the DAVIS346 sensors. Note that there is a `frames` and `events` folder for the left and the right cameras for each user.

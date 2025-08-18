@@ -112,12 +112,11 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains both real data from a DAVIS240C and simulated data from conventional images using a custom conversion method.
 - Contains a total of 1252.6 secondsSynthetic data contains 1240 seconds of data and 12.6 seconds of real data.
-- 
-
+-
 
 ```bibtext
 @inproceedings{rudnev2021eventhands, 

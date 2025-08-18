@@ -234,12 +234,10 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-
-
----
+______________________________________________________________________
 
 ### Tasks
-- [ ]  Download the DND21 datasets and check file format, size, and availability
+
+- [ ] Download the DND21 datasets and check file format, size, and availability

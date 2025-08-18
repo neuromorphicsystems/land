@@ -140,12 +140,11 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The SCENES-DVS database consists of DVS recordings of urban scenes. The dataset was recorded by different people handling a DVS sensor during long hikes in an urban environment. The sequences exceeded 15 minutes long and included indoor and outdoor environments. The records were split in small sequences of 50ms. The sequences were categorized in four classes: `street´, `bridge´, `stairs´ and `corridor´. `street´ and `bridge´ classes correspond to indoor scenes, while `stairs´ and `corridor´ correspond to outdoor ones.
 
-### Dataset Files 
+### Dataset Files
 
 | File                                                                              | Size   |
 | --------------------------------------------------------------------------------- | ------ |

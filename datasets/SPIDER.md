@@ -64,8 +64,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 Dataset has 3 different recordings from three different locations.
 
@@ -74,13 +73,13 @@ Dataset has 3 different recordings from three different locations.
 • Location: https://goo.gl/maps/JaYGwaTaBHj5H6SL9
 • 50 kmh (urban) speed limit
 • Near the university campus with Pedestrians (people walking) and bicyclists (people biking, scooting, rolling, etc.)
-• Ideal Operating Environment  
- 
+• Ideal Operating Environment\
+
 **Dataset location 2**
 • 8 lanes (4 per direction) wide street
 • Location: https://goo.gl/maps/jar6AjysZiM2LP5S7
 • 50 kmh (urban) speed limit
-• Near the main train stations of the city and a location with Pedestrians (people walking, running, or jogging), and cyclists (people biking, scooting, rolling, etc.)  
+• Near the main train stations of the city and a location with Pedestrians (people walking, running, or jogging), and cyclists (people biking, scooting, rolling, etc.)
 
 **Dataset location 3**
 • 6 lanes (3 per direction) wide street on the bridge

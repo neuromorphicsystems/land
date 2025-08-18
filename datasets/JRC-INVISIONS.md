@@ -276,7 +276,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The JRC INVISIONS Neuromorphic Sensors Parametric Tests Dataset is composed of repeated dynamic sequences captured by different event cameras (neuromorphic) and eventually integrated with a frame-based camera. Tests are performed with an optical table, which provides a controlled environment for precise image acquisition and manipulation and repeated events. Data is collected with different camera configurations in three distinct scenarios: moving targets, mechanical vibrations, rotating fan. For moving targets, spatially and temporally synchronized frame-based data is provided, with keypoints and corners computed on the frames. For mechanical vibrations, a vibrating bar and ArUco markers are recorded; the ground truth frequency and the frame equivalent fiducial marker is provided. For the rotating fan, the ground truth frequency is provided.

@@ -311,7 +311,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset consist of 91 objects

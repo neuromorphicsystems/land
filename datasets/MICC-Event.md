@@ -225,9 +225,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-The recorded actions match the 11 classes of the DVS-Gesture dataset but are performed under more challenging conditions. In particular, the actors were asked to perform the actions at different speeds, in order to demonstrate the capacity of event cameras to capture high speed movements. In addition the actions have been recorded at different scales and camera orientations and also under uneven illumination which is likely to cast shadows on the body and the surroundings, generating spurious events. 
+The recorded actions match the 11 classes of the DVS-Gesture dataset but are performed under more challenging conditions. In particular, the actors were asked to perform the actions at different speeds, in order to demonstrate the capacity of event cameras to capture high speed movements. In addition the actions have been recorded at different scales and camera orientations and also under uneven illumination which is likely to cast shadows on the body and the surroundings, generating spurious events.
 
 The dataset was recorded by 7 different actors of different age, height and gender for a total of 231 videos. All the videos are used for testing, still using the DVS128 Gesture Dataset as training set.

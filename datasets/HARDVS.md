@@ -96,9 +96,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-The dataset contains 100000  recordings across 300 actions. The dataset contains data from 5 people
+The dataset contains 100000 recordings across 300 actions. The dataset contains data from 5 people
 
 There is also a smaller version of the dataset, which has code to support it on `SpikingJelly` ([hardvs.py](https://github.com/fangwei123456/spikingjelly/blob/master/spikingjelly/datasets/hardvs.py))

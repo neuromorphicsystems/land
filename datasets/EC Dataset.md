@@ -180,8 +180,6 @@
 }
 ---
 
-
-
 ### Dataset Description
 
 We collected an audio-visual speech dataset using the “ATIS” (304×240 pixels resolution) Event Camera for the visual signal, and a high quality directional microphone at 44.1 kHz for the auditory signal. The dataset was collected in a lab environment with standard room illumination and using 8 mm lens to video-record subjects standing 70 cm away from microphone and EC. The dataset consists of 18 subjects (9 males and 9 females) with different variations among eye-glasses, beard, mustaches and head poses (e.g. with the head slightly rotated to one-side). Subjects were free to slightly move their head while speaking. A unique set of 20 utterances were selected from the TIMIT  speech corpus for each subject. There are 5 sentences in common between only one pair of subjects. In total there are 360 audio-visual clips for a total duration of 28 minutes. We also collected non-speech facial actions from all the subjects, including free head rotations, lip-biting, lip-snap, breathing with open mouth, smiling and occlusions of face and lips due to hand gestures. Finally, we collected event streams corresponding to arbitrary motions of the EC — without subjects — to evaluate visual gating false positives in presence of typical hand-held devices handling.
@@ -190,6 +188,6 @@ For accurate synchronization of visual and auditory signals' we manually trigger
 
 In order to test performance in different background noise conditions, the audio clips were mixed with recordings of subway, cafeteria, square backgrounds [1], at seven levels of SNR ratio from 15dB to −15dB with 5dB decrements. For each clean audio clip, we thus obtained 21 noisy clips.
 
-### Dataset Structure 
+### Dataset Structure
 
 The dataset consists of 18, with 9 and 9. The dataset contains 360 with a total duration of 28 min.

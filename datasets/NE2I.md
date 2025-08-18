@@ -362,11 +362,10 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-- Dataset is split into two parts: 
-	- in-distribution set:
-		- Contains 1004 images from Unsplash
-	- out-of-distribution set:
-		- Contains 100 images from DIV2K
+- Dataset is split into two parts:
+  - in-distribution set:
+    - Contains 1004 images from Unsplash
+  - out-of-distribution set:
+    - Contains 100 images from DIV2K

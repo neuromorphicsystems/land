@@ -254,14 +254,11 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-
-- Fall DetectionDataset 
-	- Contains 180 recordings from 15 subjects, each 5 seconds long with a total of 4 classes
-	- Dataset: https://tongjieducn-my.sharepoint.com/:f:/g/personal/ziyang_tongji_edu_cn/EmKnh-QyvZREl3f1Xc_A4_sBhfi2yUesyMJF4-eHXqk17g?e=QMxX
-
+- Fall DetectionDataset
+  - Contains 180 recordings from 15 subjects, each 5 seconds long with a total of 4 classes
+  - Dataset: https://tongjieducn-my.sharepoint.com/:f:/g/personal/ziyang_tongji_edu_cn/EmKnh-QyvZREl3f1Xc_A4_sBhfi2yUesyMJF4-eHXqk17g?e=QMxX
 
 ```bibtex
 @article{miao2019neuromorphic, 

@@ -435,23 +435,24 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The root group of the hdf5 file contains two datasets and four further groups.
 
 The two datasets in the root group “/” are
+
 1. train_labels
 2. test_labels
 
 The four groups in the root group “/” are
+
 1. train_timestamps
 2. train_addresses
 3. test_timestamps
 4. test_addresses
-    
+
 Each of these four groups holds datasets, which hold either the timestamp or the address sequences which can be accessed by the key values in the train_labels and test_labels datasets.
 
-The train_labels and test_labels contain the key values for the training set and test set respectively. These keys are the dict keys which help access the timestamp and address data, and they also encode the label data. 
+The train_labels and test_labels contain the key values for the training set and test set respectively. These keys are the dict keys which help access the timestamp and address data, and they also encode the label data.
 
-An example key value in the test_labels dataset is “man-im-a-7557”, which would correspond to the sample “A” of “7-5-5-7” spoken by a man named “IM” in the test dataset. This key value can be used to access the corresponding audio event stream from the groups test_timestamps and the test_addresses which hold the timestamps and the addresses for the event stream respectively. So in order to access the timestamps sequence for the sample “man-im-a-7557”, you look for the dataset with the name “man-im-a-7557” in the test_timestamps group which would hold a single dimensional array of length equal to the number of events N in the sample. Similarly to access the corresponding addresses sequence for the sample, you look for the dataset with the same name in the test_addresses group which would hold a single dimensional array of the same length N.**
+An example key value in the test_labels dataset is “man-im-a-7557”, which would correspond to the sample “A” of “7-5-5-7” spoken by a man named “IM” in the test dataset. This key value can be used to access the corresponding audio event stream from the groups test_timestamps and the test_addresses which hold the timestamps and the addresses for the event stream respectively. So in order to access the timestamps sequence for the sample “man-im-a-7557”, you look for the dataset with the name “man-im-a-7557” in the test_timestamps group which would hold a single dimensional array of length equal to the number of events N in the sample. Similarly to access the corresponding addresses sequence for the sample, you look for the dataset with the same name in the test_addresses group which would hold a single dimensional array of the same length N.\*\*

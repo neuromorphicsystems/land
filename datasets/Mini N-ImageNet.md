@@ -355,7 +355,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset contains 100 classes, which is 1/10 of the original N-ImageNet.

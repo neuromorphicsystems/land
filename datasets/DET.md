@@ -236,23 +236,20 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Captured with CeleX-V at a resolution of 1280×800 pixels
 - Contains 5424 recordings totalling over 5 hours
 - Recorded in Wuhan City, China
 
-
-
-
 Files to download:
 
-| Raw Event Data | File Size | Cloud Disk Link                                                                                               |
-| -------------- | --------- | ------------------------------------------------------------------------------------------------------------- |
-| 20190217_1156  | 2.83 GB   | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)     |
-| 20190222_1427  | 6.41 GB   | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)<br> |
-| 20170217_1205  | 10.40 GB  | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)     |
-| 20190222_1451  | 6.94 GB   | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)     |
-| 20190222_1707  | 5.89 GB   | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)     |
-| 20190222_1645  | 10.44 GB  | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)     |
-Total Size: 42.91 Gb
+| Raw Event Data       | File Size | Cloud Disk Link                                                                                               |
+| -------------------- | --------- | ------------------------------------------------------------------------------------------------------------- |
+| 20190217_1156        | 2.83 GB   | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)     |
+| 20190222_1427        | 6.41 GB   | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)<br> |
+| 20170217_1205        | 10.40 GB  | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)     |
+| 20190222_1451        | 6.94 GB   | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)     |
+| 20190222_1707        | 5.89 GB   | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)     |
+| 20190222_1645        | 10.44 GB  | [Google drive link](https://drive.google.com/drive/folders/1glMJ-0FZmItH7ZYqIG6APyDZ0QztYnoz?usp=sharing)     |
+| Total Size: 42.91 Gb |           |                                                                                                               |

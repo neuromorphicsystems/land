@@ -234,9 +234,7 @@
 }
 ---
 
-
-### Dataset Structure 
-
+### Dataset Structure
 
 - Contains data from 25 participants
 - Contains 455 recordings

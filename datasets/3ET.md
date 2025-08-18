@@ -201,39 +201,36 @@
 }
 ---
 
-
-### Dataset Structure 
-
-
+### Dataset Structure
 
 The dataset is provided in two separate downloads. The [first download link](https://drive.google.com/drive/folders/16qH_wv_oVNysJARtHIUrIXbHjOygfq_i?usp=sharing) contains the event frames and the labels from the original dataset. The [second download link](https://drive.google.com/drive/folders/1HeOS5YBLruzHjwMKyBQfVTc_mJbsy_R1?usp=sharing) contains the raw events (which also contain frames) and sample videos of the data. The event_frames are also stored as `h5` files, but are significantly larger than the raw event files.
 
-The dataset is also available via [[Tonic]], with a dedicated [data downloader script](https://github.com/neuromorphs/tonic/blob/develop/tonic/datasets/threeET_eyetracking.py)). This script accesses a slightly different version of the dataset from a [[Dropbox]] link. This version contains the raw events and the labels together.
+The dataset is also available via \[[Tonic]\], with a dedicated [data downloader script](https://github.com/neuromorphs/tonic/blob/develop/tonic/datasets/threeET_eyetracking.py)). This script accesses a slightly different version of the dataset from a \[[Dropbox]\] link. This version contains the raw events and the labels together.
 
-The source data comes from the Labeled Pupils in the Wild (LPW) dataset [^1]. This dataset contains 66 high-quality videos capturing the eye, with each  approximately 20 seconds in duration. In this dataset, the frames were captured with a fixed frame rate of  95 kHz.
+The source data comes from the Labeled Pupils in the Wild (LPW) dataset [^1]. This dataset contains 66 high-quality videos capturing the eye, with each approximately 20 seconds in duration. In this dataset, the frames were captured with a fixed frame rate of 95 kHz.
 
 The dataset was converted using v2e by looking for changes in intensity value over a time interval 4.4 ms. The constant time-bin count representation is used to convert the data to events. The original 640x480 frames were converted to the 240x180 of the DAVIS240C. This was then reduced to 80×60 to speed up training time.
 
-The raw data are stored as h5 files. Sample videos of the event-based output are provided. 
+The raw data are stored as h5 files. Sample videos of the event-based output are provided.
 
-### Dataset Structure 
+### Dataset Structure
 
-The final dataset contains [22] subjects. 
+The final dataset contains [22] subjects.
 The uncompressed size of the dataset is 3.7 Gb
 The compressed size (`.zip`) of the dataset is 3.7 Gb
 
 Each raw event file is an `h5` data file that contains the following datasets:
 
 - **events**: The source events stored as(t, x, y, p), with (0, 1) and `t` has a us.
-- **frame**: The frames are stored in an `(n x 180 x 240)` dataset, with each value being a `uint8`. 
+- **frame**: The frames are stored in an `(n x 180 x 240)` dataset, with each value being a `uint8`.
 - **frame_idx**: Most likely the index of the event that matched the start of each frame.
 - **frame_ts**: Most likely the timestamp that corresponds to the start of each frame.
 
 ### References:
 
-[^1]: M. Tonsen, X. Zhang, Y. Sugano, and A. Bulling, “Labeled pupils in the wild: A dataset for studying pupil detection in unconstrained environments,” in Proc. ACM International Symposium on Eye Tracking Research and Applications (ETRA), 2016, pp. 139–142.
+\[^1\]: M. Tonsen, X. Zhang, Y. Sugano, and A. Bulling, “Labeled pupils in the wild: A dataset for studying pupil detection in unconstrained environments,” in Proc. ACM International Symposium on Eye Tracking Research and Applications (ETRA), 2016, pp. 139–142.
 
 ## Datasets Referenced in this Paper
 
-[[EBVEYE]]
-[[N-HELEN]]
+\[[EBVEYE]\]
+\[[N-HELEN]\]

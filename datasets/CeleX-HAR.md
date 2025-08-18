@@ -107,7 +107,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The data was captured using a CeleX-V with a resolution of1280x800 pixels. It contains 150 classes and 124625 sequences. Data is recorded from multiple views, with both static and dynamic cameras. Each sequence is 3 seconds each, on average.

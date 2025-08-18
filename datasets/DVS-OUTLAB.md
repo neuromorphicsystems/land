@@ -256,10 +256,8 @@
 }
 ---
 
-
-### Dataset Structure 
-
+### Dataset Structure
 
 - Dataset contains 7 hours of recordings
-- Data was recorded with a  CeleX-4 with a resolution of 768 x 640 pixels
+- Data was recorded with a CeleX-4 with a resolution of 768 x 640 pixels
 - A subset of the data was labelled and sorted into 11 classes.

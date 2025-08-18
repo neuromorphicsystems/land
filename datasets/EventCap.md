@@ -368,6 +368,6 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains 12 recordings of 6 subjects.

@@ -314,9 +314,7 @@
 }
 ---
 
-
-### Dataset Structure 
-
+### Dataset Structure
 
 - Dataset has no optical flow ground truth.
 - Contains onlyIndoor scenes.

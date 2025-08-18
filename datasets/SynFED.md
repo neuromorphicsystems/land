@@ -283,8 +283,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains data converted from the S3DFM dataset
 - Contains data from 30 subjects

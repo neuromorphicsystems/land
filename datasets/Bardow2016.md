@@ -202,11 +202,9 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset consists of 4 recordings. Each file is stored in a binary file with a specified structure, in which each event is encoded into 8 bytes.
-
 
 ### Format
 
@@ -224,17 +222,17 @@ where data is an integer, which contains the last 4 bytes of an event.
 
 A detailed description of the biases can be found on the [iniLabs website](http://inilabs.com/support/hardware/biasing/). We use the same bias settings as used in the [jAER project](https://sourceforge.net/projects/jaer/).
 
-|   |   |
-|---|---|
-|**CAS:**|54|
-|**INJ_GND:**|1108364|
-|**REQ_PD:**|16777215|
-|**PU_X:**|8159221|
-|**DIFF_OFF:**|132|
-|**REQ:**|159147|
-|**REFR:**|6|
-|**PU_Y:**|16777215|
-|**DIFF_ON:**|482443|
-|**DIFF:**|30153|
-|**FOLL:**|52|
-|**PR:**|4|
+|               |          |
+| ------------- | -------- |
+| **CAS:**      | 54       |
+| **INJ_GND:**  | 1108364  |
+| **REQ_PD:**   | 16777215 |
+| **PU_X:**     | 8159221  |
+| **DIFF_OFF:** | 132      |
+| **REQ:**      | 159147   |
+| **REFR:**     | 6        |
+| **PU_Y:**     | 16777215 |
+| **DIFF_ON:**  | 482443   |
+| **DIFF:**     | 30153    |
+| **FOLL:**     | 52       |
+| **PR:**       | 4        |

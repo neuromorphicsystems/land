@@ -425,7 +425,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 In the dataset there are 108 clips of 10.2 min in total, from 18 subjects (9 males and 9 females).

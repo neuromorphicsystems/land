@@ -492,7 +492,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 FlaDE (Flame Detection Dataset based on Event Cameras) is a dataset designed for event-based flame detection. Traditional RGB cameras often struggle with issues such as static backgrounds, overexposure, and redundant data.

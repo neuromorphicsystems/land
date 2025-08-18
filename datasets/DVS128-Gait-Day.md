@@ -350,6 +350,6 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains 20 subjects (14 males and 6 females)

@@ -205,8 +205,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 This dataset contains event streams of highly dynamic real-world scenes collected using two DVS cameras of different spatial resolutions – a DVXplorer (640×480 px) and a Davis346 (346×260 px). Both cameras simultaneously recorded each scene with negligible parallax error. The dataset is provided to test event-based spatio-temporal downsampling techniques through comparing downsampled higher-resolution recordings with matching lower-resolution recordings, as explained in our publication above.
 

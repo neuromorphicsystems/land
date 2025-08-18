@@ -108,7 +108,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 20 people were recorded over continuous videos for each of the three rock, paper and scissors symbols, amounting to around 5 hours of total recording time. A fourth background category was also recorded in order to capture non-hand data necessary for classification tasks.

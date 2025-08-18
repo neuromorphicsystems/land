@@ -114,8 +114,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 45 classes of recordings
 - Contains 14 different types of recprdomgs
@@ -123,18 +122,16 @@
 - Training Subset contains 520 videos and requires 470.23 GB
 - Testing Subset contains 222 videos and requires 194.93GB
 
-
-
 ### Comparison Table
 
-| Dataset              | Year | Videos | Frames    | Classes | Attributes | Resolution | Absent | Frame | Reality | LT  | Public |
-| -------------------- | ---- | ------ | --------- | ------- | ---------- | ---------- | ------ | ----- | ------- | --- | ------ |
-| [[VOT-DVS]]          | 2016 | 60     | N/A       |         |            | 240x180    | N      | N     | N       | N   | Y      |
-| [[TD-DVS]]           | 2016 | 77     | N/A       |         |            | 240x180    | N      | N     | N       | N   | Y      |
-| [[ULSTER]]           | 2016 | 1      | 9,000     |         |            | 240x180    | N      | N     | Y       | Y   | N      |
-| [[EED]]              | 2018 | 7      | 234       |         |            | 240x180    | N      | N     | Y       | N   | Y      |
-| [[FE108]] | 2021 | 108    | 208,672   | 21      | 4          | 346x260    | N      | N     | Y       | N   | Y      |
-| [[VisEvent]]         | 2021 | 820    | 371,127   |         | 17         | 346x260    | Y      | Y     | Y       | N   | Y      |
-| [[COESOT]]           | 2022 | 1354   | 478,721   | 90      | 17         | 346x260    | Y      | Y     | Y       | N   | Y      |
-| [[EventVOT]]         | 2023 | 1141   | 569,359   | 19      | 14         | 1280x720   | Y      | N     | Y       | N   | Y      |
-| [[FELT]]             | 2024 | 742    | 1,694,474 | 45      | 14         | 346x260    | Y      | Y     | Y       | Y   | Y      |
+| Dataset        | Year | Videos | Frames    | Classes | Attributes | Resolution | Absent | Frame | Reality | LT  | Public |
+| -------------- | ---- | ------ | --------- | ------- | ---------- | ---------- | ------ | ----- | ------- | --- | ------ |
+| \[[VOT-DVS]\]  | 2016 | 60     | N/A       |         |            | 240x180    | N      | N     | N       | N   | Y      |
+| \[[TD-DVS]\]   | 2016 | 77     | N/A       |         |            | 240x180    | N      | N     | N       | N   | Y      |
+| \[[ULSTER]\]   | 2016 | 1      | 9,000     |         |            | 240x180    | N      | N     | Y       | Y   | N      |
+| \[[EED]\]      | 2018 | 7      | 234       |         |            | 240x180    | N      | N     | Y       | N   | Y      |
+| \[[FE108]\]    | 2021 | 108    | 208,672   | 21      | 4          | 346x260    | N      | N     | Y       | N   | Y      |
+| \[[VisEvent]\] | 2021 | 820    | 371,127   |         | 17         | 346x260    | Y      | Y     | Y       | N   | Y      |
+| \[[COESOT]\]   | 2022 | 1354   | 478,721   | 90      | 17         | 346x260    | Y      | Y     | Y       | N   | Y      |
+| \[[EventVOT]\] | 2023 | 1141   | 569,359   | 19      | 14         | 1280x720   | Y      | N     | Y       | N   | Y      |
+| \[[FELT]\]     | 2024 | 742    | 1,694,474 | 45      | 14         | 346x260    | Y      | Y     | Y       | Y   | Y      |

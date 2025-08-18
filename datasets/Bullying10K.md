@@ -102,14 +102,13 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 Bullying10K is a privacy-preserving dataset designed for bullying Recognition. It was captured using a DVS (Dynamic Vision Sensor) camera and includes 10,000 samples, comprising a total of 12 billion events.
 
 - Dataset captured with 2 DAVIS346 sensors
-- Two lighting conditions 
-- 25 subjects recorded 
+- Two lighting conditions
+- 25 subjects recorded
 - 10000 recordings
 - 10 different action types
 - Data stored in numpy files

@@ -330,8 +330,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains 238 hours of recordings
 - A total of 24 recordings of 10 minutes were selected.
 - Data was filtered using a Hot Pixel Filter

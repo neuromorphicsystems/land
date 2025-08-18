@@ -218,7 +218,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 - Recorded with 4 sensors (3x DAVIS346 and 1x DAVIS240C)

@@ -273,8 +273,8 @@
 }
 ---
 
-
 ### Dataset Structure
+
 - Converted from TartanAir
 - Sequences have a resolution of 480 x 640
 - Steps to create the event-based dataset are provided at [Event-Camera-Data-Dense-Pre-training/generate_data at main · Yan98/Event-Camera-Data-Dense-Pre-training (github.com)](https://github.com/Yan98/Event-Camera-Data-Dense-Pre-training/tree/main/generate_data)

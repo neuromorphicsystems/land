@@ -265,10 +265,9 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-Each example is a separate binary file (e.g. 'accordion\image_0001.bin') consisting of a list of events. Each event occupies 40 bits arranged as described below:
+Each example is a separate binary file (e.g. 'accordion\\image_0001.bin') consisting of a list of events. Each event occupies 40 bits arranged as described below:
 
 bit 39 - 32: Xaddress (in pixels)
 bit 31 - 24: Yaddress (in pixels)
@@ -277,13 +276,11 @@ bit 22 - 0: Timestamp (in microseconds)
 
 The filenames and directory structure match the original Caltech101 dataset so that spike recordings inlcuded here can be backtraced to the original images.
 
-
 A Matlab function for "Read_Ndataset.m" is provided for reading these binary files into Matlab, and a Matlab script "RunMe.m" shows how to read data in and use the provided Matlab functions
 
 Additional Matlab functions are available at: http://www.garrickorchard.com/code
 
-
-Bounding box and object contour annotations are provided for the data, each in a separate file (e.g. 'accordion\annotation_0001.bin'). Each file contains two boundaries. The first is a rectangular box, while the second traces out the object countour. A Matlab script is provided showing how to read the data into Matlab.
+Bounding box and object contour annotations are provided for the data, each in a separate file (e.g. 'accordion\\annotation_0001.bin'). Each file contains two boundaries. The first is a rectangular box, while the second traces out the object countour. A Matlab script is provided showing how to read the data into Matlab.
 
 For those wishing to write their own functions, the binary values are written as 16bit signed integers
 
@@ -308,14 +305,12 @@ word N*2+7: 2nd dimension of contour point 2
 .
 .
 .
-word (N+M+1)*2: 1st dimension of contour point M
-word (N+M+1)*2+1: 2nd dimension of contour point M
-
-
+word (N+M+1)\*2: 1st dimension of contour point M
+word (N+M+1)\*2+1: 2nd dimension of contour point M
 
 The bias parameters used by the ATIS during recording are:
-APSvrefL:  3050mV
-APSvrefH:  3150mV
+APSvrefL: 3050mV
+APSvrefH: 3150mV
 APSbiasOut: 750mV
 APSbiasHyst: 620mV
 CtrlbiasLP: 620mV

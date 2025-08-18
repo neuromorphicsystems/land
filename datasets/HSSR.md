@@ -268,10 +268,9 @@
 }
 ---
 
-
 ### Dataset Structure
 
-- Comprises two datasets: 
-	- Spiking ImageNet (S-ImgNet) 
-	- Spiking data of Cars (S-Cars).
+- Comprises two datasets:
+  - Spiking ImageNet (S-ImgNet)
+  - Spiking data of Cars (S-Cars).
 - Monitor conversion using an e-ink screen to prevent flicker (for the S-ImgNet dataset)

@@ -271,31 +271,29 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-
-
-- Used the same bias values as [[DDD17]] dataset. Note paper states that this led to better results than the biases used in the [[CED]] dataset. This is proof that sharing bias values leads to better datasets #discussion
--  Recorded in the Brookfield and Kenmore Hills (Brisbane)
+- Used the same bias values as \[[DDD17]\] dataset. Note paper states that this led to better results than the biases used in the \[[CED]\] dataset. This is proof that sharing bias values leads to better datasets #discussion
+- Recorded in the Brookfield and Kenmore Hills (Brisbane)
 - Route length is approximately 8km
 - The dataset contains 6 loops of the route.
 - Data is stored in rosbags
 
 The dataset contains six sequences of recordings. For each recording, four files are made available:
 
-1. A rosbag (*.bag) file with the following contents:
-    - /dvs/events (type: dvs_msgs/EventArray) with the event stream, see https://github.com/uzh-rpg/rpg_dvs_ros)
-    - /dvs/camera_info (type: sensor_msgs/CameraInfo) with the camera info of the DAVIS frame camera
-    - /dvs/image_raw (type: sensor_msgs/Image) with the DAVIS frame camera images
-    - /dvs/imu (sensor_msgs/Imu) with the IMU data of the event camera
-        
-2. An associated *_hot_pixels.txt file that contains the hot pixels for that recording (detected with https://github.com/cedric-scheerlinck/dvs_tools/tree/master/dvs_hot_pixel_filter)
-    
-3. The recordings using a frame-based consumer camera (*.mp4 files)
-    
-4. Associated GPS information (*.nmea) files recorded using the consumer camera - synchronized with the mp4 files.
-    
+1. A rosbag (\*.bag) file with the following contents:
+
+   - /dvs/events (type: dvs_msgs/EventArray) with the event stream, see https://github.com/uzh-rpg/rpg_dvs_ros)
+   - /dvs/camera_info (type: sensor_msgs/CameraInfo) with the camera info of the DAVIS frame camera
+   - /dvs/image_raw (type: sensor_msgs/Image) with the DAVIS frame camera images
+   - /dvs/imu (sensor_msgs/Imu) with the IMU data of the event camera
+
+2. An associated \*\_hot_pixels.txt file that contains the hot pixels for that recording (detected with https://github.com/cedric-scheerlinck/dvs_tools/tree/master/dvs_hot_pixel_filter)
+
+3. The recordings using a frame-based consumer camera (\*.mp4 files)
+
+4. Associated GPS information (\*.nmea) files recorded using the consumer camera - synchronized with the mp4 files.
+
 Note that the timestamps of the event files and frame-based camera files do not match as they were not synchronized during recording time. Please see the associated code repository (https://github.com/Tobias-Fischer/ensemble-event-vpr) for the correct mappings and time offsets between the event recordings and frame-based recordings.
 
 The code repository also contains code to match GPS data between different traverses.

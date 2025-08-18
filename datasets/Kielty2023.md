@@ -266,13 +266,11 @@
 }
 ---
 
-
-
-### Dataset Structure 
+### Dataset Structure
 
 - The dataset contains both non-public recordings and data converted from the RGB YawDD dataset[^1].
 - Both sets of data were converted using V2E with an output resolution of 500 x 500 pixels
 - Dataset contains a total of [num_recordings::123] recordings
 - Dataset contains 2 different classes (yawn / no yawn)
 
-[^1]: Abtahi, S., Omidyeganeh, M., Shirmohammadi, S. and Hariri, B., 2014, March. YawDD: A yawning detection dataset. In Proceedings of the 5th ACM multimedia systems conference (pp. 24-28).
+\[^1\]: Abtahi, S., Omidyeganeh, M., Shirmohammadi, S. and Hariri, B., 2014, March. YawDD: A yawning detection dataset. In Proceedings of the 5th ACM multimedia systems conference (pp. 24-28).

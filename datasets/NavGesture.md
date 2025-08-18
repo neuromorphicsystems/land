@@ -575,9 +575,7 @@
 }
 ---
 
-
-### Dataset Structure 
-
+### Dataset Structure
 
 - Dataset contains 1342 recordings in total
 - Dataset contains 6 different gestures

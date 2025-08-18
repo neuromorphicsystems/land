@@ -100,7 +100,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 - Space-time instance segmentation dataset focused on mice tracking
@@ -112,7 +111,7 @@
 ### Comparison Datasets
 
 | **Name**       | **Resolution** | **Frames** | **Aligned** | **Pixel-level Masks** | **Multiple Objects** |
-|----------------|----------------|------------|-------------|-----------------------|----------------------|
+| -------------- | -------------- | ---------- | ----------- | --------------------- | -------------------- |
 | Ulster         | 240 × 180      | Y          | Y           | N                     | N                    |
 | EED            | 240 × 180      | Y          | Y           | N                     | N                    |
 | FE10           | 346 × 260      | Y          | Y           | N                     | N                    |

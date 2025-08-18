@@ -89,7 +89,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 The dataset is a modified version of the DVS-GESTURE dataset in which the recordings have been deliberately corrupted. There are six different types of corruption applied to the data

@@ -40,7 +40,7 @@
                 "format": "TSV",
                 "available": true
             },
-                      {
+            {
                 "name": "Testing Set (Google Drive)",
                 "url": "https://drive.google.com/drive/folders/11a5NG4RwmbVxlSdxiU0MGrF46U6Lj09b?usp=drive_link",
                 "format": "TSV",
@@ -366,10 +366,10 @@
 }
 ---
 
-
 ### Dataset Structure
+
 The dataset provides 21 sequences, including dynamic
-scenes and extreme blurs.  13 sequences were used for training and 8 sequences for the test set. The image and event resolution is 1024×768. The dataset contains typical urban scenes encompassing diverse motion modes, including ego-motion, object motion, and a combination of both.
+scenes and extreme blurs. 13 sequences were used for training and 8 sequences for the test set. The image and event resolution is 1024×768. The dataset contains typical urban scenes encompassing diverse motion modes, including ego-motion, object motion, and a combination of both.
 
 Training dataset: [Download link](https://drive.google.com/drive/folders/1nu84bu_rLnUz-HQZirtlAqd0fMFvcm6K?usp=drive_link)
 Testing dataset: [Download link](https://drive.google.com/drive/folders/11a5NG4RwmbVxlSdxiU0MGrF46U6Lj09b?usp=drive_link)

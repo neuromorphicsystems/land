@@ -195,14 +195,14 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
+Thirty subjects with diversity in height and gender were part of the dataset collection. Each person performed 5 categories of activities and then event memory surfaces of each clip were generated and quantized at a rate of 30 FPS.
 
-Thirty subjects with diversity in height and gender were part of the dataset collection. Each person performed 5 categories of activities and then event memory surfaces of each clip were generated and quantized at a rate of 30 FPS. 
+The dataset contains 3091:
 
-The dataset contains 3091: 
-- Boxing: 475, 
-- Clapping: 435, 
-- Jogging: 860, 
-- Walking: 791, 
+- Boxing: 475,
+- Clapping: 435,
+- Jogging: 860,
+- Walking: 791,
 - Waving: 530.

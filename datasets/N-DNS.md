@@ -575,8 +575,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Based on the Microsoft DNS Challenge
 - Github repository contains code to convert the audio to spikes

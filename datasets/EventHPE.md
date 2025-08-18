@@ -256,22 +256,20 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains data from 15 subjects ( 11 male and 4)
 - Contains 21 different actions
 
 Downloadable data contains
-	- preprocessed data
-    - events_256 (event frames converted from raw events data, resolution 256x256)
-    - full_pic_256 (gray-scale images)
-    - pose_events (annotated poses of gray-scale images)
-    - hmr_results (inferred poses of gray-scale images using [HMR](https://github.com/akanazawa/hmr))
-    - vibe_results_0802 (inferred poses of gray-scale images using [VIBE](https://github.com/mkocabas/VIBE))
-    - pred_flow_events_256 (inferred optical flow from event frames)
-    - model (train/test on a snippet of 8 frames)
-
+\- preprocessed data
+\- events_256 (event frames converted from raw events data, resolution 256x256)
+\- full_pic_256 (gray-scale images)
+\- pose_events (annotated poses of gray-scale images)
+\- hmr_results (inferred poses of gray-scale images using [HMR](https://github.com/akanazawa/hmr))
+\- vibe_results_0802 (inferred poses of gray-scale images using [VIBE](https://github.com/mkocabas/VIBE))
+\- pred_flow_events_256 (inferred optical flow from event frames)
+\- model (train/test on a snippet of 8 frames)
 
 Dataset is also provided through a Google Drive link, although that is currently unavailable.
 https://drive.google.com/drive/folders/11gMj-5sgSiBciWNR0V6r9PMpru84zMk5?usp=sharing

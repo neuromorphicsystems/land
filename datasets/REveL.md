@@ -248,27 +248,26 @@
 }
 ---
 
-
-### Dataset Structure 
-
+### Dataset Structure
 
 There are two folders for each session in which data was collected.
 Note that the calibration parameter values vary across sessions.
 
 Within each session directory is:
+
 - Calibration data (for the session)
 - Calibration yaml file with:
-	- Transformation from the vicon marker to the camera frame 'T_v_c'
-	- Transformation from the camera frame to the lidar frame 'T_c_l'
-	- Camera Intrinsic Matrix 'K'
-	- Camera Distortion Parameters
+  - Transformation from the vicon marker to the camera frame 'T_v_c'
+  - Transformation from the camera frame to the lidar frame 'T_c_l'
+  - Camera Intrinsic Matrix 'K'
+  - Camera Distortion Parameters
 - Data directories (as zip files)
 
 Inside each data directory after extraction is:
-	- ROSBag
-	- Undistorted RGB images from ROSBag
-	- Labels for undistorted RGB images in YOLO format
-	- Class list for labels
+\- ROSBag
+\- Undistorted RGB images from ROSBag
+\- Labels for undistorted RGB images in YOLO format
+\- Class list for labels
 
 Labels correspond to the image file of the same name. The name of each label/image file is the ROS header timestamp for the image message in the ROSBag.
 

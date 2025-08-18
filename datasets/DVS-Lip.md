@@ -307,10 +307,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-
-- Contains 100 different words 
+- Contains 100 different words
 - Contains data from [40] subjects (20 male and 20 female)
 - Contains a total of 19871 recordings in total

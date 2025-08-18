@@ -346,14 +346,14 @@
 }
 ---
 
-
 ### Dataset Description
 
-The FJU pedestrian detection (FJUPD) dataset is the main dataset used in ourpaper "Spike-event Object Detection for Neuromorphic Vision". FJUPD is captured by DAVIS346 and has event images with a size of 346*260.The FJUPD records pedestrians in three scales and is fabricated to evaluate the effects of semi-automatic labeling and the deep SNN model in the published IEEE Access paper. The event images in the dataset are decoded by the surface
+The FJU pedestrian detection (FJUPD) dataset is the main dataset used in ourpaper "Spike-event Object Detection for Neuromorphic Vision". FJUPD is captured by DAVIS346 and has event images with a size of 346\*260.The FJUPD records pedestrians in three scales and is fabricated to evaluate the effects of semi-automatic labeling and the deep SNN model in the published IEEE Access paper. The event images in the dataset are decoded by the surface
 of active events method (SAE), with time steps ranging from 10,000 to 20,000.The FJUPD has two background situations and three object scales.
 
 The dataset download operation will get the compressed ZIP file of the FJUPD dataset. There are 3 folders after decompressing the zip file: raw, labeled, paper. In the "raw" folder, according to the different situations, the FJUPD is split into two folds. Each fold contains SAE decoded images, with time steps ranging from 10,000 to 20,000, and the original event data (.aedat4). In the "labeled" folder, there are semi-automatic labels by discriminative correlation filter with channel and spatial reliability (CSR-DCF) and the corresponding SAE decoded images. In addition to the "raw" and "labeled" folders, there is a folder named "paper" in the FJUPD. It contains training, testing, and validation sets for the published IEEE Access paper.
 
-### Dataset Structure 
+### Dataset Structure
+
 - Contains 6 different classes, composed of two lighting conditions and three scales each.
 - Dataset contains a total of 72 sequences in total

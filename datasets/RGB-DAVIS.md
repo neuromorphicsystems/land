@@ -352,8 +352,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
+### Dataset Structure
 
-### Dataset Structure 
 - Dataset has a sensor (DAVIS240C) resolution of 180x190 pixels

@@ -110,9 +110,9 @@
 }
 ---
 
-
 ### Dataset Structure
+
 - Contains three different sub-datasets:
-	- A synthetic dataset converted from the Blobby dataset and the Sculpture dataset using ESIM
-	- DiLiGenT-Ev, which is a conversion of the DiLiGenT dataset using ESIM in which the out-most border light directions examples are used
-	- A real dataset containing data recorded from 5 real-world objects
+  - A synthetic dataset converted from the Blobby dataset and the Sculpture dataset using ESIM
+  - DiLiGenT-Ev, which is a conversion of the DiLiGenT dataset using ESIM in which the out-most border light directions examples are used
+  - A real dataset containing data recorded from 5 real-world objects

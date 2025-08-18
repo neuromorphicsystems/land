@@ -307,11 +307,10 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains two datasets, one from a Gen4 sensor and one from a DAVIS346 sensor
-- Both datasets 
-	- Contains 20 scenes
-	- Contains 31 volunteers
-	- Contains 282 sequences
+- Both datasets
+  - Contains 20 scenes
+  - Contains 31 volunteers
+  - Contains 282 sequences

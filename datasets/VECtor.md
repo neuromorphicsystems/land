@@ -229,28 +229,42 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Makes use of hardware synchronisation.
 
 #### Data Format
+
 The data sequences are stored in two different formats (rosbag files and text files) with identical content. All rosbag files are compressed in [bz2 format](https://wiki.ros.org/rosbag/Commandline), and can be easily decompressed by using the [bag merger function in MPL dataset toolbox](https://github.com/mgaoling/mpl_dataset_toolbox#bag-merger).
 
 - **/prophesee/left/events** ([prophesee_event_msgs/EventArray](https://github.com/prophesee-ai/prophesee_ros_wrapper/blob/master/prophesee_event_msgs/msg/EventArray.msg)): Events from the left event camera.
+
 - **/prophesee/right/events** ([prophesee_event_msgs/EventArray](https://github.com/prophesee-ai/prophesee_ros_wrapper/blob/master/prophesee_event_msgs/msg/EventArray.msg)): Events from the right event camera.
+
 - **/camera/left/image_mono** ([sensor_msgs/Image](http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html)): Grayscale images from the left regular camera.
+
 - **/camera/right/image_mono** ([sensor_msgs/Image](http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html)): Grayscale images from the right regular camera.
+
 - **/kinect/depth_image** ([sensor_msgs/Image](http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html)): Depth images from the RGB-D sensor.
+
 - **/ouster/point_cloud** ([sensor_msgs/PointCloud2](http://docs.ros.org/en/lunar/api/sensor_msgs/html/msg/PointCloud2.html)): Point clouds from the LiDAR.
+
 - **/imu/data** ([sensor_msgs/Imu](http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Imu.html)): Full 9-axis readings from the IMU.
+
 - **/gt/pose** ([geometry_msgs/PoseStamped](http://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/PoseStamped.html)): Ground truth signals.
-    
+
 - **left_event.hdf5** ([DSEC format](https://dsec.ifi.uzh.ch/data-format/)): Events from the left event camera stored in hdf5 format.
+
 - **right_event.hdf5** ([DSEC format](https://dsec.ifi.uzh.ch/data-format/)): Events from the right event camera stored in hdf5 format.
+
 - **left_camera.zip**: Grayscale images with their exposure time from the left regular camera.
+
 - **right_camera.zip**: Grayscale images with their exposure time from the right regular camera.
+
 - **kinect_depth.zip**: Depth images from the RGB-D sensor.
+
 - **lidar.zip**: Point clouds from the LiDAR.
+
 - **imu.txt**: Full 9-axis readings from the IMU.
+
 - **gt.txt** ([TUM format](https://vision.in.tum.de/data/datasets/rgbd-dataset/file_formats)): Alternative ground truth signals for quantitative evaluation.

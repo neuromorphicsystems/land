@@ -91,28 +91,23 @@
 }
 ---
 
-
-### Dataset Structure 
-
-
-
-
+### Dataset Structure
 
 ### Comparison Table
 
 ^a40c5f
 
-| **Dataset**                  | **Task**         | **Annotation** | **DVS**   | **Inputs** | **IMU** | **Frames** | **Depth** | **Amount**  |
-| ---------------------------- | ---------------- | -------------- | --------- | ---------- | ------- | ---------- | --------- | ----------- |
-| [[EventVOT]]                 | Detection        | Manual         | 1280x720  |            |         | Y          |           | 249.92GB    |
-| [[FELT]]                     | Detection        | Manual         | 346x260   |            |         | Y          |           | 664.78GB    |
-| [[ADD]]                      | Detection        | Automatic      | 1280x720  |            |         |            |           | 15h/3.5TB   |
-| [[MVSEC]]                    | Depth Estimation | Implicit       | 2x346x260 |            | Y       | Y          | Y         | 186.62GB    |
-| [[DSEC]]                     | Depth Estimation | Implicit       | 2x640×480 |            | Y       | Y          | Y         | 453GB       |
-| [[ViViD++]] (Driving)        | Visual SLAM      | Implicit       | 640x480   |            | Y       | Y          | Y         | 4:19h       |
-| [[PRED18]] | Following        | Manual         | 36x36     |            |         | Y          |           | 1:h15       |
-| [[DDD17]]                    | Driving          | Implicit       | 346x260   | Y          |         | Y          |           | 12:00h      |
-| [[DDD20]]                    | Driving          | Implicit       | 346x260   | Y          |         | Y          |           | 51:00h      |
-| [[MMDVS-LF]]                 | Line Following   | Manual         | 1280x720  | Y          | Y       | Y          | Y         | 37:55m/11GB |
+| **Dataset**             | **Task**         | **Annotation** | **DVS**   | **Inputs** | **IMU** | **Frames** | **Depth** | **Amount**  |
+| ----------------------- | ---------------- | -------------- | --------- | ---------- | ------- | ---------- | --------- | ----------- |
+| \[[EventVOT]\]          | Detection        | Manual         | 1280x720  |            |         | Y          |           | 249.92GB    |
+| \[[FELT]\]              | Detection        | Manual         | 346x260   |            |         | Y          |           | 664.78GB    |
+| \[[ADD]\]               | Detection        | Automatic      | 1280x720  |            |         |            |           | 15h/3.5TB   |
+| \[[MVSEC]\]             | Depth Estimation | Implicit       | 2x346x260 |            | Y       | Y          | Y         | 186.62GB    |
+| \[[DSEC]\]              | Depth Estimation | Implicit       | 2x640×480 |            | Y       | Y          | Y         | 453GB       |
+| \[[ViViD++]\] (Driving) | Visual SLAM      | Implicit       | 640x480   |            | Y       | Y          | Y         | 4:19h       |
+| \[[PRED18]\]            | Following        | Manual         | 36x36     |            |         | Y          |           | 1:h15       |
+| \[[DDD17]\]             | Driving          | Implicit       | 346x260   | Y          |         | Y          |           | 12:00h      |
+| \[[DDD20]\]             | Driving          | Implicit       | 346x260   | Y          |         | Y          |           | 51:00h      |
+| \[[MMDVS-LF]\]          | Line Following   | Manual         | 1280x720  | Y          | Y       | Y          | Y         | 37:55m/11GB |
 
 ^a3cc21

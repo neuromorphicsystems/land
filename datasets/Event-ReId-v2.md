@@ -386,12 +386,12 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The current Event-ReId-v2 dataset comprises [num_subjects::60] identities walking across a disjoint field of view of four event cameras integrated through a surveillance network. The cameras are installed at various positions and angles of tilt, and each one is paired with an RGB camera in a stable stereo setup. This arrangement ensures they capture approximately the same scene and are synchronized using the network clock, see Figure 2. Each RGB camera captures data at a frame rate of 33 FPS with a resolution of 640x480 pixels, resulting in around 27K images. On average, each camera records 120 frames per person. The resolution of the event cameras matches that of the RGB cameras, and the duration of recording for each stream is approximately ≈4 seconds, the same for both sensors, lasting around 4 seconds. Additionally, within the 60 identities captured, 9 subjects are wearing face masks. A total of 57 subjects appear in all four camera pairs, while the rest are seen in three camera views. The dataset encompasses a range of variations, including changes in lighting, poses, and viewpoints. We manually annotate the person and face bounding boxes on both event and RGB streams; the event ground truth bounding box is synchronized with RGB bounding boxes.
 
 ### Notes:
 
 Another dataset was used for experimental setup in paper: ReId SoftBio (synthetic event data)
+
 - softBio consists of 152 people and 64,472 frames from 8 surveillance cameras.

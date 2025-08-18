@@ -285,7 +285,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 366 traverses of the 100m lab environment

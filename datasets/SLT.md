@@ -97,8 +97,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 **Synthetic Lunar Terrain (SLT)** is a dataset based on a reconstruction of a typical **cratered lunar surface landscape** at the [EXTERRES Laboratory](https://set.adelaide.edu.au/atcsr/space-research/exterres-laboratory) at University of Adelaide, Roseworthy Campus. On a surface area of **3.6m x 4.8m**, multiple synthetic craters with different sizes and geometries were sculpted into **lunar regolith simulant**. A **9kW metal-halide lamp** illuminated the scene, providing high contrast drop-shadows from the rims of craters and similar surface features that are characteristic for the Earth's moon.
 
@@ -109,27 +108,27 @@ The event-stream and grayscale image data can be further referenced via a detail
 In detail, SLT contains the following:
 
 - eventbased.zip:
-    - **42 camera orbits** in the binary **EVT 3.0** format ([Prophesee docs](https://docs.prophesee.ai/stable/data/encoding_formats/evt3.html)) 
-    - corresponding **.mp4** event-frame video rendering for visualization purposes (33.333ms accumulation time at 30FPS)
-    - corresponding **.bias** file containing settings used during recording
+  - **42 camera orbits** in the binary **EVT 3.0** format ([Prophesee docs](https://docs.prophesee.ai/stable/data/encoding_formats/evt3.html))
+  - corresponding **.mp4** event-frame video rendering for visualization purposes (33.333ms accumulation time at 30FPS)
+  - corresponding **.bias** file containing settings used during recording
 - code.zip:
-    - Standalone C++ code of the **metavision EVT3-to-RAW file decoder**, allowing to convert the binary EVT 3.0 format into a plaintext **.csv** that includes
-        - the coordinates of the event-pixel,
-        - the polarity change,
-        - and the time-stamp of the event.
-    - This code is an unmodified redistribution from the [Metavision SDK](https://www.prophesee.ai/metavision-intelligence/), version 4.6.0, released by Prophesee under Apache License 2.0.
--  optical.zip:
-    - **42 image sequences** in **.tif** format (LZW, 1920x1200px, 8bit, grayscale)
-        - Length of image sequences varies between about 300 to 700 images per sequence
+  - Standalone C++ code of the **metavision EVT3-to-RAW file decoder**, allowing to convert the binary EVT 3.0 format into a plaintext **.csv** that includes
+    - the coordinates of the event-pixel,
+    - the polarity change,
+    - and the time-stamp of the event.
+  - This code is an unmodified redistribution from the [Metavision SDK](https://www.prophesee.ai/metavision-intelligence/), version 4.6.0, released by Prophesee under Apache License 2.0.
+- optical.zip:
+  - **42 image sequences** in **.tif** format (LZW, 1920x1200px, 8bit, grayscale)
+    - Length of image sequences varies between about 300 to 700 images per sequence
 - 3d_scan.zip:
-    - **SLT3d_scan.ply:** 3D point cloud of the scene Stanford Polygon File Format
-    - **SLT3d_scan.xyz:** 3D point cloud with plaintext x y z coordinates, white-space separated
+  - **SLT3d_scan.ply:** 3D point cloud of the scene Stanford Polygon File Format
+  - **SLT3d_scan.xyz:** 3D point cloud with plaintext x y z coordinates, white-space separated
 - cratermap.png:
-    - Annotations of **130 different surface features** that have been manually identified as crater-like with approximate x,y-coordinates.
+  - Annotations of **130 different surface features** that have been manually identified as crater-like with approximate x,y-coordinates.
 - positionmap.png:
-    - Illustration of the different positions from which the rod was moved over the scene (not to scale).
+  - Illustration of the different positions from which the rod was moved over the scene (not to scale).
 - sample.zip:
-    - A sample containing 1 event-camera orbit with the corresponding image sequence (for convenience only, to test the dataset without the need to download it's entirety)
+  - A sample containing 1 event-camera orbit with the corresponding image sequence (for convenience only, to test the dataset without the need to download it's entirety)
 
 The global coordinate frame of this dataset puts the origin at the centre of the scene. The shorter side of the terrain is roughly aligned with the x-axis, the longer side with the y-axis. The z-axis represents height/depth (compare with **cratermap.png**). The different conditions (compare with **positionmap.png**) from which the data was taken are encoded as follows:
 

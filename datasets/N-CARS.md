@@ -102,7 +102,6 @@
 }
 ---
 
-
-## Dataset Structure 
+## Dataset Structure
 
 The N-CARS dataset consist of 12,336 car samples and 11,693 non-car samples

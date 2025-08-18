@@ -112,22 +112,19 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 220 recordings
 - Contains 3 different types of labelled objects
 
-
-
 ### Comparison Table
 
-| Dataset                    | Year | Venue | Resolution | Modality       | Classes | Boxes   | Label  | Frequency | High-speed | Low-light |
-| -------------------------- | ---- | ----- | ---------- | -------------- | ------- | ------- | ------ | --------- | ---------- | --------- |
-| PKU-DDD17-CAR              | 2019 | ICME  | 346×260    | Events, Frames | 1       | 3155    | Manual | 1 Hz      | N          | Y         |
-| [[Jiang2019]]              | 2019 | ICRA  | 240x180    | Events, Frames | 1       | 9203    | Manual | 1 Hz      | N          | N         |
-| [[Chen2019]]               | 2019 | FNR   | 240x180    | Events         | 1       | 28109   | Manual | 1 Hz      | N          | N         |
-| [[ADD]]                    | 2020 | arXiv | 304X240    | Events         | 2       | 255k    | Pseudo | 1, 4 Hz   | N          | Y         |
-| [[1Mpx Detection Dataset]] | 2020 | NIPS  | 1280×720   | Events         | 3       | 25M     | Pseudo | 60 Hz     | N          | Y         |
-| DAD                        | 2021 | ICIP  | 346×260    | Events, Frames | 1       | 6427    | Manual | 1 Hz      | N          | Y         |
-| [[PKU-DAVIS-SOD]]          | 2022 | Ours  | 346×260    | Events, Frames | 3       | 1080.1k | Manual | 25 Hz     | Y          | Y         |
+| Dataset                      | Year | Venue | Resolution | Modality       | Classes | Boxes   | Label  | Frequency | High-speed | Low-light |
+| ---------------------------- | ---- | ----- | ---------- | -------------- | ------- | ------- | ------ | --------- | ---------- | --------- |
+| PKU-DDD17-CAR                | 2019 | ICME  | 346×260    | Events, Frames | 1       | 3155    | Manual | 1 Hz      | N          | Y         |
+| \[[Jiang2019]\]              | 2019 | ICRA  | 240x180    | Events, Frames | 1       | 9203    | Manual | 1 Hz      | N          | N         |
+| \[[Chen2019]\]               | 2019 | FNR   | 240x180    | Events         | 1       | 28109   | Manual | 1 Hz      | N          | N         |
+| \[[ADD]\]                    | 2020 | arXiv | 304X240    | Events         | 2       | 255k    | Pseudo | 1, 4 Hz   | N          | Y         |
+| \[[1Mpx Detection Dataset]\] | 2020 | NIPS  | 1280×720   | Events         | 3       | 25M     | Pseudo | 60 Hz     | N          | Y         |
+| DAD                          | 2021 | ICIP  | 346×260    | Events, Frames | 1       | 6427    | Manual | 1 Hz      | N          | Y         |
+| \[[PKU-DAVIS-SOD]\]          | 2022 | Ours  | 346×260    | Events, Frames | 3       | 1080.1k | Manual | 25 Hz     | Y          | Y         |

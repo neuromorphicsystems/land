@@ -228,8 +228,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 N-WLASL dataset is a synthetic event-based dataset comprising 21,093 samples across 2,000 glosses. The dataset was collected using an event camera to shoot toward an LCD monitor. The monitor plays video frames from WLASL, the largest public word-level American Sign Language dataset. We use the event camera DAVIS346 with a resolution of 346x260 to record the display. The video resolution of WLASL is 256x256 and the frame rate is 25Hz. To ensure accurate recording of the display, we have implemented three video pre-processing procedures using the python-opencv and dv packages in Python. These procedures are as follows:
 
 Add black paddings and red borders around video frames to increase their size to 346x260.
@@ -239,10 +239,7 @@ Center the video frames on the monitor display after scaling them to 1428x1080 i
 Display all videos sequentially at the original frame rate of 25Hz and pause the first frame of each video for 500ms to prevent event bursts brought on by swapping videos.
 
 - Converted from the WLASL dataset[^1]
-- Contains 21093 recordings 
+- Contains 21093 recordings
 - Contains 2000 classes
 
-
-
-
-[^1]: Li, D., Rodriguez, C., Yu, X. and Li, H., 2020. Word-level deep sign language recognition from video: A new large-scale dataset and methods comparison. In _Proceedings of the IEEE/CVF winter conference on applications of computer vision_ (pp. 1459-1469).
+\[^1\]: Li, D., Rodriguez, C., Yu, X. and Li, H., 2020. Word-level deep sign language recognition from video: A new large-scale dataset and methods comparison. In _Proceedings of the IEEE/CVF winter conference on applications of computer vision_ (pp. 1459-1469).

@@ -192,7 +192,6 @@
 }
 ---
 
-
-### Dataset Description 
+### Dataset Description
 
 The dataset recorded onboard a manually piloted quadrotor tracking powerlines. The quadrotor was equipped with an iniVation Dynamic and Active Vision Sensor (DAVIS) 346 event camera. The camera resolution was 346 × 260 pixel. A Matrix Vision MLC200wG Bluefox camera was also mounted to record higher quality standard frames than those provided by the DAVIS camera

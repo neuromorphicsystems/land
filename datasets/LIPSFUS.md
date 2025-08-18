@@ -200,8 +200,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset contains recordings from 22 subjects with ages from 6 to 60, both genders and 5 different nationalities. These files are in the folder "NosiyRoom". These files can be played for visualization in jAER, or they can be loaded into MATLAB with the attached sample scripts. In the folder We are now working in several SNN / CNN trainings for evaluating the goodness of this dataset, so we will come back here with more digested .aedat files once the work is finished.
 

@@ -251,15 +251,13 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-- Real portion of the dataset contains 4 light levels 
+- Real portion of the dataset contains 4 light levels
 - Real portion of the dataset contains 32 recordings
 
-
-
 | Property          | Synthetic              | Real             |
-|-------------------|------------------------|------------------|
+| ----------------- | ---------------------- | ---------------- |
 | Sensor resolution | 1280x720               | 1280x720         |
 | Dataset size      | 179,400 (no. of poses) | 16,930           |
 | No. Trajectories  | 300                    | 32               |

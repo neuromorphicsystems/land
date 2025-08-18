@@ -303,34 +303,30 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 9000 recordings in total
 - Contains 6 different classes of gestures ("wave", "point", "fist", "clap", "armroll")
 - Contains data from 5 subjects
 
-
-
-
 ### Comparisons from paper
 
 ^cac401
 
-| Dataset Name        | Year | Type        | Data         | Sensor        | Resolution | Sec. per Instance | Samples |
-| ------------------- | ---- | ----------- | ------------ | ------------- | ---------- | ----------------- | ------- |
-| [[CIFAR10-DVS]]     | 2017 |             | images       | DAVIS128      | 128x128    | 1.2s              | 10k     |
-| [[MNIST-DVS]]       | 2013 | reproduced  | digit images | DAVIS128      | 128x128    | 2-3s              | 30k     |
-| [[N-MNIST]]         | 2015 | reproduced  | digit images | ATIS          | 28×28      | 0.3s              | 70k     |
-| [[N-CALTECH101]]    | 2015 | reproduced  | images       | ATIS          | 302×245    | 0.3s              | 8.7k    |
-| [[ES-ImageNet]]     | 2021 | converted   | images       |               | 224x224    |                   | 1.3mil  |
-| [[N-ImageNet]]      | 2021 | reproduced  | images       | Samsung Gen3  | 480x640    | -                 | 1.7mil  |
-| [[HARDVS]]          | 2022 | event-based | action       | DAVIS346      | 346×260    | 5s                | 100k    |
-| [[DailyAction-DVS]] | 2021 | event-based | action       | DAVIS346      | 346x260    | 5s                | 1.4k    |
-| [[Bullying10K]]     | 2023 | event-based | action       | DAVIS346      | 346×260    | 2-20s             | 10k     |
-| [[ASL-DVS]]         | 2019 | event-basec | hand action  | DAVIS240      | 240x180    | 0.1s              | 100k    |
-| [[NavGesture]]      | 2020 | event-based | hand action  | ATIS          | 302x245    |                   | 1.3k    |
-| [[DVS-GESTURE]]     | 2017 | event-based | hand action  | DAVIS 128     | 128x128    | 6s                | 1.3k    |
-| [[EB-HandGesture]]  | 2024 | event-based | hand action  | SilkyCam Gen3 | 640х480    | 0.5s              | 1.5k    |
+| Dataset Name          | Year | Type        | Data         | Sensor        | Resolution | Sec. per Instance | Samples |
+| --------------------- | ---- | ----------- | ------------ | ------------- | ---------- | ----------------- | ------- |
+| \[[CIFAR10-DVS]\]     | 2017 |             | images       | DAVIS128      | 128x128    | 1.2s              | 10k     |
+| \[[MNIST-DVS]\]       | 2013 | reproduced  | digit images | DAVIS128      | 128x128    | 2-3s              | 30k     |
+| \[[N-MNIST]\]         | 2015 | reproduced  | digit images | ATIS          | 28×28      | 0.3s              | 70k     |
+| \[[N-CALTECH101]\]    | 2015 | reproduced  | images       | ATIS          | 302×245    | 0.3s              | 8.7k    |
+| \[[ES-ImageNet]\]     | 2021 | converted   | images       |               | 224x224    |                   | 1.3mil  |
+| \[[N-ImageNet]\]      | 2021 | reproduced  | images       | Samsung Gen3  | 480x640    | -                 | 1.7mil  |
+| \[[HARDVS]\]          | 2022 | event-based | action       | DAVIS346      | 346×260    | 5s                | 100k    |
+| \[[DailyAction-DVS]\] | 2021 | event-based | action       | DAVIS346      | 346x260    | 5s                | 1.4k    |
+| \[[Bullying10K]\]     | 2023 | event-based | action       | DAVIS346      | 346×260    | 2-20s             | 10k     |
+| \[[ASL-DVS]\]         | 2019 | event-basec | hand action  | DAVIS240      | 240x180    | 0.1s              | 100k    |
+| \[[NavGesture]\]      | 2020 | event-based | hand action  | ATIS          | 302x245    |                   | 1.3k    |
+| \[[DVS-GESTURE]\]     | 2017 | event-based | hand action  | DAVIS 128     | 128x128    | 6s                | 1.3k    |
+| \[[EB-HandGesture]\]  | 2024 | event-based | hand action  | SilkyCam Gen3 | 640х480    | 0.5s              | 1.5k    |
 
 ^1aa4f5

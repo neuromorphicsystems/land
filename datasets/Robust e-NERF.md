@@ -93,15 +93,13 @@
 }
 ---
 
-
 ### Dataset Description
 
-This is a synthetic event dataset used in [**Deblur _e_-NeRF**](https://wengflow.github.io/deblur-e-nerf) to study the collective effect of camera speed and scene illuminance on the quality of NeRF reconstruction from a moving event camera. 
+This is a synthetic event dataset used in [**Deblur _e_-NeRF**](https://wengflow.github.io/deblur-e-nerf) to study the collective effect of camera speed and scene illuminance on the quality of NeRF reconstruction from a moving event camera.
 
 It is an extension of the synthetic event dataset used in [**Robust _e_-NeRF**](https://wengflow.github.io/robust-e-nerf). The dataset is simulated using an [improved version of ESIM](https://github.com/wengflow/rpg_esim) with three different camera configurations of increasing difficulty levels (_i.e._ _easy_, _medium_ and _hard_) on seven Realistic Synthetic 360 scenes (adopted in the synthetic experiments of NeRF), resulting in a total of 21 sequence recordings. Please refer to the [Deblur _e_-NeRF paper](https://arxiv.org/abs/2409.17988) for more details.
 
 This synthetic event dataset allows for a retrospective comparison between event-based and image-based NeRF reconstruction methods, as the event sequences were simulated under highly similar conditions as the NeRF synthetic dataset. In particular, we adopt the same camera intrinsics and camera distance to the object at the origin. Furthermore, the event camera travels in a hemi-/spherical spiral motion about the object, thereby having a similar camera pose distribution for training. Apart from that, we also use the same test camera poses/views. Nonetheless, this new synthetic event dataset is not only specific to NeRF reconstruction, but also suitable for novel view synthesis, 3D reconstruction, localization and SLAM in general.
-
 
 ### Dataset Structure
 

@@ -282,17 +282,16 @@
 }
 ---
 
-
 ### Dataset Structure
 
 The paper and associates project page provide the code for a simulator that generates the data. The paper also introduces a benchmark dataset. https://www.blinkvision.org/download.html, which includes a dataset that can be downloaded.
 
 ### Comparison Table
 
-| **Dataset**     | **Motion Pattern** | **Dynamic Object** | **Occlusion** | **Training Frames** | **Training Scenes** | **Test Scenes** | **Resolution** |
-| --------------- | ------------------ | ------------------ | ------------- | ------------------- | ------------------- | --------------- | -------------- |
-| [[DVSFLOW16]]   | Rotation           | N                  | N             | -                   | -                   | 5               | 240 x 180      |
-| [[DVSMOTION20]] | Rotation           | N                  | N             | -                   | -                   | 4               | 260 x 346      |
-| [[MVSEC]]       | Drone              | N                  | N             | 3k                  | 1                   | 4               | 260 × 346      |
-| [[DSEC]]        | Car                | N                  | N             | 8k                  | 18                  | 7               | 640 × 480      |
-| [[BlinkFlow]]   | Random             | Y                  | Y             | 33k                 | 3362                | 225             | 640 × 480      |
+| **Dataset**       | **Motion Pattern** | **Dynamic Object** | **Occlusion** | **Training Frames** | **Training Scenes** | **Test Scenes** | **Resolution** |
+| ----------------- | ------------------ | ------------------ | ------------- | ------------------- | ------------------- | --------------- | -------------- |
+| \[[DVSFLOW16]\]   | Rotation           | N                  | N             | -                   | -                   | 5               | 240 x 180      |
+| \[[DVSMOTION20]\] | Rotation           | N                  | N             | -                   | -                   | 4               | 260 x 346      |
+| \[[MVSEC]\]       | Drone              | N                  | N             | 3k                  | 1                   | 4               | 260 × 346      |
+| \[[DSEC]\]        | Car                | N                  | N             | 8k                  | 18                  | 7               | 640 × 480      |
+| \[[BlinkFlow]\]   | Random             | Y                  | Y             | 33k                 | 3362                | 225             | 640 × 480      |

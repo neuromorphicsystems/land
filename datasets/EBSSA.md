@@ -234,10 +234,7 @@
 }
 ---
 
-
-### Dataset Structure 
-
-
+### Dataset Structure
 
 - Cintains 84 labelled recordings and 149 unlabelled recordings
 - Contains 572 tracked objects

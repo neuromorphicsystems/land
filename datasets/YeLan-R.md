@@ -534,8 +534,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Real dataset is 129.2 Gb in size
 - Synthetic dataset is 2.6 Tb in size

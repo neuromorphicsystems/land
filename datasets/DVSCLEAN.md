@@ -168,7 +168,7 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - The dataset contains both real data from a Celex-V sensor (1280x800 pixels) and simulated data.
 -

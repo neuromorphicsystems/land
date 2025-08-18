@@ -207,7 +207,6 @@
 }
 ---
 
-
 ### Dataset Structure
-- Contains 6 sequences
-	-
+
+- ## Contains 6 sequences

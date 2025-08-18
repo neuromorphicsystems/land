@@ -102,12 +102,12 @@
 }
 ---
 
-
-### Dataset Description 
+### Dataset Description
 
 A single 128x128 pixel DVS sensor was placed in front of a 24" LCD monitor. Images of CIFAR-10 were upscaled to 512 * 512 through bicubic interpolation, and displayed on the LCD monitor with circulating smooth movement. A total of 10,000 event-stream recordings in 10 classes(airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck) with 1000 recordings per classes were obtained.
 
 ### Dataset Structure
+
 - Converted from a subset the CIFAR10 dataset
 - Contains 10 classes
 - Contains in total 10000 recordings

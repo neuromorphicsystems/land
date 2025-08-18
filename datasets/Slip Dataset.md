@@ -113,7 +113,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 100 recordings in 2 classes (50 with rotational slip and 50 without rotational slip)

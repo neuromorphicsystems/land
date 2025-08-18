@@ -111,11 +111,10 @@
 }
 ---
 
-
-### Dataset Structure 
-
+### Dataset Structure
 
 The BL2SHD-R dataset is divided into two sub-datasets:
+
 - **BL2SHD-Rsimple**: is collected in static scenes with camera ego-motion and thus only contains global blurry LDR observations. Since all pixels of the captured image are motionconsistent, the ground-truth HDR frames can be generatedby global aligning and merging the adjacent multi-exposure sharp LDR images.
 
 - **BL2SHD-Rcomplex**: is collected in dynamic scenes withfast-moving targets, where the captured LDR images encompass global and local non-linear blur, which is more complex to handle. Due to the significant challenges associated with multi-frame registration for fast-moving targets, the ground-truth data for our dynamic scene dataset is currently unavailable.

@@ -194,10 +194,10 @@
 }
 ---
 
-
 ### Dataset Structure
 
 The dataset is organized into several directories, each containing specific types of data related to the 3D reconstruction tasks. Below is a breakdown of the directory structure:
+
 ```
 MOEC-3D/
 ├── masks/

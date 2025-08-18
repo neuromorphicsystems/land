@@ -249,9 +249,7 @@
 }
 ---
 
-
-### Dataset Structure 
-
+### Dataset Structure
 
 - Contains data from 26 subjects (3 females and 23 males)
 - Contains a total of 260 recordings

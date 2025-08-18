@@ -268,7 +268,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The LLE-VOS dataset includes 70 videos, consisting of paired normal and low-light videos, along with their corresponding segmentation annotations and event streams. The videos are recorded at a diverse range of locations, including gyms, playgrounds, classrooms, meeting rooms, and zoos.

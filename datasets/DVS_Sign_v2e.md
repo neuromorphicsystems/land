@@ -334,9 +334,6 @@
 }
 ---
 
-
-### Dataset Structure 
-
-
+### Dataset Structure
 
 - Converted from the LSA64 dataset

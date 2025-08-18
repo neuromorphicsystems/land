@@ -308,7 +308,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 A total of 8000 were selected from each of 5 scenes (4000 real-activity events and 4000 noise). The samples were recorded under different lighting: very good lightning (~ 750 lux) and low light condition (~ 5 lux).

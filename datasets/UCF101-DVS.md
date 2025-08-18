@@ -375,9 +375,6 @@
 }
 ---
 
-
-
-
 ## Dataset Structure
 
 Converted from the UCF101 dataset and contains 13300 recordings in 101 categories.

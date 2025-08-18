@@ -411,28 +411,26 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Converted from the LSVRC2012 dataset
 
-
 ### Comparison Table
 
-| Name                                       | Generating Speed<sup>a</sup>       | Resolution           | # of Samples                            | # Classes | Type      |
-|--------------------------------------------|------------------------------------|----------------------|-----------------------------------------|-----------|-----------|
-| POKER-DVS (Prez-Carrasco et al., 2013)     | –                                  | 32×32                | 131                                     | 4         | Classify  |
-| N-MNIST (Orchard et al., 2015)             | 300 ms/sample                      | 28×28                | 60,000 training + 10,000 test           | 10        | Classify  |
-| DVS-Caltech101 (Orchard et al., 2015)      | 300 ms/sample                      | 302×245 (avg)        | 8,709                                   | 100       | Classify  |
-| DVS-UCF-50 (Hu et al., 2016)               | 6,800 ms/sample                    | 240×180              | 6,676                                   | 50        | Classify  |
-| DVS-Caltech-256 (Hu et al., 2016)          | 1,010 ms/sample                    | 240×180              | 30,607                                  | 257       | Classify  |
-| DVS-VOT-2015 (Hu et al., 2016)             | 30 FPS, 20.70 s/sample             | 240×180              | 67                                      | –         | Track     |
-| DVS-CIFAR10 (Li et al., 2017)              | 300 ms/sample                      | 512×512              | 10,000                                  | 10        | Classify  |
-| DVS-Gesture (Amir et al., 2017)            | 6 s/sample                         | 128×128              | 1,342                                   | 11        | Classify  |
-| Pred-18 (Moeys et al., 2018)               | 15 FPS                             | 240×180              | 1.25 h (67.5k frames)                   | 2         | Detect    |
-| Action Recognition (Miao et al., 2019)     | 5 s/sample                         | 346×260              | 450                                     | 10        | Classify  |
-| 1Mpx Detection (de Tournemire et al., 2020)| 60 s/sample                        | 304×240              | 14.65 h, 255,781 objects                | 2         | Detect    |
-| SL-ANIMALS-DVS (Vasudevan et al., 2020)    | –                                  | 128×128              | 1,102                                   | 10        | Classify  |
-| DVS-Gait-Day/Night (Wang et al., 2020)     | 3–4 s/sample                       | 128×128              | 4,000                                   | 20        | Classify  |
-| N-ROD (Cannici et al., 2021)               | 6.6 s/sample                       | 256×256              | 41,877                                  | 51        | Classify  |
-| ES-ImageNet                                | 29.47 ms/sample<sup>b</sup>        | 224×224<sup>c</sup>  | 1,257,035 training + 49,881 test        | 1,000     | Classify  |
+| Name                                        | Generating Speed<sup>a</sup> | Resolution          | # of Samples                     | # Classes | Type     |
+| ------------------------------------------- | ---------------------------- | ------------------- | -------------------------------- | --------- | -------- |
+| POKER-DVS (Prez-Carrasco et al., 2013)      | –                            | 32×32               | 131                              | 4         | Classify |
+| N-MNIST (Orchard et al., 2015)              | 300 ms/sample                | 28×28               | 60,000 training + 10,000 test    | 10        | Classify |
+| DVS-Caltech101 (Orchard et al., 2015)       | 300 ms/sample                | 302×245 (avg)       | 8,709                            | 100       | Classify |
+| DVS-UCF-50 (Hu et al., 2016)                | 6,800 ms/sample              | 240×180             | 6,676                            | 50        | Classify |
+| DVS-Caltech-256 (Hu et al., 2016)           | 1,010 ms/sample              | 240×180             | 30,607                           | 257       | Classify |
+| DVS-VOT-2015 (Hu et al., 2016)              | 30 FPS, 20.70 s/sample       | 240×180             | 67                               | –         | Track    |
+| DVS-CIFAR10 (Li et al., 2017)               | 300 ms/sample                | 512×512             | 10,000                           | 10        | Classify |
+| DVS-Gesture (Amir et al., 2017)             | 6 s/sample                   | 128×128             | 1,342                            | 11        | Classify |
+| Pred-18 (Moeys et al., 2018)                | 15 FPS                       | 240×180             | 1.25 h (67.5k frames)            | 2         | Detect   |
+| Action Recognition (Miao et al., 2019)      | 5 s/sample                   | 346×260             | 450                              | 10        | Classify |
+| 1Mpx Detection (de Tournemire et al., 2020) | 60 s/sample                  | 304×240             | 14.65 h, 255,781 objects         | 2         | Detect   |
+| SL-ANIMALS-DVS (Vasudevan et al., 2020)     | –                            | 128×128             | 1,102                            | 10        | Classify |
+| DVS-Gait-Day/Night (Wang et al., 2020)      | 3–4 s/sample                 | 128×128             | 4,000                            | 20        | Classify |
+| N-ROD (Cannici et al., 2021)                | 6.6 s/sample                 | 256×256             | 41,877                           | 51        | Classify |
+| ES-ImageNet                                 | 29.47 ms/sample<sup>b</sup>  | 224×224<sup>c</sup> | 1,257,035 training + 49,881 test | 1,000     | Classify |

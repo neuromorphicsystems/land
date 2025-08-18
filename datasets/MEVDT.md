@@ -209,11 +209,10 @@
 }
 ---
 
-
-### Dataset Description 
-
+### Dataset Description
 
 Key Points:
+
 - The MEVDT dataset addresses the critical need for annotated datasets in the domain of event-based computer vision, particularly for automotive applications.
 - The dataset comprises 63 multi-modal traffic sequences featuring approximately 13k images, 5M of high-temporal resolution events, 10k manually-annotated object labels, and 85 unique object tracking trajectories.
 - Labels for object detection and tracking, alongside multiple data formats, are included to support the development of advanced computer vision algorithms.
@@ -226,6 +225,7 @@ Data was collected using the hybrid sensor DAVIS 240c, which combines an Active 
 
 Files contained here:
 The MEVDT dataset is organized into four directories, each with training and testing splits:
+
 - sequences/: Holds grayscale images and sequence-long event streams. Within each scene, sequences are titled by the first sample's timestamp, including image files (.png) and events stream lists (.csv).
 - labels/: Contains ground truth data for object detection and tracking computer vision tasks. The tracking_labels/ includes annotations in formats like COCO JSON, MOT Challenge, and a custom format for sequence-long object tracking; while detection_labels/ provides per-image object class and bounding box coordinates in x_min, y_min, x_max, y_max format for each event sample file in event_samples/.
 - event_samples/: Consists of fixed-duration batch-sampled event files in AEDAT format, organized by sampling interval, enabling research at various temporal resolutions.
@@ -233,9 +233,9 @@ The MEVDT dataset is organized into four directories, each with training and tes
 
 Note: each line in the sequence-long event stream CSV files corresponds to a single event in comma-separated in the following format: ts, x, y, p.
 
-In this format, ts denotes the event's timestamp in nanoseconds, x and y correspond to its two-dimensional pixel coordinate, and p indicates its polarity as either positive (p=1) or negative (p=0). 
+In this format, ts denotes the event's timestamp in nanoseconds, x and y correspond to its two-dimensional pixel coordinate, and p indicates its polarity as either positive (p=1) or negative (p=0).
 
-### Dataset Structure 
+### Dataset Structure
 
 ```
 

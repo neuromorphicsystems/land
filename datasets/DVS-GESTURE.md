@@ -302,8 +302,8 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains 1342 recordings
 - Contains 11 different arm and hand gestures
 - Contains 29 different subjects

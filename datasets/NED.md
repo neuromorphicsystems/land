@@ -348,8 +348,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The NED dataset includes 51 sequences in three types of combination of object and camera motion, i.e., static scene (with static camera and object), dynamic object (with static camera),
 and dynamic camera (with static or dynamic objects).

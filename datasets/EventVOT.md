@@ -291,22 +291,18 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains 19 different classes of recording
 - Contains 1141 videos.
 
-
-
-
-
-| **Datasets** | **Year** | **#Videos** | **#Frames** | **#Class** | **#Att** | **#Resolution** | **Aim**      | **Absent** | **Frame** | **Reality** | **Public** |
-|--------------|----------|-------------|-------------|------------|----------|-----------------|--------------|------------|-----------|-------------|------------|
-| VOT-DVS      | 2016     | 60          | N/A         | N/A        | N/A      | 240 × 180       | Eval         | N          | N         | N           | Y          |
-| TD-DVS       | 2016     | 77          | N/A         | N/A        | N/A      | 240 × 180       | Eval         | N          | N         | N           | Y          |
-| [[ULSTER]]   | 2016     | 1           | 9,000       | N/A        | N/A      | 240 × 180       | Eval         | N          | N         | Y           | N          |
-| [[EED]]      | 2018     | 7           | 234         | N/A        | N/A      | 240 × 180       | Eval         | N          | N         | Y           | Y          |
-| [[FE108]]    | 2021     | 108         | 208,672     | 21         | 4        | 346 × 260       | Train & Eval | N          | N         | Y           | Y          |
-| [[VisEvent]] | 2021     | 820         | 371,127     | N/A        | 17       | 346 × 260       | Train & Eval | Y          | Y         | Y           | Y          |
-| [[COESOT]]   | 2022     | 1354        | 478,721     | 90         | 17       | 346 × 260       | Train & Eval | Y          | Y         | Y           | Y          |
-| [[EventVOT]] | 2023     | 1141        | 569,359     | 19         | 14       | 1280 x 720      | Train & Eval | Y          | N         | Y           | Y          |
+| **Datasets**   | **Year** | **#Videos** | **#Frames** | **#Class** | **#Att** | **#Resolution** | **Aim**      | **Absent** | **Frame** | **Reality** | **Public** |
+| -------------- | -------- | ----------- | ----------- | ---------- | -------- | --------------- | ------------ | ---------- | --------- | ----------- | ---------- |
+| VOT-DVS        | 2016     | 60          | N/A         | N/A        | N/A      | 240 × 180       | Eval         | N          | N         | N           | Y          |
+| TD-DVS         | 2016     | 77          | N/A         | N/A        | N/A      | 240 × 180       | Eval         | N          | N         | N           | Y          |
+| \[[ULSTER]\]   | 2016     | 1           | 9,000       | N/A        | N/A      | 240 × 180       | Eval         | N          | N         | Y           | N          |
+| \[[EED]\]      | 2018     | 7           | 234         | N/A        | N/A      | 240 × 180       | Eval         | N          | N         | Y           | Y          |
+| \[[FE108]\]    | 2021     | 108         | 208,672     | 21         | 4        | 346 × 260       | Train & Eval | N          | N         | Y           | Y          |
+| \[[VisEvent]\] | 2021     | 820         | 371,127     | N/A        | 17       | 346 × 260       | Train & Eval | Y          | Y         | Y           | Y          |
+| \[[COESOT]\]   | 2022     | 1354        | 478,721     | 90         | 17       | 346 × 260       | Train & Eval | Y          | Y         | Y           | Y          |
+| \[[EventVOT]\] | 2023     | 1141        | 569,359     | 19         | 14       | 1280 x 720      | Train & Eval | Y          | N         | Y           | Y          |

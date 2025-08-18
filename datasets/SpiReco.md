@@ -361,10 +361,10 @@
 }
 ---
 
-
 ### Dataset Structure
+
 - Contains 3 datasets:
-	- S-MNIST - 4.3 Gb
-	- S-CIFAR - 4.8 Gb
-	- S-CALTECH - 4.1 Gb
+  - S-MNIST - 4.3 Gb
+  - S-CIFAR - 4.8 Gb
+  - S-CALTECH - 4.1 Gb
 -

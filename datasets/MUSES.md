@@ -319,8 +319,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 ##### Recordings
 
@@ -343,8 +342,8 @@
 - Sophisticated two-step annotation protocol that allows for the incorporation of both **class level** and **instance level uncertainty**.
 - Two cascaded annotation stages to distinguish between invalid and valid regions
 - Two annotation outputs:
-    - Panoptic segmentation annotation
-    - Tertiary mask with class level and instance-level uncertainty annotations, which enables the new task of uncertainty-aware panoptic segmentation
+  - Panoptic segmentation annotation
+  - Tertiary mask with class level and instance-level uncertainty annotations, which enables the new task of uncertainty-aware panoptic segmentation
 - 19 semantic classes, fully compatible with the evaluation classes of the [Cityscapes](https://www.cityscapes-dataset.com/) dataset.
 
 ##### Sensor Specifications
@@ -353,7 +352,7 @@
 - Lidar (MEMS): 10 Hz, avg. angular resolution: 0.2°, range: 200 m, HFOV: 120°, VFOV: 25°, 75K points/scan
 - Radar (FMCW): 4 Hz, range resolution: 43.8 mm, horizontal angular, resolution: 0.9°, range: 330 m
 - Event camera: 1280×720, 15M events/s, HFOV: 64°, VFOV: 39°
-- IMU/GNSS: Fusion RTK accuracy: <10cm, 30 Hz
+- IMU/GNSS: Fusion RTK accuracy: \<10cm, 30 Hz
 
 Please refer to the [MUSES SDK](https://github.com/timbroed/MUSES) for examples on how to read and process the sensor data.
 

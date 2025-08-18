@@ -112,7 +112,7 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains over 85 minutes of recordings
 - Contains data from 4 people (3 males and 1)

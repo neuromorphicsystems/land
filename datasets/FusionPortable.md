@@ -42,7 +42,7 @@
                 "url": "https://drive.google.com/drive/folders/1PYhnf3PlY5r0hbyzWDGTUTPxRMl6SYa-?usp=sharing",
                 "format": "ROSbag",
                 "available": true
-            },  
+            },
             {
                 "name": "Baidu",
                 "url": "https://pan.baidu.com/s/1lZwK-TNrCyoyC9oWEs8jUg?pwd=byj8",
@@ -223,6 +223,5 @@
     ]
 }
 ---
-
 
 ### Dataset Structure

@@ -309,7 +309,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 In total, 4 individuals (3 male and 3 female) with different eye shapes participated. All of them were college students about 20 years old. A total of 91 eye movement video sequences were recorded.

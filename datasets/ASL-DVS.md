@@ -379,10 +379,8 @@
 }
 ---
 
-
-
 ## Dataset Structure
 
 - Contains American Sign Language
-- Contains 24 classes corresponding to 24 out of the 26 letters in the English alphabet. 
+- Contains 24 classes corresponding to 24 out of the 26 letters in the English alphabet.
 - Contains 4200 recordings from 5 subjects, each with an approximate duration of 100 ms.

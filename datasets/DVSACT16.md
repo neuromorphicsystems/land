@@ -250,7 +250,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 This data report summarizes a new benchmark dataset in which we converted established visual video benchmarks for object tracking, action recognition and object recognition into spiking neuromorphic datasets, recorded with the DVS output (Lichtsteiner et al., 2008) of a DAVIS camera (Berner et al., 2013; Brandli et al., 2014). This report presents our approach for sensor calibration and capture of frame-based videos into neuromorphic vision datasets with minimal human intervention. We converted four widely used dynamic datasets: the VOT Challenge 2015 Dataset (Kristan et al., 2016), TrackingDataset3, the UCF-50 Action Recognition Dataset (Reddy and Shah, 2012), and the Caltech-256 Object Category Dataset (Griffin et al., 2006).

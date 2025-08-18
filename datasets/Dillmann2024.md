@@ -210,16 +210,10 @@
 }
 ---
 
-
-### Dataset Structure 
-
-
+### Dataset Structure
 
 - Contains a total of 300 recordings
 - Contains 30 different gestures from 2 subjects.
 - Depth captured simultaneously with an Intel Realsense camera
 
-
-
-
----
+______________________________________________________________________

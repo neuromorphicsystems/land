@@ -103,7 +103,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 EvDET200K, a novel benchmark dataset for event-based object detection. Captured with a high-definition Prophesee EVK4-HD event camera, this dataset encompasses 10 distinct categories, 200,000 bounding boxes, and 10,054 samples, each spanning 2 to 5 seconds.
@@ -134,17 +133,18 @@ EvDET200K
         └── val.zip (596.67 MB)
 
 ```
+
 ### Comparison Table
 
-| **Dataset**                | **Year** | **Sensor**        | **Resolution** | **Scale** | **Bbox** | **Duration** | **Class** | **Real** | **Clear Weather** | **Raining Weather** | **Day time** | **Night time** | **Multi-scene** | **Multi-motion** |
-| -------------------------- | -------- | ----------------- | -------------- | --------- | -------- | ------------ | --------- | -------- | ----------------- | ------------------- | ------------ | -------------- | --------------- | ---------------- |
-| [[N-Caltech101]]           | 2015     | Simulator         |                | 9000      | 9K       | 1-10s        | 101       | N        | N                 | N                   | Y            | N              | Y               | N                |
-| [[SEVD]]                   | 2024     | Simulator         |                |           | 9M       | 2-30m        | 6         | N        | N                 | Y                   | Y            | Y              | Y               | N                |
-| [[DDD17]]                  | 2017     | DAVIS 346B        | 346x260px      | 36        |          | 1-50m        | 7         | Y        | Y                 | Y                   | Y            | Y              | Y               | N                |
-| [[DDD20]]                  | 2020     | DAVIS 346B        | 346x260px      | 216       |          | 1-50m        | 7         | Y        | Y                 | N                   | Y            | Y              | Y               | N                |
-| [[ADD]]                    | 2020     | Prophesee Gen1    | 304x240px      | 2357      | 255K     | 30-120s      | 2         | Y        | Y                 | N                   | Y            | N              | Y               | N                |
-| [[1Mpx Detection Dataset]] | 2020     | Prophesee Gen2    | 1280×720рx     | 929       | 25M      | 30-120s      | 3         | Y        | Y                 | N                   | Y            | N              | Y               | N                |
-| [[DSEC]]                   | 2021     | Prophesee Gen3.1  | 640×480px      | 60        | 390K     | 1-30m        | 8         | Y        | Y                 | N                   | Y            | Y              | N               | N                |
-| [[EvDET200K ]]             | 2024     | Prophesee EVK4-HD | 1280×720рx     | 10054     | 200K     | 2-5s         | 10        | Y        | Y                 | Y                   | Y            | Y              | Y               | Y                |
+| **Dataset**                  | **Year** | **Sensor**        | **Resolution** | **Scale** | **Bbox** | **Duration** | **Class** | **Real** | **Clear Weather** | **Raining Weather** | **Day time** | **Night time** | **Multi-scene** | **Multi-motion** |
+| ---------------------------- | -------- | ----------------- | -------------- | --------- | -------- | ------------ | --------- | -------- | ----------------- | ------------------- | ------------ | -------------- | --------------- | ---------------- |
+| \[[N-Caltech101]\]           | 2015     | Simulator         |                | 9000      | 9K       | 1-10s        | 101       | N        | N                 | N                   | Y            | N              | Y               | N                |
+| \[[SEVD]\]                   | 2024     | Simulator         |                |           | 9M       | 2-30m        | 6         | N        | N                 | Y                   | Y            | Y              | Y               | N                |
+| \[[DDD17]\]                  | 2017     | DAVIS 346B        | 346x260px      | 36        |          | 1-50m        | 7         | Y        | Y                 | Y                   | Y            | Y              | Y               | N                |
+| \[[DDD20]\]                  | 2020     | DAVIS 346B        | 346x260px      | 216       |          | 1-50m        | 7         | Y        | Y                 | N                   | Y            | Y              | Y               | N                |
+| \[[ADD]\]                    | 2020     | Prophesee Gen1    | 304x240px      | 2357      | 255K     | 30-120s      | 2         | Y        | Y                 | N                   | Y            | N              | Y               | N                |
+| \[[1Mpx Detection Dataset]\] | 2020     | Prophesee Gen2    | 1280×720рx     | 929       | 25M      | 30-120s      | 3         | Y        | Y                 | N                   | Y            | N              | Y               | N                |
+| \[[DSEC]\]                   | 2021     | Prophesee Gen3.1  | 640×480px      | 60        | 390K     | 1-30m        | 8         | Y        | Y                 | N                   | Y            | Y              | N               | N                |
+| \[[EvDET200K ]\]             | 2024     | Prophesee EVK4-HD | 1280×720рx     | 10054     | 200K     | 2-5s         | 10        | Y        | Y                 | Y                   | Y            | Y              | Y               | Y                |
 
 ^2d054e

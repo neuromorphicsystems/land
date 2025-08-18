@@ -337,8 +337,6 @@
 }
 ---
 
-
-### Dataset Structure 
-
+### Dataset Structure
 
 - Contains data from 3 participants

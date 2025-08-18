@@ -265,7 +265,7 @@
 }
 ---
 
-
 ### Dataset Structure
+
 - Converted from the CASIA-B dataset.
 - Dataset contains 124 subjects, each of which has 66 video clips recorded by RGB camera from 11 different view angles (0◦ to 180◦), i.e., 6 clips for each angle. The view angle is the relative angle between the view of the camera and walking direction of the subjects.

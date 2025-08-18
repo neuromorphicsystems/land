@@ -97,8 +97,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Cameras synchronised using hardware
 - Consists of two sub-datasets RGBlur+E-HS and RGBlur+ELS.

@@ -108,17 +108,19 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 TUM-VIE is an event camera dataset for developing 3D perception and navigation algorithms. It contains handheld and head-mounted sequences in indoor and outdoor environments with rapid motion during sports and high dynamic range. TUM-VIE includes challenging sequences where state-of-the art VIO fails or results in large drift. Hence, it can help to push the boundary on event-based visual-inertial algorithms.
 
 The dataset contains:
+
 - Stereo event data Prophesee Gen4 HD (1280x720 pixels)
 - Stereo grayscale frames at 20Hz (1024x1024 pixels)
 - IMU data at 200Hz
 - 6dof motion capture data at 120Hz (beginning and end of each sequence)
 - Contains 48 minutes of recordings
-- 
+-
+
 Timestamps between all sensors are synchronized in hardware.
 
 Adapted from: https://cvg.cit.tum.de/data/datasets/visual-inertial-event-dataset

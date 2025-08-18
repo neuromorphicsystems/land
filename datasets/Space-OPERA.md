@@ -100,19 +100,15 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Dataset contains 36 recordings, comprising 12 real recordings and 24 simulated recordings
 - Dataset contains: 43.24 seconds of real data
-
-
-
-
 
 Real data statistics:
 
 | Trajectory | Scene         | No.events | No. poses | Duration (s) |
-|------------|---------------|-----------|-----------|--------------|
+| ---------- | ------------- | --------- | --------- | ------------ |
 | approach   | harsh-fast    | 5842584   | 41        | 1.6          |
 |            | harsh-slow    | 6463394   | 90        | 3.56         |
 |            | lowlight-fast | 1399075   | 41        | 1.6          |

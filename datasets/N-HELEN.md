@@ -97,15 +97,14 @@
 }
 ---
 
-
 ### Dataset structure
 
-The [[N-HELEN]] dataset was created by converting frames from the original HELEN dataset (available via [Helen Eye Dataset (kaggle.com)](https://www.kaggle.com/datasets/kmader/helen-eye-dataset))[^1] and converted using ESIM. Contrast thresholds (both positive and negative) are sampled from a normal distribution with a $\mu = 0.2$ and a $\sigma = 0.05$ and a refractory period if $1~ms$ is used.
+The \[[N-HELEN]\] dataset was created by converting frames from the original HELEN dataset (available via [Helen Eye Dataset (kaggle.com)](https://www.kaggle.com/datasets/kmader/helen-eye-dataset))[^1] and converted using ESIM. Contrast thresholds (both positive and negative) are sampled from a normal distribution with a $\\mu = 0.2$ and a $\\sigma = 0.05$ and a refractory period if $1~ms$ is used.
 
-The dataset contained 2330 recordings in the N-HELEN dataset. Three real recordings, captured with a Prophesee Gen4 sensor, of a single subject were then used to validate the model trained on the synthetic data. This recording was manually annotated and labelled. 
+The dataset contained 2330 recordings in the N-HELEN dataset. Three real recordings, captured with a Prophesee Gen4 sensor, of a single subject were then used to validate the model trained on the synthetic data. This recording was manually annotated and labelled.
 
 Note that the paper indicates that this real data may not be publicly available for privacy reasons.
 
----
+______________________________________________________________________
 
-[^1]: Le, V., Brandt, J., Lin, Z., Bourdev, L., & Huang, T. S. (2012). Interactive facial feature localization. In _Computer Vision–ECCV 2012: 12th European Conference on Computer Vision, Florence, Italy, October 7-13, 2012, Proceedings, Part III 12_ (pp. 679-692). Springer Berlin Heidelberg.
+\[^1\]: Le, V., Brandt, J., Lin, Z., Bourdev, L., & Huang, T. S. (2012). Interactive facial feature localization. In _Computer Vision–ECCV 2012: 12th European Conference on Computer Vision, Florence, Italy, October 7-13, 2012, Proceedings, Part III 12_ (pp. 679-692). Springer Berlin Heidelberg.

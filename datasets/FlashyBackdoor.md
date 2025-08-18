@@ -96,7 +96,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
-- Dataset is structured to match the [[DVS-GESTURE]] dataset.
+- Dataset is structured to match the \[[DVS-GESTURE]\] dataset.

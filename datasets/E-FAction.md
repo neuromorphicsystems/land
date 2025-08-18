@@ -272,11 +272,10 @@
 }
 ---
 
-
-
 ### Dataset Description
 
 The dataset uses the DAVIS346 event camera to capture 3304 action sequences in a resolution of 346×260 from real-world scenarios. The E-FAction dataset provides a challenging benchmark for recognizing fine-grained human actions, such as differentiating between ‘Power Walk’, ‘Jog’, and ‘Stroll’. All collection processes adhere to the aforementioned protocols, carried out by 10 action performers. The dataset is divided into training (60%), validation (15%), and testing (25%) sets, facilitating the development and evaluation of future event-based human action recognition models.
 
-### Dataset Structure 
+### Dataset Structure
+
 - Contains 1024 recordings in 128 different classes.

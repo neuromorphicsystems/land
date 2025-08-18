@@ -297,6 +297,6 @@
 }
 ---
 
-
 ### Dataset Structure
+
 - Contains 67 scenes, 8728 sets of blurred-sharp image pairs

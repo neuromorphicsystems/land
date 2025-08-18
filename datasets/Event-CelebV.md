@@ -448,7 +448,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 - Simulated data was converted from the CelebV-HQ (https://doi.org/10.1007/978-3-031-20071-7_38) dataset

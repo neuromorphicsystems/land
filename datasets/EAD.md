@@ -282,8 +282,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset was captured with a DAVIS346 using a motorized varifocal lens (Fujifilm D17x7.5B-YN1). Data was recorded under two lighting conditions (`dark` and `light`) and two different motion patterns (`dynamic` and `static`). The ground-truth focus was obtained by hand.
 

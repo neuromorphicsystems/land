@@ -227,12 +227,12 @@
 }
 ---
 
-
-
 ### Dataset Description
 
 MA-VIED was collected using a Kia Soul electric vehicle equipped with diverse heterogeneous sensors, capturing crucial information for vehicle localization and tracking. The dataset comprises sequences recorded during 13 experimental sessions in varied driving environments (highway, country road, city, racetrack-like) and styles (smooth and rapid maneuvers). These sessions took place in December 2021, as the electric vehicle navigated for several kilometers through different streets in Passignano sul Trasimeno (PG, Umbria, Italy).
-### Dataset Structure 
-The dataset contain 13 sequences of different environment such as urban, suburban and race-track like environments with varying light conditions. 
+
+### Dataset Structure
+
+The dataset contain 13 sequences of different environment such as urban, suburban and race-track like environments with varying light conditions.
 
 The dataset also contains event camera biases - ratio of ON and OFF is approx 0.6 for our sensor

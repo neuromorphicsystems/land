@@ -103,7 +103,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 Dataset has 1440 recordings of 15 subjects acting performing 12 different actions.

@@ -110,10 +110,9 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 33 movements from 17 participants (12 female and 5 male).
-- Note: This dataset uses a custom version of the aedat file format in which 4 different streams of data are merged into a single file. 
+- Note: This dataset uses a custom version of the aedat file format in which 4 different streams of data are merged into a single file.
 
----
+______________________________________________________________________

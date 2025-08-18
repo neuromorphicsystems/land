@@ -268,8 +268,8 @@
 }
 ---
 
+### ### Dataset Structure
 
-### ### Dataset Structure 
 - Converted from Aff-Wild2
 - A custom frame-differencing technique as used (outlined in paper)
 - Contains 298 from 200 subjects

@@ -288,14 +288,13 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
+EventScape also contains moving pedestrians to enable development of pedestrian-aware perception algorithms. A sensor size of 512 x 256 pixels is used with a a focal length of 256 pixels.
 
-EventScape also contains moving pedestrians to enable development of pedestrian-aware perception algorithms. A sensor size of 512 x 256 pixels is used with a a focal length of 256 pixels. 
+EventScape is split into training, validation and test folders which contain 536, 103 and 119 sequences respectively. Each sequence contains between 100 and 150 samples, each with semantic labels, depth labels, raw events, frames and vehicle navigation data. The vehicle navigation data contain the following information: position, orientation, angular velocity, linear velocity, steering angle, brake state and throttle. Below you can find samples of each dataset split.
 
-EventScape is split into training, validation and test folders which contain 536, 103 and 119 sequences respectively. Each sequence contains between 100 and 150 samples, each with semantic labels, depth labels, raw events, frames and vehicle navigation data. The vehicle navigation data contain the following information: position, orientation, angular velocity, linear velocity, steering angle, brake state and throttle. Below you can find samples of each dataset split. 
-
-To download the whole dataset use the following links: [Training set (71 Gb)](https://rpg.ifi.uzh.ch/data/RAM_Net/dataset/Town01-03_train.zip), [Validation set (12 Gb)](https://rpg.ifi.uzh.ch/data/RAM_Net/dataset/Town05_val.zip), [Test set (14 Gb)](https://rpg.ifi.uzh.ch/data/RAM_Net/dataset/Town05_test.zip). 
+To download the whole dataset use the following links: [Training set (71 Gb)](https://rpg.ifi.uzh.ch/data/RAM_Net/dataset/Town01-03_train.zip), [Validation set (12 Gb)](https://rpg.ifi.uzh.ch/data/RAM_Net/dataset/Town05_val.zip), [Test set (14 Gb)](https://rpg.ifi.uzh.ch/data/RAM_Net/dataset/Town05_test.zip).
 
 Note that, while the test and validation set each were recorded in Town 05, they were recorded in different locations with no overlap.
 

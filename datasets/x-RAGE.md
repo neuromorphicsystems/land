@@ -85,49 +85,49 @@
 }
 ---
 
-
 ### Dataset Structure
+
 - 36 unique gestures with its variations.
-- Recorded by 6  subjects in 6 different scenarios.
+- Recorded by 6 subjects in 6 different scenarios.
 - Recorded in 3 states (sitting, standing, walking).
 - Recorded 8064 samples in total.
 - Recorded with EVK4 at 1280x720 pixels resolution.
 
-| Action Category                                 | Gesture                                                | Action                | Available with Both Hands |
-|-------------------------------------------------|--------------------------------------------------------|-----------------------|---------------------------|
-| Move                                            | pinch drag to top and release                          | Move Top/Forward      | 2, 32                     |
-| Move                                            | pinch drag to right and release                        | Move Right            | 3, 33                     |
-| Move                                            | pinch drag to bottom and release                       | Move Bottom/Backward  | 4, 34                     |
-| Move                                            | pinch drag to left and release                         | Move Left             | 5, 35                     |
-| Move                                            | Fist drag to top and release                           | Move Top/Forward      | 7, 37                     |
-| Move                                            | Fist drag to right and release                         | Move Right            | 8, 38                     |
-| Move                                            | Fist drag to bottom and release                        | Move Bottom/Backward  | 9, 39                     |
-| Move                                            | Fist drag to left and release                          | Move Left             | 10, 40                    |
-| Open/Close                                      | index pinch & open palm                                | Select                | 1, 31                     |
-| Open/Close                                      | relax palm to fist                                     | Select                | 6, 36                     |
-| Zoom                                            | Zoom in Pinch opening with thumb and index             | Zoom in               | 18, 45                    |
-| Zoom                                            | Zoom out Pinch Closing with thumb and index            | Zoom out              | 19, 46                    |
-| Zoom                                            | left and right hand fist going apart                   | Zoom in               | 20                        |
-| Zoom                                            | left and right hand fist coming close                  | Zoom out              | 21                        |
-| Rotate                                          | Rotating right on a pinch knob with thumb and index    | Clockwise Rotate      | 25, 47                    |
-| Rotate                                          | Rotating left on a pinch knob with thumb and index     | Anti-Clockwise Rotate | 26, 48                    |
-| Rotate                                          | Rotating right on a bottle cap with thumb and index    | Clockwise Rotate      | 27, 49                    |
-| Rotate                                          | Rotating left on a bottle cap with thumb and index     | Anti-Clockwise Rotate | 28, 50                    |
-| Rotate                                          | Rotating right on a small screw with thumb and index   | Clockwise Rotate      | 29, 51                    |
-| Rotate                                          | Rotating left on a small screw with thumb and index    | Anti-Clockwise Rotate | 30, 52                    |
-| Accept / Decline                                | Air Draw Tick                                          | Correct / Accept      | 11, 41                    |
-| Accept / Decline                                | Two index finger in cross overlap                      | Incorrect / Decline   | 12                        |
-| Accept / Decline                                | Thumbs Up                                              | Like / Accept         | 13, 42                    |
-| Accept / Decline                                | Thumbs Down                                            | Dislike / Decline     | 14, 43                    |
-| Accept / Decline                                | Okay gesture                                           | Okay / Accept         | 15, 44                    |
-| Halt / Stop                                     | Timeout gesture                                        | Pause                 | 16                        |
-| Halt / Stop                                     | Two hands palm open up                                 | Pause                 | 17                        |
-| Steer Rotate                                    | Steer right with left and right fist                   | Clockwise Rotate      | 22                        |
-| Steer Rotate                                    | Steer left with left and right fist                    | Anti-Clockwise Rotate | 23                        |
-| Take a Photo                                    | Making photo frame with both hands                     | Screenshot            | 24                        |
-| Sweeping left                                   | Sweeping left                                          | Move Left             | 53, 55                    |
-| Sweeping right                                  | Sweeping right                                         | Move Right            | 54, 56                    |
-| Sweeping up                                     | Sweeping up                                            | Move Top/Forward      | 57, 59                    |
-| Sweeping down                                   | Sweeping down                                          | Move Bottom/Backward  | 58, 60                    |
-| All fingers apex closing                        | All fingers apex closing                               | Select                | 61, 62                    |
-| Hand waving gesture of greeting "Hi"            | Hand waving gesture of greeting "Hi"                   | Home                  | 63, 64                    |
+| Action Category                      | Gesture                                              | Action                | Available with Both Hands |
+| ------------------------------------ | ---------------------------------------------------- | --------------------- | ------------------------- |
+| Move                                 | pinch drag to top and release                        | Move Top/Forward      | 2, 32                     |
+| Move                                 | pinch drag to right and release                      | Move Right            | 3, 33                     |
+| Move                                 | pinch drag to bottom and release                     | Move Bottom/Backward  | 4, 34                     |
+| Move                                 | pinch drag to left and release                       | Move Left             | 5, 35                     |
+| Move                                 | Fist drag to top and release                         | Move Top/Forward      | 7, 37                     |
+| Move                                 | Fist drag to right and release                       | Move Right            | 8, 38                     |
+| Move                                 | Fist drag to bottom and release                      | Move Bottom/Backward  | 9, 39                     |
+| Move                                 | Fist drag to left and release                        | Move Left             | 10, 40                    |
+| Open/Close                           | index pinch & open palm                              | Select                | 1, 31                     |
+| Open/Close                           | relax palm to fist                                   | Select                | 6, 36                     |
+| Zoom                                 | Zoom in Pinch opening with thumb and index           | Zoom in               | 18, 45                    |
+| Zoom                                 | Zoom out Pinch Closing with thumb and index          | Zoom out              | 19, 46                    |
+| Zoom                                 | left and right hand fist going apart                 | Zoom in               | 20                        |
+| Zoom                                 | left and right hand fist coming close                | Zoom out              | 21                        |
+| Rotate                               | Rotating right on a pinch knob with thumb and index  | Clockwise Rotate      | 25, 47                    |
+| Rotate                               | Rotating left on a pinch knob with thumb and index   | Anti-Clockwise Rotate | 26, 48                    |
+| Rotate                               | Rotating right on a bottle cap with thumb and index  | Clockwise Rotate      | 27, 49                    |
+| Rotate                               | Rotating left on a bottle cap with thumb and index   | Anti-Clockwise Rotate | 28, 50                    |
+| Rotate                               | Rotating right on a small screw with thumb and index | Clockwise Rotate      | 29, 51                    |
+| Rotate                               | Rotating left on a small screw with thumb and index  | Anti-Clockwise Rotate | 30, 52                    |
+| Accept / Decline                     | Air Draw Tick                                        | Correct / Accept      | 11, 41                    |
+| Accept / Decline                     | Two index finger in cross overlap                    | Incorrect / Decline   | 12                        |
+| Accept / Decline                     | Thumbs Up                                            | Like / Accept         | 13, 42                    |
+| Accept / Decline                     | Thumbs Down                                          | Dislike / Decline     | 14, 43                    |
+| Accept / Decline                     | Okay gesture                                         | Okay / Accept         | 15, 44                    |
+| Halt / Stop                          | Timeout gesture                                      | Pause                 | 16                        |
+| Halt / Stop                          | Two hands palm open up                               | Pause                 | 17                        |
+| Steer Rotate                         | Steer right with left and right fist                 | Clockwise Rotate      | 22                        |
+| Steer Rotate                         | Steer left with left and right fist                  | Anti-Clockwise Rotate | 23                        |
+| Take a Photo                         | Making photo frame with both hands                   | Screenshot            | 24                        |
+| Sweeping left                        | Sweeping left                                        | Move Left             | 53, 55                    |
+| Sweeping right                       | Sweeping right                                       | Move Right            | 54, 56                    |
+| Sweeping up                          | Sweeping up                                          | Move Top/Forward      | 57, 59                    |
+| Sweeping down                        | Sweeping down                                        | Move Bottom/Backward  | 58, 60                    |
+| All fingers apex closing             | All fingers apex closing                             | Select                | 61, 62                    |
+| Hand waving gesture of greeting "Hi" | Hand waving gesture of greeting "Hi"                 | Home                  | 63, 64                    |

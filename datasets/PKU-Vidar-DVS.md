@@ -111,10 +111,9 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-The PKU-Vidar-DVS dataset contains 9 indoor and outdoor challenging scenarios by considering velocity distribution, illumination change, category diversity, and object scale, etc. 
+The PKU-Vidar-DVS dataset contains 9 indoor and outdoor challenging scenarios by considering velocity distribution, illumination change, category diversity, and object scale, etc.
 
 A hybrid camera system was used to record 490 sequences including Vidar spikes and DVS events. In each sequence, approximately 5 seconds of data were acquired/
 

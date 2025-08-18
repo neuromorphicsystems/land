@@ -332,7 +332,7 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains both simulated data converted from a high-speed camera using v2e and real data captured with a Prophesee Gen4 sensor
 -

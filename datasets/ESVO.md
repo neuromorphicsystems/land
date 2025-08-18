@@ -10,8 +10,7 @@
         "DAVIS346",
         "DAVIS240C"
     ],
-    "other_sensors": [
-    ],
+    "other_sensors": [],
     "category": "Visual Navigation",
     "subcategory": [
         "Visual Odometry",
@@ -385,6 +384,5 @@
     ]
 }
 ---
-
 
 ### Dataset Structure

@@ -228,9 +228,6 @@
 }
 ---
 
-
-### Dataset Structure 
-
-
+### Dataset Structure
 
 - Contains 400 samples

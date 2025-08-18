@@ -294,10 +294,9 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains data from 40 subjects
 - Contains 9 recordings per subject, and therefore a total of 360 recordings
 
- To download NVSFD, send an email to cv-projlab@isr.uc.pt` to receive the datasets passwords.
+To download NVSFD, send an email to cv-projlab@isr.uc.pt\` to receive the datasets passwords.

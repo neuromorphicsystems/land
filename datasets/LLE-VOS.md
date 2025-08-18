@@ -265,15 +265,12 @@
 }
 ---
 
-
-
 ### Dataset Description
 
 The LLE-VOS dataset includes 70 videos, consisting of paired normal and low-light videos, along with their corresponding segmentation annotations and event streams. The videos are recorded at a diverse range of locations, including gyms, playgrounds, classrooms, meeting rooms, and zoos.
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains both real data (LLE-VOS) and simulate data (LLE-DAVIS)
-	- LLE-VOS contains a total of 70 recordings
-	- LLE-DAVIS contains 90 recordings
+  - LLE-VOS contains a total of 70 recordings
+  - LLE-DAVIS contains 90 recordings

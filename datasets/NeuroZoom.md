@@ -396,7 +396,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 | Filename     | Size     | Resolution | Download Link                                                                                |
@@ -406,8 +405,6 @@
 | ev_lr_2.zip  | 0.644 Gb | 111×62     | [Download](https://drive.google.com/uc?id=1GVBwbz_wOL20Iu7FvfYdxBNiwV_hDwLq&export=download) |
 | ev_llr_1.zip | 0.166 Gb | 56×31      | [Download](https://drive.google.com/uc?id=1OUXb9KCOGTXHXjSkdPz-UZ-Bc7CWwufG&export=download) |
 | ev_llr_2.zip | 0.166 Gb | 56×31      | [Download](https://drive.google.com/uc?id=1aCeaOpquWfSbSV_GfAcIEA0XGm7CsgSb&export=download) |
-
-
 
 - "ev_hr.zip": event data with resolution of 222 x 124
 - "ev_lr_1.zip" and "ev_lr_2.zip": event data with resolution of 111 x62

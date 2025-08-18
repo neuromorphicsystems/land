@@ -456,9 +456,7 @@
 }
 ---
 
-
-### Dataset Structure 
-
+### Dataset Structure
 
 - 1.6 million faces
 - [73] participants (31 female, 42 male)
@@ -466,6 +464,6 @@
 - 689 min
 - Data stored in Prophesee .raw files
 
-The dataset contains a total of  689 min of event-based data, containing 1.6 million annotated faces from 73 participants, comprising 31 female and  42 male subjects. Data was collected in two scenarios: wild and controlled.
+The dataset contains a total of 689 min of event-based data, containing 1.6 million annotated faces from 73 participants, comprising 31 female and 42 male subjects. Data was collected in two scenarios: wild and controlled.
 
-Total size is 629.2 Gb  of raw event data, and 76.6 Gb of processed data.
+Total size is 629.2 Gb of raw event data, and 76.6 Gb of processed data.

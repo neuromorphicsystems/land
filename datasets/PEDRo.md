@@ -286,10 +286,12 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains 119 recordings with an average duration of 18 seconds.
+
 - Contains 43259 bounding boxes for 27000 samples of 40 ms each.
 
 - Dataset format is provided.
+
 -

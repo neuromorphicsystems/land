@@ -100,7 +100,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 eTraM encompasses three distinct traffic monitoring scenes with 5 hrs of intersection, 3 hrs of roadway, and 2 hr of local street data sequences. Data for each scene is collected at multiple locations. For instance, the intersection scene contains data from 2 four-way, threeway, daytime, nighttime, and twilight data totaling up to 10 hr of data with 5 hrs of daytime and nighttime data. eTraM contains 2M instances of 2D bounding box annotations for traffic participant detection. These annotations additionally include object IDs, making it possible to evaluate multi-object tracking, as shown in the supplementary material. The annotation classes encompass a range of traffic participants, from various vehicles (cars, trucks, buses, and trams) to pedestrians and micro-mobility (bikes, bicycles, and wheelchairs).

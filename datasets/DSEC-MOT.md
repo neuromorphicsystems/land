@@ -104,9 +104,9 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-- Built upon [[DSEC]]. The dataset is a set of annotations for select recordings.
+- Built upon \[[DSEC]\]. The dataset is a set of annotations for select recordings.
 - 12 annotated sequences with a total of 37,080 boxes, 502 tracks, and 769.2-second duration
 - 7 object classes including cars, pedestrians, bicycles, motorcycles, buses, trucks, and trains
 - Challenging scenarios including crowded urban areas and rural scenes with various lighting conditions

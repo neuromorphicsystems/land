@@ -162,7 +162,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 The dataset contains of 5 scenarios with a total of 26 takes. Each take corresponds to one path and is between 20 to 60 seconds long. For each take the following data is provided:

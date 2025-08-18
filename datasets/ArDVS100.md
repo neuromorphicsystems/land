@@ -77,49 +77,47 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Consists of two synthesised datasets and one real dataset:
-	- [[ArDVS100]]: 
-		- Durations: 1s to 256s 
-		- Classes: 100
-		- Created from [[HARDVS]]
-	- TemArDVS100: 
-		- Durations: 14s to 215s
-		- Classes 100
-		- Created from [[HARDVS]] and [[DailyDVS-200]]
-	- Real-ArDVS10:
-		- Duration: 2s to 75s
-		- Classes: 10
-
+  - \[[ArDVS100]\]:
+    - Durations: 1s to 256s
+    - Classes: 100
+    - Created from \[[HARDVS]\]
+  - TemArDVS100:
+    - Durations: 14s to 215s
+    - Classes 100
+    - Created from \[[HARDVS]\] and \[[DailyDVS-200]\]
+  - Real-ArDVS10:
+    - Duration: 2s to 75s
+    - Classes: 10
 
 ### Comparison Table
 
-| Dataset        | Year | Sensors         | Object | Scale     | Class | Real | Temporal Fine-grained Labels | Duration(s) |
-|----------------|------|-----------------|--------|-----------|-------|------|------------------------------|-------------|
-| MNISTDVS       | 2013 | DAVIS128        | Image  | 30,000    | 10    | ✗    | ✗                            | –           |
-| N-Caltech101   | 2015 | ATIS            | Image  | 8,709     | 101   | ✗    | ✗                            | 0.3s        |
-| N-MNIST        | 2015 | ATIS            | Image  | 70,000    | 10    | ✗    | ✗                            | 0.3s        |
-| CIFAR10-DVS    | 2017 | DAVIS128        | Image  | 10,000    | 10    | ✗    | ✗                            | 1.2s        |
-| N-ImageNet     | 2021 | Samsung-Gen3    | Image  | 1,781,167 | 1,000 | ✗    | ✗                            | 0.1s        |
-| ES-ImageNet    | 2021 | –               | Image  | 1,306,916 | 1,000 | ✗    | ✗                            | –           |
-| ASLAN-DVS      | 2011 | DAVIS240c       | Action | 3,697     | 432   | ✗    | ✗                            | –           |
-| DvsGesture     | 2017 | DAVIS128        | Action | 1,342     | 11    | ✓    | ✓                            | 6s          |
-| N-CARS         | 2018 | ATIS            | Car    | 24,029    | 2     | ✓    | ✗                            | 0.1s        |
-| ASL-DVS        | 2019 | DAVIS240        | Hand   | 100,800   | 24    | ✓    | ✗                            | 0.1s        |
-| DVS Action     | 2019 | DAVIS346        | Action | 450       | 10    | ✗    | ✗                            | 5s          |
-| HMDB-DVS       | 2019 | DAVIS240c       | Action | 6,766     | 51    | ✓    | ✓                            | 19s         |
-| UCF-DVS        | 2019 | DAVIS240c       | Action | 13,320    | 101   | ✓    | ✓                            | 25s         |
-| DailyAction    | 2021 | DAVIS346        | Action | 1,440     | 12    | ✓    | ✓                            | 10s         |
-| HARDVS         | 2022 | DAVIS346        | Action | 107,646   | 300   | ✓    | ✓                            | 5s          |
-| THUEACT50      | 2023 | CeleX-V         | Action | 10,500    | 50    | ✓    | ✓                            | 2s-5s       |
-| THUEA50CHL     | 2023 | DAVIS346        | Action | 2,330     | 50    | ✓    | ✓                            | 2s-6s       |
-| Bullying10K    | 2023 | DAVIS346        | Action | 10,000    | 10    | ✓    | ✓                            | 1s-20s      |
-| SeAct          | 2024 | DAVIS346        | Action | 580       | 58    | ✓    | ✓                            | 2s-10s      |
-| DailyDVS-200   | 2024 | DVXplorer Lite  | Action | 22,046    | 200   | ✓    | ✓                            | 2s-20s      |
-| ArDVS100       | 2024 | DAVIS346        | Action | 10,000    | 100   | ✗    | ✗                            | 1s-265s     |
-| Real-ArDVS100  | 2024 | DAVIS346        | Action | 10,000    | 100   | ✓    | ✗                            | 2s-75s      |
-| TemArDVS100    | 2024 | DAVIS346        | Action | 10,000    | 100   | ✗    | ✓                            | 14s-215s    |
+| Dataset       | Year | Sensors        | Object | Scale     | Class | Real | Temporal Fine-grained Labels | Duration(s) |
+| ------------- | ---- | -------------- | ------ | --------- | ----- | ---- | ---------------------------- | ----------- |
+| MNISTDVS      | 2013 | DAVIS128       | Image  | 30,000    | 10    | ✗    | ✗                            | –           |
+| N-Caltech101  | 2015 | ATIS           | Image  | 8,709     | 101   | ✗    | ✗                            | 0.3s        |
+| N-MNIST       | 2015 | ATIS           | Image  | 70,000    | 10    | ✗    | ✗                            | 0.3s        |
+| CIFAR10-DVS   | 2017 | DAVIS128       | Image  | 10,000    | 10    | ✗    | ✗                            | 1.2s        |
+| N-ImageNet    | 2021 | Samsung-Gen3   | Image  | 1,781,167 | 1,000 | ✗    | ✗                            | 0.1s        |
+| ES-ImageNet   | 2021 | –              | Image  | 1,306,916 | 1,000 | ✗    | ✗                            | –           |
+| ASLAN-DVS     | 2011 | DAVIS240c      | Action | 3,697     | 432   | ✗    | ✗                            | –           |
+| DvsGesture    | 2017 | DAVIS128       | Action | 1,342     | 11    | ✓    | ✓                            | 6s          |
+| N-CARS        | 2018 | ATIS           | Car    | 24,029    | 2     | ✓    | ✗                            | 0.1s        |
+| ASL-DVS       | 2019 | DAVIS240       | Hand   | 100,800   | 24    | ✓    | ✗                            | 0.1s        |
+| DVS Action    | 2019 | DAVIS346       | Action | 450       | 10    | ✗    | ✗                            | 5s          |
+| HMDB-DVS      | 2019 | DAVIS240c      | Action | 6,766     | 51    | ✓    | ✓                            | 19s         |
+| UCF-DVS       | 2019 | DAVIS240c      | Action | 13,320    | 101   | ✓    | ✓                            | 25s         |
+| DailyAction   | 2021 | DAVIS346       | Action | 1,440     | 12    | ✓    | ✓                            | 10s         |
+| HARDVS        | 2022 | DAVIS346       | Action | 107,646   | 300   | ✓    | ✓                            | 5s          |
+| THUEACT50     | 2023 | CeleX-V        | Action | 10,500    | 50    | ✓    | ✓                            | 2s-5s       |
+| THUEA50CHL    | 2023 | DAVIS346       | Action | 2,330     | 50    | ✓    | ✓                            | 2s-6s       |
+| Bullying10K   | 2023 | DAVIS346       | Action | 10,000    | 10    | ✓    | ✓                            | 1s-20s      |
+| SeAct         | 2024 | DAVIS346       | Action | 580       | 58    | ✓    | ✓                            | 2s-10s      |
+| DailyDVS-200  | 2024 | DVXplorer Lite | Action | 22,046    | 200   | ✓    | ✓                            | 2s-20s      |
+| ArDVS100      | 2024 | DAVIS346       | Action | 10,000    | 100   | ✗    | ✗                            | 1s-265s     |
+| Real-ArDVS100 | 2024 | DAVIS346       | Action | 10,000    | 100   | ✓    | ✗                            | 2s-75s      |
+| TemArDVS100   | 2024 | DAVIS346       | Action | 10,000    | 100   | ✗    | ✓                            | 14s-215s    |
 
 Let me know if you need any tweaks or further formatting!

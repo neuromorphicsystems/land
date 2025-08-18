@@ -473,20 +473,19 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains data from 26 different outdoor scenes
-- Each recording is 5.6 s 
-
+- Each recording is 5.6 s
 
 ### Comparison Table
 
-| Dataset                            | Year | Task          | Train/Test   | HDR/LDR | Bit-Depth | Frame Rate   | Num. Frames |
-| ---------------------------------- | ---- | ------------- | ------------ | ------- | --------- | ------------ | ----------- |
-| [[The Event-Based Camera Dataset]] | 2016 | HDR Recon.    | Test         | LDR     | 8         | 24 fps       | 28418       |
-| [[HQF]]                            | 2020 | HDR Recon.    | Test         | LDR     | 8         | <40 fps      | 15390       |
-| [[BS-ERGB]]                        | 2022 | Video Interp. | Train & Test | HDR     | 8         | 28 fps       | 40000       |
-| [[PIR2000-DAVIS]]                  | 2022 | Video Deblur. | Train & Test | LDR     | 8         | 2000 fps     | 2565        |
-| [[EventHDR]]                       | 2024 | HDR Recon.    | Train & Test | HDR     | 16        | 500-2000 fps | 81128       |
+| Dataset                              | Year | Task          | Train/Test   | HDR/LDR | Bit-Depth | Frame Rate   | Num. Frames |
+| ------------------------------------ | ---- | ------------- | ------------ | ------- | --------- | ------------ | ----------- |
+| \[[The Event-Based Camera Dataset]\] | 2016 | HDR Recon.    | Test         | LDR     | 8         | 24 fps       | 28418       |
+| \[[HQF]\]                            | 2020 | HDR Recon.    | Test         | LDR     | 8         | \<40 fps     | 15390       |
+| \[[BS-ERGB]\]                        | 2022 | Video Interp. | Train & Test | HDR     | 8         | 28 fps       | 40000       |
+| \[[PIR2000-DAVIS]\]                  | 2022 | Video Deblur. | Train & Test | LDR     | 8         | 2000 fps     | 2565        |
+| \[[EventHDR]\]                       | 2024 | HDR Recon.    | Train & Test | HDR     | 16        | 500-2000 fps | 81128       |

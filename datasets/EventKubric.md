@@ -90,7 +90,6 @@
 }
 ---
 
-
 ### Dataset Structure
 
 - Dataset generated using Kubric, upsampled using FILM, and converted to events using ESIM
@@ -99,6 +98,6 @@
 | **Dataset**            | **Source** | **Events** | **No. Samples** | **Resolution** | **fps (Hz)** | **sample duration (s)** | **IMO** | **optical flow** | **depth** | **point tracking** | **segmentations** |
 | ---------------------- | ---------- | ---------- | --------------- | -------------- | ------------ | ----------------------- | ------- | ---------------- | --------- | ------------------ | ----------------- |
 | TAP-Vid Kubric, MOVI-F | 3D PBR     | none       | ~ 10000         | 512 x 512      | 12           | 2                       | Y       | Y                | Y         | Y                  | Y                 |
-| [[BlinkFlow]]          | 3D BR      | synthetic  | 3587            | 640 × 480      | 10           | 1                       | Y       | Y                | Y         | N                  | Y                 |
-| [[MultiFlow]]          | 2D warp    | synthetic  | 12100           | 512 × 384      | 100          | 0.5                     | Y       | Y*               | N         | N                  | N                 |
-| [[EventKubric ]]       | 3D PBR     | synthetic  | 10173           | 512 × 512      | 48           | 2                       | Y       | Y                | Y         | Y                  | Y                 |
+| \[[BlinkFlow]\]        | 3D BR      | synthetic  | 3587            | 640 × 480      | 10           | 1                       | Y       | Y                | Y         | N                  | Y                 |
+| \[[MultiFlow]\]        | 2D warp    | synthetic  | 12100           | 512 × 384      | 100          | 0.5                     | Y       | Y\*              | N         | N                  | N                 |
+| \[[EventKubric ]\]     | 3D PBR     | synthetic  | 10173           | 512 × 512      | 48           | 2                       | Y       | Y                | Y         | Y                  | Y                 |

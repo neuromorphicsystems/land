@@ -225,7 +225,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 21 datasets (i.e. recordings)

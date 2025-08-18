@@ -352,26 +352,26 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 ### Standard THU-ACT-50
+
 - 50 event-specific action categories
 - 105 socially recruited subjects
 - 10,500 video recordings
-- CeleX-V event camera with a spatial resolution of 1280 x 800 
+- CeleX-V event camera with a spatial resolution of 1280 x 800
 - Two oblique front views of the actor
 - Download size: 93.3 Gb
 
-|D|Action|ID|Action|ID|Action|ID|Action|ID|Action|
-|---|---|---|---|---|---|---|---|---|---|
-|A0|Walking|A10|Cross arms|A20|Calling with phone|A30|Fan|A40|Check time|
-|A1|Running|A11|Salute|A21|Reading|A31|Open umbrella|A41|Drink water|
-|A2|Jump up|A12|Squat down|A22|Tai chi|A32|Close umbrella|A42|Wipe face|
-|A3|Running in circles|A13|Sit down|A23|Swing objects|A33|Put on glasses|A43|Long jump|
-|A4|Falling down|A14|Stand up|A24|Throw|A34|Take off glasses|A44|Push up|
-|A5|Waving one hand|A15|Sit and stand|A25|Staggering|A35|Pick up|A45|Sit up|
-|A6|Waving two hands|A16|Knead face|A26|Headache|A36|Put on bag|A46|Shake hands (two-players)|
-|A7|Clap|A17|Nod head|A27|Stomachache|A37|Take off bag|A47|Fighting (two-players)|
-|A8|Rub hands|A18|Shake head|A28|Back pain|A38|Put object into bag|A48|Handing objects (two-players)|
-|A9|Punch|A19|Thumb up|A29|Vomit|A39|Take object out of bag|A49|Lifting chairs (two-players)|
+| D   | Action             | ID  | Action        | ID  | Action             | ID  | Action                 | ID  | Action                        |
+| --- | ------------------ | --- | ------------- | --- | ------------------ | --- | ---------------------- | --- | ----------------------------- |
+| A0  | Walking            | A10 | Cross arms    | A20 | Calling with phone | A30 | Fan                    | A40 | Check time                    |
+| A1  | Running            | A11 | Salute        | A21 | Reading            | A31 | Open umbrella          | A41 | Drink water                   |
+| A2  | Jump up            | A12 | Squat down    | A22 | Tai chi            | A32 | Close umbrella         | A42 | Wipe face                     |
+| A3  | Running in circles | A13 | Sit down      | A23 | Swing objects      | A33 | Put on glasses         | A43 | Long jump                     |
+| A4  | Falling down       | A14 | Stand up      | A24 | Throw              | A34 | Take off glasses       | A44 | Push up                       |
+| A5  | Waving one hand    | A15 | Sit and stand | A25 | Staggering         | A35 | Pick up                | A45 | Sit up                        |
+| A6  | Waving two hands   | A16 | Knead face    | A26 | Headache           | A36 | Put on bag             | A46 | Shake hands (two-players)     |
+| A7  | Clap               | A17 | Nod head      | A27 | Stomachache        | A37 | Take off bag           | A47 | Fighting (two-players)        |
+| A8  | Rub hands          | A18 | Shake head    | A28 | Back pain          | A38 | Put object into bag    | A48 | Handing objects (two-players) |
+| A9  | Punch              | A19 | Thumb up      | A29 | Vomit              | A39 | Take object out of bag | A49 | Lifting chairs (two-players)  |

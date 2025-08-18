@@ -114,15 +114,11 @@
 }
 ---
 
-
-### Dataset Structure 
-
-
+### Dataset Structure
 
 - Cameras had a baseline of 10 cm
 - Default biases were used for the recordings
 - Contains 14 sequences across 4 different types of recordings
-
 
 ### ROS Bag Data Format
 

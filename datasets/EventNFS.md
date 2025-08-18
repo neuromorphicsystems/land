@@ -110,19 +110,17 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Dataset contains 70 sequences
 - Dataset contains approximately 60 minutes of recordings
 
-    
 ### Dataset Files
 
-| File                                                                                                      | Resolution | Size    |
-| --------------------------------------------------------------------------------------------------------- | ---------- | ------- |
-| [ev_hr.zip](https://drive.usercontent.google.com/open?id=1qFBtTh_QQ-qRMX6czVmDIbDeyMnWwa44&authuser=0)    | 222 x 124  | 3.4 GB  |
-| [ev_lr_1.zip](https://drive.usercontent.google.com/open?id=1u_IK2Yovv5FUd1xEgWSLgHAsMenV76kM&authuser=0)  | 111 x 62   | 0.64 GB |
-| [ev_lr_2.zip](https://drive.usercontent.google.com/open?id=16z0j0Pcq8Nek5wH1GtMbh_w_s71JN0nP&authuser=0)  | 111 x 62   | 0.12 GB |
-| [ev_llr_2.zip](https://drive.usercontent.google.com/open?id=1Mam35TvsSqci-j2QG0Uwd5XAMfCR5TkQ&authuser=0) | 56 x 31    | 0.12 GB |
-The index number of each file is corresponding to the sequence of the [Need-for-Speed (NFS) dataset](http://ci2cv.net/nfs/index.html) [14].
+| File                                                                                                                                        | Resolution | Size    |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------- |
+| [ev_hr.zip](https://drive.usercontent.google.com/open?id=1qFBtTh_QQ-qRMX6czVmDIbDeyMnWwa44&authuser=0)                                      | 222 x 124  | 3.4 GB  |
+| [ev_lr_1.zip](https://drive.usercontent.google.com/open?id=1u_IK2Yovv5FUd1xEgWSLgHAsMenV76kM&authuser=0)                                    | 111 x 62   | 0.64 GB |
+| [ev_lr_2.zip](https://drive.usercontent.google.com/open?id=16z0j0Pcq8Nek5wH1GtMbh_w_s71JN0nP&authuser=0)                                    | 111 x 62   | 0.12 GB |
+| [ev_llr_2.zip](https://drive.usercontent.google.com/open?id=1Mam35TvsSqci-j2QG0Uwd5XAMfCR5TkQ&authuser=0)                                   | 56 x 31    | 0.12 GB |
+| The index number of each file is corresponding to the sequence of the [Need-for-Speed (NFS) dataset](http://ci2cv.net/nfs/index.html) [14]. |            |         |

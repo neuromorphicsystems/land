@@ -209,7 +209,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains a total of 14.4 seconds of data.

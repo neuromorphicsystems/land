@@ -109,20 +109,22 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
+- Contains the three datasets from the EPIC Kitchens-55 datasets (P01, P08, and P22)
 
-- Contains the three datasets from the EPIC Kitchens-55 datasets (P01, P08, and P22) 
-- Converted using ESIM. 
+- Converted using ESIM.
+
 - The recordings are first person action recognition sequences.
+
 - Source video was upscaled with Super SloMo (based on adaptive sampling strategy in v2e)
 
 - The dataset provides both a download script and commands to download both the entire dataset and the component parts (i.e. only the raw events).
 
-- More details can be found in the thesis available at [PhD_Thesis_Chiara_conv_final.pdf#page=132.30](file:///Users/gregorycohen/Downloads/PhD_Thesis_Chiara_conv_final.pdf#page=132.30)
-
+- More details can be found in the thesis available at \[PhD_Thesis_Chiara_conv_final.pdf#page=132.30\](file:///Users/gregorycohen/Downloads/PhD_Thesis_Chiara_conv_final.pdf#page=132.30)
 
 ### Citation
+
 ```bibtex
 @article{plizzari20212,
   title={E $\^{} 2$(GO) MOTION: Motion Augmented Event Stream for Egocentric Action Recognition},

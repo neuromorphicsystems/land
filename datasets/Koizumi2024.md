@@ -141,6 +141,6 @@
 }
 ---
 
-
 ### Dataset Structure
-- Augmented version of the [[DHP19]] dataset
+
+- Augmented version of the \[[DHP19]\] dataset

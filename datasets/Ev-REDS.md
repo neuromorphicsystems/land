@@ -262,15 +262,14 @@
 }
 ---
 
-
 ### Dataset Structure
-- Contains 32 sequences, comprising 22 indoor scenes and 10 outdoor scenes
 
+- Contains 32 sequences, comprising 22 indoor scenes and 10 outdoor scenes
 
 ## MS-RBD capture system
 
 | Scene   | Sequence   | Train/Test | #Event (K) | FPS | Dynamic/Static | Camera Motion |
-|---------|------------|------------|------------|-----|----------------|---------------|
+| ------- | ---------- | ---------- | ---------- | --- | -------------- | ------------- |
 | Indoor  | Badminton  | Train      | 8096       | 15  | Static         | Rotation      |
 |         | Book       | Train      | 12128      | 15  | Static         | Rotation      |
 |         | Book2      | Train      | 3647       | 15  | Dynamic        | No motion     |

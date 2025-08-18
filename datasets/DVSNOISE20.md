@@ -291,10 +291,9 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-This dataset is designed to evaluate event denoising algorithm performance against real sensor data. Data was collected using a DAVIS346 neuromorphic camera. Movement of the camera was restricted by a gimbal, and the IMU was calibrated before each collection. Only stationary scenes were selected, avoiding saturation and severe noise in the APS. 
+This dataset is designed to evaluate event denoising algorithm performance against real sensor data. Data was collected using a DAVIS346 neuromorphic camera. Movement of the camera was restricted by a gimbal, and the IMU was calibrated before each collection. Only stationary scenes were selected, avoiding saturation and severe noise in the APS.
 
 The dataset contains 16 indoor and outdoor scenes of noisy, real-world data. Each scene was captured three times for ≈16 seconds, giving 48 total sequences with a wide range of motions.
 

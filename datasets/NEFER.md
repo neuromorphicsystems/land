@@ -394,8 +394,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 609 recordings from 29 subjects
 - Recordings are labelled with one of 7 different emotions

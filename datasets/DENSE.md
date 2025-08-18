@@ -254,9 +254,8 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Dataset uses the CARLA simulator with a custom event-based plugin
-- Simulated dataset has a resolution of 346 x 260 to match the real-world data from a DAVIS346 used in the [[MVSEC]] dataset
+- Simulated dataset has a resolution of 346 x 260 to match the real-world data from a DAVIS346 used in the \[[MVSEC]\] dataset
 - Dataset contains 5000 recordings

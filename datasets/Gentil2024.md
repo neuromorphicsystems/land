@@ -96,21 +96,20 @@
 }
 ---
 
-
 ### Dataset Description
+
 `The contributions of this work are the design and implementation of a satellite-agnostic docking port detection and localisation algorithm, the evaluation of the proposed framework with both  event and RGB data, and the open source release of the datasets used in the evaluation.`
 
 ### Dataset Structure
 
-FILE NAMES:		ROS Bags are named according to the following convention -
-			T[X]_RA_[Y]_ES_[Z]_[lighting conditions]
-			X = Trajectory Number (1-3)
-			Y = Sunlight Source %
-			Z = Earthshine Source Included (1=True, 0=False)
-			lighting conditions = Description of Y and Z combinations with local co-located lighting.
+FILE NAMES: ROS Bags are named according to the following convention -
+T[X]_RA_[Y]_ES_[Z]\_[lighting conditions]
+X = Trajectory Number (1-3)
+Y = Sunlight Source %
+Z = Earthshine Source Included (1=True, 0=False)
+lighting conditions = Description of Y and Z combinations with local co-located lighting.
 
-
-FOLDER STRUCTURE:	 
+FOLDER STRUCTURE:
 dataset_0307 contains the augmented parts of the main dataset from the paper. Subfolders contain calibration and training data for the no port, and two texture (data augmentation cases). This also contains the ground truth calibration as a yml file and raw calibration ROS bag in the calibration folder. Note that the calibration is provided for the DAVIS 346 Camera only, the Prophesee data is provided without extrinsics.
 
 dataset_0307_notexture contains the unaugmented data for training and testing.
@@ -132,39 +131,39 @@ Sourced from: https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/README
 
 #### Dataset Files
 
-| Filename                                                                                          | Size     |
-|---------------------------------------------------------------------------------------------------|----------|
-| [README.txt](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/README.txt)              | 1.4 KB   |
-| [Manifest](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/Manifest)                  | 3.1 KB   |
-| [restore_tars.sh](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/restore_tars.sh)    | 2.6 KB   |
-| [calibration1_jul27.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__calibration__calibration1_jul27.bag.tar)  | 33.4 MB  |
-| [calibration2_jul27.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__calibration__calibration2_jul27.bag.tar)  | 32.8 MB  |
-| [calibration_dvs.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__camera-to-robot-calibration_dvs.yaml.tar)   | 688 B    |
-| [calibration_t265.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__camera-to-robot-calibration_t265.yaml.tar) | 686 B    |
-| [calibration_wide.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__camera-to-robot-calibration_wide.yaml.tar) | 682 B    |
-| [dark__hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__dark__hard.bag.tar)                             | 6.6 GB   |
-| [dark__test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__dark__test.bag.tar)                             | 6.3 GB   |
-| [dark__train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__dark__train.bag.tar)                           | 7.8 GB   |
-| [dvs_annotated_events_test.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__dvs_annotated_events_test.tar)        | 322 MB   |
-| [dvs_annotated_events_train.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__dvs_annotated_events_train.tar)      | 1.1 GB   |
-| [light__hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__light__hard.bag.tar)                           | 6.3 GB   |
-| [light__test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__light__test.bag.tar)                           | 6.3 GB   |
-| [light__train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__light__train.bag.tar)                         | 7.5 GB   |
-| [mixed__hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__mixed__hard.bag.tar)                           | 6.2 GB   |
-| [mixed__test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__mixed__test.bag.tar)                           | 6.6 GB   |
-| [mixed__train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__mixed__train.bag.tar)                         | 7.6 GB   |
-| [normal__hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__normal__hard.bag.tar)                         | 6.2 GB   |
-| [normal__test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__normal__test.bag.tar)                         | 6.6 GB   |
-| [normal__train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__normal__train.bag.tar)                       | 7.6 GB   |
-| [0407_mixed__hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__mixed__hard.bag.tar)                      | 6.5 GB   |
-| [0407_mixed__test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__mixed__test.bag.tar)                      | 6.3 GB   |
-| [0407_mixed__train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__mixed__train.bag.tar)                    | 7.3 GB   |
-| [0407_normal__hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__normal__hard.bag.tar)                    | 6.2 GB   |
-| [0407_normal__test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__normal__test.bag.tar)                    | 6.3 GB   |
-| [0407_normal__train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__normal__train.bag.tar)                  | 7.4 GB   |
-| [calibration_dvs.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__camera-to-robot-calibration_dvs.yaml.tar)     | 688 B    |
-| [calibration_t265.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__camera-to-robot-calibration_t265.yaml.tar)   | 686 B    |
-| [calibration_wide.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__camera-to-robot-calibration_wide.yaml.tar)   | 682 B    |
-| [camera-calibration-left.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__camera-calibration-left.yaml.tar)     | 1.2 KB   |
-| [camera-calibration-right.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__camera-calibration-right.yaml.tar)   | 1.2 KB   |
-| [stereo_calibration.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__stereo_calibration.bag.tar)                | 4.5 MB   |
+| Filename                                                                                                                                                | Size    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| [README.txt](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/README.txt)                                                                    | 1.4 KB  |
+| [Manifest](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/Manifest)                                                                        | 3.1 KB  |
+| [restore_tars.sh](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/restore_tars.sh)                                                          | 2.6 KB  |
+| [calibration1_jul27.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__calibration__calibration1_jul27.bag.tar)         | 33.4 MB |
+| [calibration2_jul27.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__calibration__calibration2_jul27.bag.tar)         | 32.8 MB |
+| [calibration_dvs.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__camera-to-robot-calibration_dvs.yaml.tar)          | 688 B   |
+| [calibration_t265.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__camera-to-robot-calibration_t265.yaml.tar)        | 686 B   |
+| [calibration_wide.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__camera-to-robot-calibration_wide.yaml.tar)        | 682 B   |
+| [dark\_\_hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__dark__hard.bag.tar)                                    | 6.6 GB  |
+| [dark\_\_test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__dark__test.bag.tar)                                    | 6.3 GB  |
+| [dark\_\_train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__dark__train.bag.tar)                                  | 7.8 GB  |
+| [dvs_annotated_events_test.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__dvs_annotated_events_test.tar)                | 322 MB  |
+| [dvs_annotated_events_train.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__dvs_annotated_events_train.tar)              | 1.1 GB  |
+| [light\_\_hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__light__hard.bag.tar)                                  | 6.3 GB  |
+| [light\_\_test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__light__test.bag.tar)                                  | 6.3 GB  |
+| [light\_\_train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__light__train.bag.tar)                                | 7.5 GB  |
+| [mixed\_\_hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__mixed__hard.bag.tar)                                  | 6.2 GB  |
+| [mixed\_\_test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__mixed__test.bag.tar)                                  | 6.6 GB  |
+| [mixed\_\_train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__mixed__train.bag.tar)                                | 7.6 GB  |
+| [normal\_\_hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__normal__hard.bag.tar)                                | 6.2 GB  |
+| [normal\_\_test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__normal__test.bag.tar)                                | 6.6 GB  |
+| [normal\_\_train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0307__normal__train.bag.tar)                              | 7.6 GB  |
+| [0407_mixed\_\_hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__mixed__hard.bag.tar)                             | 6.5 GB  |
+| [0407_mixed\_\_test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__mixed__test.bag.tar)                             | 6.3 GB  |
+| [0407_mixed\_\_train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__mixed__train.bag.tar)                           | 7.3 GB  |
+| [0407_normal\_\_hard.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__normal__hard.bag.tar)                           | 6.2 GB  |
+| [0407_normal\_\_test.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__normal__test.bag.tar)                           | 6.3 GB  |
+| [0407_normal\_\_train.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_0407__normal__train.bag.tar)                         | 7.4 GB  |
+| [calibration_dvs.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__camera-to-robot-calibration_dvs.yaml.tar)   | 688 B   |
+| [calibration_t265.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__camera-to-robot-calibration_t265.yaml.tar) | 686 B   |
+| [calibration_wide.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__camera-to-robot-calibration_wide.yaml.tar) | 682 B   |
+| [camera-calibration-left.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__camera-calibration-left.yaml.tar)   | 1.2 KB  |
+| [camera-calibration-right.yaml.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__camera-calibration-right.yaml.tar) | 1.2 KB  |
+| [stereo_calibration.bag.tar](https://ses.library.usyd.edu.au/bitstream/handle/2123/33938/dataset_calibration__stereo_calibration.bag.tar)               | 4.5 MB  |

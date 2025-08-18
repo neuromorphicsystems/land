@@ -113,7 +113,6 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 The dataset has excellent documentation available at https://better-flow.github.io/evimo/docs/.

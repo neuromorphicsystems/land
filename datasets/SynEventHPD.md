@@ -86,6 +86,6 @@
 }
 ---
 
-
 ### Dataset Structure
+
 - Contains data converted from Human3.6M, AMASS, PHSPD, and MMHPSD-Gray datasets

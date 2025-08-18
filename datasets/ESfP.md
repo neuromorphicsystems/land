@@ -288,12 +288,10 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
+There are 2 datasets used: ESfP-synthetic Dataset and ESFfP-Real Dataset.
 
-
-There are 2 datasets used: ESfP-synthetic Dataset and ESFfP-Real Dataset. 
-
-The synthetic dataset consist of events which were stimulated using ESIM. The dataset consists of 89 training and 15 test sequences. 
+The synthetic dataset consist of events which were stimulated using ESIM. The dataset consists of 89 training and 15 test sequences.
 
 The real Dataset consists of a total of 90 scenes.

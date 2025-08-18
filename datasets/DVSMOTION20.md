@@ -321,8 +321,7 @@
 }
 ---
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 4 recordings.
 -

@@ -315,13 +315,13 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
 - Contains data from 13 subjects
 - Contains 5 different types of activities
 - Ground truth is labelled at 100 Hz
 
 ### Datasets Referenced in this Paper
 
-[[3ET]]
-[[3ET+]]
+\[[3ET]\]
+\[[3ET+]\]

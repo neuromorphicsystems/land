@@ -307,14 +307,11 @@
 }
 ---
 
-
-
 ### Dataset Description
 
 DSEC is a stereo camera dataset in driving scenarios that contains data from two monochrome **event cameras** and two **global shutter color cameras** in favorable and challenging illumination conditions. In addition, we collect **Lidar** data and RTK GPS measurements, both hardware synchronized with all camera data. One of the distinctive features of this dataset is the inclusion of VGA-resolution event cameras. Event cameras have received increasing attention for their high temporal resolution and high dynamic range performance. However, due to their novelty, event camera datasets in driving scenarios are rare. This work presents the first high-resolution, large-scale stereo dataset with event cameras. The dataset contains 53 sequences collected by driving in a variety of illumination conditions and provides ground truth disparity for the development and evaluation of event-based stereo algorithms.
 
-
-### Dataset Structure 
+### Dataset Structure
 
 - Contains 53 recordings
 - Cameras have a baseline of 60 cm

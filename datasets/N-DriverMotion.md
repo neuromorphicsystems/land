@@ -255,10 +255,9 @@
 }
 ---
 
+### Dataset Structure
 
-### Dataset Structure 
-
-- 13  classes
+- 13 classes
 - 1239 recordings
 - 23 subjects
 - 3 lighting conditions.
