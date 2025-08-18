@@ -1,6 +1,5 @@
-ui/build
-ui/node_modules
-
 .DS_Store
 .venv
 __pycache__
+ui/build
+ui/node_modules
