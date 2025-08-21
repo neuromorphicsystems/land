@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Gaze Tracking",
         "Eye Tracking"
     ],
-    "task": "Gaze Detection",
+    "description": "Gaze Detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

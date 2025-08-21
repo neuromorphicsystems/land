@@ -13,11 +13,11 @@
         "FLIR Blackfly S"
     ],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "Beamsplitters",
         "De-blurring"
     ],
-    "task": "Event-based Motion De-blurring",
+    "description": "Event-based Motion De-blurring",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

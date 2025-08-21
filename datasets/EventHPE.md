@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Human Pose Recognition",
         "Optical Flow"
     ],
-    "task": "Human pose and shape recognition",
+    "description": "Human pose and shape recognition",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Drone Racing",
         "Drone Detection"
     ],
-    "task": "Navigation for drone racing",
+    "description": "Navigation for drone racing",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

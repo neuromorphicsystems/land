@@ -11,13 +11,13 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "SLAM",
         "Autonomous Driving",
         "Robotics",
         "Visual Odometry"
     ],
-    "task": "Multi-sensor SLAM dataset",
+    "description": "Multi-sensor SLAM dataset",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Classification Datasets"
     ],
-    "task": "Visual Game",
+    "description": "Visual Game",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

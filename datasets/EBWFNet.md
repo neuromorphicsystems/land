@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Adaptive Optics",
         "Wavefront Sensing"
     ],
-    "task": "Wavefront sensing",
+    "description": "Wavefront sensing",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

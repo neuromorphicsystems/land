@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Gesture Recognition",
         "First-person",
         "Sign Language"
     ],
-    "task": "Egocentric gesture dataset",
+    "description": "Egocentric gesture dataset",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

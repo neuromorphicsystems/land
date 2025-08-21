@@ -15,11 +15,11 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Object Classification",
         "Monitor Conversion"
     ],
-    "task": "Character and Object Recognition",
+    "description": "Character and Object Recognition",
     "paper": {
         "title": "Converting Static Image Datasets to Spiking Neuromorphic Datasets Using Saccades",
         "doi": "10.3389/fnins.2015.00437",

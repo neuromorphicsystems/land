@@ -14,10 +14,10 @@
         "LUCID ATLAS10"
     ],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Human Pose Recognition"
     ],
-    "task": "Human pose estimation",
+    "description": "Human pose estimation",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

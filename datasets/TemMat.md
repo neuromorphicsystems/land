@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Frame Reconstruction"
     ],
-    "task": "Image Reconstruction from events",
+    "description": "Image Reconstruction from events",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

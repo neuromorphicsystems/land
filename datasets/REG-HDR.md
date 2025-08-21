@@ -14,12 +14,12 @@
         "BITRAN CS-700C"
     ],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Beamsplitters",
         "De-blurring",
         "HDR Video Reconstruction"
     ],
-    "task": "Video frame interpolation",
+    "description": "Video frame interpolation",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

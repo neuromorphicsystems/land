@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "De-blurring"
     ],
-    "task": "Image de-blurring",
+    "description": "Image de-blurring",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

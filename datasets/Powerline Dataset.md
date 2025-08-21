@@ -13,11 +13,11 @@
         "Matrix Vision MLC200wG Bluefox"
     ],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Flying Datasets",
         "Line segmentation"
     ],
-    "task": "Powerline Tracking",
+    "description": "Powerline Tracking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -13,10 +13,10 @@
         "Svpro HD camera"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Drone Detection"
     ],
-    "task": "Drone Detection",
+    "description": "Drone Detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

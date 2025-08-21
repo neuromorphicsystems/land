@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Monitor Conversion",
         "Classification Datasets"
     ],
-    "task": "Bechmarking dataset for SNNs",
+    "description": "Bechmarking dataset for SNNs",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

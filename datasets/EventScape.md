@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Depth Estimation",
         "Pedestrian Detection"
     ],
-    "task": "Frame/Event Fusion (Depth Estimation)",
+    "description": "Frame/Event Fusion (Depth Estimation)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

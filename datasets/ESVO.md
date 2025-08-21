@@ -12,11 +12,11 @@
     ],
     "other_sensors": [],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "Visual Odometry",
         "SLAM"
     ],
-    "task": "Visual Odometry (SLAM)",
+    "description": "Visual Odometry (SLAM)",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

@@ -13,10 +13,10 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Hand Pose Detection"
     ],
-    "task": "Hand Mesh Reconstruction",
+    "description": "Hand Mesh Reconstruction",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

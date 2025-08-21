@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Driver Monitoring",
         "Yawn Detection",
         "Seatbelt Detection"
     ],
-    "task": "Yawn Detection and Seatbelt State Detection",
+    "description": "Yawn Detection and Seatbelt State Detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

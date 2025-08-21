@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Object Detection",
         "Drone Detection"
     ],
-    "task": "Target Detection",
+    "description": "Target Detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

@@ -13,11 +13,11 @@
         "Vicon"
     ],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Multiple Object Tracking",
         "Object Tracking"
     ],
-    "task": "Motion segmentation",
+    "description": "Motion segmentation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

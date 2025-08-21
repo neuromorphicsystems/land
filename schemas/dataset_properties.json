@@ -32,16 +32,16 @@
         "distribution_methods": {
             "type": "array",
             "description": "The method by which the dataset is distributed (e.g., Dropbox, GitHub, etc.).",
-            "items": { 
-                "type": "string" 
+            "items": {
+                "type": "string"
             },
             "uniqueItems": true
         },
         "file_formats": {
             "type": "array",
             "description": "The file formats in which the dataset is available (e.g., Binary File, CSV, etc.).",
-            "items": { 
-                "type": "string" 
+            "items": {
+                "type": "string"
             },
             "uniqueItems": true
         },
@@ -58,10 +58,7 @@
         "size_type": {
             "type": "string",
             "description": "Describes how the size_gb is measured (e.g., compressed or uncompressed).",
-            "enum": [
-                "Compressed",
-                "Uncompressed"
-            ]
+            "enum": ["Compressed", "Uncompressed"]
         },
         "dataset_links": {
             "type": "array",

@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Object Segmentation",
         "Contour Detection"
     ],
-    "task": "Contour Detection",
+    "description": "Contour Detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

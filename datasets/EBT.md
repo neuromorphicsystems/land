@@ -12,11 +12,11 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Event Frame Fusion",
         "De-blurring"
     ],
-    "task": "Video Binarization",
+    "description": "Video Binarization",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

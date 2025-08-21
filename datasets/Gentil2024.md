@@ -12,11 +12,11 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Space Datasets",
         "Satellite Docking"
     ],
-    "task": "Satellite Docking",
+    "description": "Satellite Docking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Human Action Recognition"
     ],
-    "task": "Human Action Recognition",
+    "description": "Human Action Recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,
@@ -104,5 +104,5 @@
  [Event Images] 链接：https://pan.baidu.com/s/1OhlhOBHY91W2SwE6oWjDwA?pwd=1234    提取码：1234
   [Compact Event file] 链接：https://pan.baidu.com/s/1iw214Aj5ugN-arhuxjmfOw?pwd=1234 提取码：1234
   [RGB Event Images] 链接：https://pan.baidu.com/s/1w-z86PH7mGY0CqVBj_MpNA?pwd=1234 提取码：1234
-  [Raw Event file] To be updated 
+  [Raw Event file] To be updated
 ```

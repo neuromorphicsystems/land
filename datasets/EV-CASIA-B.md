@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Gait Recognition",
         "Monitor Conversion"
     ],
-    "task": "Gait Recognition",
+    "description": "Gait Recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

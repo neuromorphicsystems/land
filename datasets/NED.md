@@ -12,11 +12,11 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "De-blurring",
         "Shutter Control"
     ],
-    "task": "Event-based Motion De-blurring",
+    "description": "Event-based Motion De-blurring",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

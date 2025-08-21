@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Low Light Reconstruction"
     ],
-    "task": "Low light reconstruction",
+    "description": "Low light reconstruction",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

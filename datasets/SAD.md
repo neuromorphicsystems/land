@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Autofocus",
         "Microscopy"
     ],
-    "task": "Intensity-robust autofocus",
+    "description": "Intensity-robust autofocus",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Underwater Imaging"
     ],
-    "task": "Underwater Imaging",
+    "description": "Underwater Imaging",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "SNN Training"
     ],
-    "task": "Back-propagation and Deep Learning Benchmark",
+    "description": "Back-propagation and Deep Learning Benchmark",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

@@ -13,10 +13,10 @@
         "Velodyne HDL-32E"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Flying Datasets"
     ],
-    "task": "Landing Trajectory Simulations",
+    "description": "Landing Trajectory Simulations",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

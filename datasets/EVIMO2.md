@@ -14,12 +14,12 @@
         "Flea3"
     ],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Motion Segmentation",
         "Optical Flow",
         "Visual Odometry"
     ],
-    "task": "Motion Segmentation",
+    "description": "Motion Segmentation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

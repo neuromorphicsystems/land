@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Pedestrian Detection",
         "Human Action Recognition",
         "Surveillance"
     ],
-    "task": "Railway Tunnel Intrusion Detection",
+    "description": "Railway Tunnel Intrusion Detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

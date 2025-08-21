@@ -13,12 +13,12 @@
         "FLIR Chameleon 3"
     ],
     "category": "Depth, Stereo, and 3D Reconstruction",
-    "subcategory": [
+    "tags": [
         "Stereo Datasets",
         "Depth Estimation",
         "Event Frame Fusion"
     ],
-    "task": "Disparity Estimation (Stereo Matching)",
+    "description": "Disparity Estimation (Stereo Matching)",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

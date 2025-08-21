@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Object Classification"
     ],
-    "task": "Pre-training event-based dataset",
+    "description": "Pre-training event-based dataset",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

@@ -14,10 +14,10 @@
         "Livox Avia LiDAR"
     ],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "Visual Odometry"
     ],
-    "task": "Moncular Visual Odometry",
+    "description": "Moncular Visual Odometry",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

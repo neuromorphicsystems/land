@@ -12,10 +12,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "3D Reconstruction"
     ],
-    "task": "3D reconstruction",
+    "description": "3D reconstruction",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

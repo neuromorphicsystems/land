@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Human Action Recognition",
         "Monitor Conversion"
     ],
-    "task": "Human Activity Recognition",
+    "description": "Human Activity Recognition",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

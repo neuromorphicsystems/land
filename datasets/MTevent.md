@@ -14,11 +14,11 @@
         "IDS uEye"
     ],
     "category": "Depth, Stereo, and 3D Reconstruction",
-    "subcategory": [
+    "tags": [
         "Object Detection",
         "3D Pose Estimation"
     ],
-    "task": "6D Pose Estimation and Moving Object Detection",
+    "description": "6D Pose Estimation and Moving Object Detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

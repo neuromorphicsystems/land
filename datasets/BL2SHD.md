@@ -20,11 +20,11 @@
         "LIR BFS-U3-04S"
     ],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "De-blurring",
         "Beamsplitters"
     ],
-    "task": "High dynamic range imaging",
+    "description": "High dynamic range imaging",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

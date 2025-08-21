@@ -15,10 +15,10 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Monitor Conversion"
     ],
-    "task": "Synthetic to Real Validation Dataset",
+    "description": "Synthetic to Real Validation Dataset",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

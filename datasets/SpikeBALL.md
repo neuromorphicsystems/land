@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Foosball"
     ],
-    "task": "Robotic foosball ball tracking",
+    "description": "Robotic foosball ball tracking",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

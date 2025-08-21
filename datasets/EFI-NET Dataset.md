@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Video Interpolation"
     ],
-    "task": "Video frame interpolation",
+    "description": "Video frame interpolation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

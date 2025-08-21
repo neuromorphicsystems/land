@@ -13,11 +13,11 @@
         "Livox Avia LiDAR"
     ],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "SLAM",
         "Camera Pose Estimation"
     ],
-    "task": "Odometry and mapping",
+    "description": "Odometry and mapping",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

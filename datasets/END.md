@@ -14,10 +14,10 @@
     ],
     "other_sensors": [],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "De-noising"
     ],
-    "task": "Event data de-noising",
+    "description": "Event data de-noising",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -15,10 +15,10 @@
     ],
     "other_sensors": [],
     "category": "Depth, Stereo, and 3D Reconstruction",
-    "subcategory": [
+    "tags": [
         "Line segmentation"
     ],
-    "task": "Line Segmentation",
+    "description": "Line Segmentation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

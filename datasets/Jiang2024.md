@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "De-noising"
     ],
-    "task": "Denoising Technique",
+    "description": "Denoising Technique",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

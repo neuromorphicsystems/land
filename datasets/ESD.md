@@ -13,10 +13,10 @@
         "Intel D435 RGBD"
     ],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Object Segmentation"
     ],
-    "task": "Object segmentation in indoor cluttered environments",
+    "description": "Object segmentation in indoor cluttered environments",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

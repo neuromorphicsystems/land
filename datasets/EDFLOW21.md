@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Optical Flow"
     ],
-    "task": "Corner detection and Optical Flow",
+    "description": "Corner detection and Optical Flow",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

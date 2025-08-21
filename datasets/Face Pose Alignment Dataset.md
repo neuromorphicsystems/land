@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Face Detection",
         "Facial Expression",
         "Emotion Recognition"
     ],
-    "task": "Face Pose Alignment (Facial Detection)",
+    "description": "Face Pose Alignment (Facial Detection)",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

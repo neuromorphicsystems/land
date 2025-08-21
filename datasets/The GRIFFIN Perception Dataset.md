@@ -15,11 +15,11 @@
         "OptiTrack"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Flying Datasets",
         "Drone Detection"
     ],
-    "task": "Flight perception",
+    "description": "Flight perception",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

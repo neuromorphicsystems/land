@@ -14,11 +14,11 @@
         "FLIR Blackfly S USB3"
     ],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Optical Flow",
         "Autonomous Driving"
     ],
-    "task": "Dense Optical Flow Estimation",
+    "description": "Dense Optical Flow Estimation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

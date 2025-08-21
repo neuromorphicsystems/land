@@ -14,11 +14,11 @@
         "Thorlabs CCM1BS013"
     ],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Beamsplitters",
         "High-Speed Video Reconstruction"
     ],
-    "task": "Frame/Event Fusion (Frame interpolation)",
+    "description": "Frame/Event Fusion (Frame interpolation)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

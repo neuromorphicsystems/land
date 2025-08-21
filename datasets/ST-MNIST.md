@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Other Modalities",
-    "subcategory": [
+    "tags": [
         "Tactomorphics",
         "Object Classification"
     ],
-    "task": "Tactile Classification",
+    "description": "Tactile Classification",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

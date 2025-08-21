@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Other Modalities",
-    "subcategory": [
+    "tags": [
         "None"
     ],
-    "task": "Speech Separation",
+    "description": "Speech Separation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

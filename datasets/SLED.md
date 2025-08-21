@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Depth, Stereo, and 3D Reconstruction",
-    "subcategory": [
+    "tags": [
         "Driving Dataset",
         "Depth Estimation",
         "Lidar"
     ],
-    "task": "Depth from event-based LiDAR data",
+    "description": "Depth from event-based LiDAR data",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

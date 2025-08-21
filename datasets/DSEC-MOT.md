@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Object Tracking",
         "Multiple Object Tracking",
         "Annotated Dataset"
     ],
-    "task": "Multiple Object Tracking",
+    "description": "Multiple Object Tracking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

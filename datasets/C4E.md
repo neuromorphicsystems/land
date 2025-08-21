@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "De-blurring",
         "Colour Sensors"
     ],
-    "task": "Colour de-blurring",
+    "description": "Colour de-blurring",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

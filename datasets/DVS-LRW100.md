@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Lip-reading"
     ],
-    "task": "Lip Reading",
+    "description": "Lip Reading",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

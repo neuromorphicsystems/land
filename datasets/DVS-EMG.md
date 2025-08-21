@@ -14,11 +14,11 @@
         "Myo EMG armband"
     ],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Gesture Recognition",
         "Hand Pose Detection"
     ],
-    "task": "Hand Gesture Recognition",
+    "description": "Hand Gesture Recognition",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,7 +11,7 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Person Detection",
         "Surveillance",
         "Human Pose Recognition",
@@ -19,7 +19,7 @@
         "Privacy Preservation",
         "First-person"
     ],
-    "task": "Human pose estimation",
+    "description": "Human pose estimation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

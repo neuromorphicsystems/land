@@ -12,11 +12,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Voice Activity\u00a0",
         "Lip-reading"
     ],
-    "task": "Voice Activity Detection",
+    "description": "Voice Activity Detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

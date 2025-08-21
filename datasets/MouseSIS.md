@@ -13,11 +13,11 @@
         "Basler acA1300-200um"
     ],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Beamsplitters",
         "Object Segmentation"
     ],
-    "task": "Space-Time Instance Segmentation",
+    "description": "Space-Time Instance Segmentation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

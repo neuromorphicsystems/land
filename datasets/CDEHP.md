@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Human Pose Recognition",
         "Human Action Recognition"
     ],
-    "task": "Human pose estimation",
+    "description": "Human pose estimation",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

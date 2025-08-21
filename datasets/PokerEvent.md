@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Object Classification"
     ],
-    "task": "Object Classification",
+    "description": "Object Classification",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

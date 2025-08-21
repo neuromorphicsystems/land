@@ -14,10 +14,10 @@
         "Velo-dyne VLS-128 LiDAR"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Autonomous Driving"
     ],
-    "task": "Autonomous Driving",
+    "description": "Autonomous Driving",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

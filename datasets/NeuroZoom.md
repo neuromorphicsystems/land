@@ -11,13 +11,13 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Super-resolution",
         "Monitor Conversion",
         "De-noising",
         "Upscaling Resolution"
     ],
-    "task": "De-noising and Super-resolution",
+    "description": "De-noising and Super-resolution",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

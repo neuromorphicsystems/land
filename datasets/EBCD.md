@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Pedestrian Detection",
         "Vehicle Detection"
     ],
-    "task": "Pedestrian and vehicle detection in dynamic outdoor environments",
+    "description": "Pedestrian and vehicle detection in dynamic outdoor environments",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Monitor Conversion",
         "Object Classification",
         "High-speed Recognition"
     ],
-    "task": "Ultra-high speed object recognition",
+    "description": "Ultra-high speed object recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

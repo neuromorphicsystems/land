@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "HDR Video Reconstruction"
     ],
-    "task": "Seeing in the dark",
+    "description": "Seeing in the dark",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

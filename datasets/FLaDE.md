@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Flame Detection"
     ],
-    "task": "Flame detection",
+    "description": "Flame detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

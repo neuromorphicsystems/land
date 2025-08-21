@@ -13,10 +13,10 @@
         "FLIR Chameleon 3"
     ],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "HDR Video Reconstruction"
     ],
-    "task": "Frame/Event fusion (HDR and high temporal imaging)",
+    "description": "Frame/Event fusion (HDR and high temporal imaging)",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

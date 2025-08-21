@@ -13,11 +13,11 @@
         "Flir BFS-U3-1226-C Blackfly"
     ],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "Visual Odometry",
         "Beamsplitters"
     ],
-    "task": "Moncular Visual Odometry",
+    "description": "Moncular Visual Odometry",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

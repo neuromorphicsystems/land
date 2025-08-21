@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Super-resolution",
         "3D Reconstruction",
         "Beamsplitters"
     ],
-    "task": "Super-resolution reconstruction",
+    "description": "Super-resolution reconstruction",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Transformers",
         "Robotics"
     ],
-    "task": "Robotic Gripper Force Measurement",
+    "description": "Robotic Gripper Force Measurement",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

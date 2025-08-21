@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Other Modalities",
-    "subcategory": [
+    "tags": [
         "Tactomorphics"
     ],
-    "task": "Texture Recognition",
+    "description": "Texture Recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

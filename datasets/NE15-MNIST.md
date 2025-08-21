@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Object Classification",
         "Benchmarking"
     ],
-    "task": "SNN Training",
+    "description": "SNN Training",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

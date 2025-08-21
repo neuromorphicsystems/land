@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Flying Datasets",
         "Remote Sensing Dataset"
     ],
-    "task": "Remote Sensing Dataset",
+    "description": "Remote Sensing Dataset",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

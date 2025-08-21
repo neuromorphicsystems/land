@@ -16,11 +16,11 @@
         "3DM-GQ7-GNSS/INS"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Stereo Datasets",
         "SLAM"
     ],
-    "task": "Indoor Localisation and Mapping",
+    "description": "Indoor Localisation and Mapping",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

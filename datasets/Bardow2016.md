@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Optical Flow"
     ],
-    "task": "Optical flow and intensity reconstruction",
+    "description": "Optical flow and intensity reconstruction",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

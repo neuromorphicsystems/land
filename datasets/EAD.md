@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Autofocus"
     ],
-    "task": "Automatic focusing methods",
+    "description": "Automatic focusing methods",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

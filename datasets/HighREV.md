@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "De-blurring"
     ],
-    "task": "Frame/Event Fusion (Frame interpolation)",
+    "description": "Frame/Event Fusion (Frame interpolation)",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

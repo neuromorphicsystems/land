@@ -12,10 +12,10 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Space Datasets"
     ],
-    "task": "Object Detection and Tracking for SSA",
+    "description": "Object Detection and Tracking for SSA",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

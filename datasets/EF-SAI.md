@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Synthetic Aperture Imaging"
     ],
-    "task": "Synthetic Aperture Imaging",
+    "description": "Synthetic Aperture Imaging",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

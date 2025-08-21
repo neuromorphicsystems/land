@@ -12,11 +12,11 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Space Datasets",
         "Satellite Pose Estimation"
     ],
-    "task": "Satellite Pose Estimation",
+    "description": "Satellite Pose Estimation",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

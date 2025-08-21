@@ -13,12 +13,12 @@
         "Optitrack"
     ],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "3D Tracking",
         "Object Tracking",
         "Stereo Datasets"
     ],
-    "task": "3D feature tracking",
+    "description": "3D feature tracking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

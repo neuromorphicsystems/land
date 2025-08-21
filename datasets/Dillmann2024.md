@@ -13,10 +13,10 @@
         "RealSense"
     ],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Human Action Recognition"
     ],
-    "task": "Gesture Recognition",
+    "description": "Gesture Recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

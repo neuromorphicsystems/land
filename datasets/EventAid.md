@@ -23,7 +23,7 @@
         "Hikvision MV-CA050-12UC RGB camera"
     ],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Beamsplitters",
         "De-blurring",
         "Sim-to-Real",
@@ -31,7 +31,7 @@
         "High-Speed Video Reconstruction",
         "Super-resolution"
     ],
-    "task": "Benchmarking datasets",
+    "description": "Benchmarking datasets",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

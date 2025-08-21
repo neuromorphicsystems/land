@@ -13,12 +13,12 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Robotics",
         "Object Tracking",
         "Closed Loop Control"
     ],
-    "task": "Predator/Prey tracking dataset",
+    "description": "Predator/Prey tracking dataset",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Visual Place Recognition",
         "Visual Odometry",
         "SLAM"
     ],
-    "task": "Visual Place Recognition",
+    "description": "Visual Place Recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

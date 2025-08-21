@@ -5,43 +5,54 @@
     "description": "Schema describing the required information and formatting for a neuromorphic dataset entry.",
     "type": "object",
     "properties": {
-        "name": { 
+        "name": {
             "type": "string",
             "description": "The name of the dataset.",
             "minLength": 1
         },
-        "aliases": { 
+        "description": {
+            "type": "string",
+            "description": "A one-sentence description of the dataset."
+        },
+        "aliases": {
             "type": "array",
             "description": "Alternative names or aliases for the dataset.",
             "items": { "type": "string" },
             "minItems": 0,
             "uniqueItems": true
-        },        
-        "full_name": { 
+        },
+        "full_name": {
             "type": "string",
             "description": "The full name of the dataset (if provided)."
         },
-        "modality": { 
+        "modality": {
             "type": "array",
-            "items": { 
+            "items": {
                 "type": "string",
-                "enum": ["Vision", "Audio", "Tactile", "Olfactory", "Spike", "Other"]
+                "enum": [
+                    "Vision",
+                    "Audio",
+                    "Tactile",
+                    "Olfactory",
+                    "Spike",
+                    "Other"
+                ]
             },
             "description": "The modality of the specified dataset.",
             "minItems": 1
         },
-        "year": { 
+        "year": {
             "type": "integer",
             "description": "The year the dataset was created or published.",
-            "exclusiveMinimum": 1980            
+            "exclusiveMinimum": 1980
         },
-        "sensors": { 
+        "sensors": {
             "type": "array",
             "description": "The sensors used to collect the dataset.",
             "items": { "type": "string" },
             "uniqueItems": true
         },
-        "other_sensors": { 
+        "other_sensors": {
             "type": "array",
             "description": "Other sensors used to collect the dataset.",
             "items": { "type": "string" },
@@ -51,16 +62,12 @@
             "type": "string",
             "description": "The category of the dataset"
         },
-        "subcategory": {
+        "tags": {
             "type": "array",
-            "description": "Subcategories of the dataset.",
+            "description": "Tags that further specify the dataset category or indicate the task that the dataset addresses.",
             "items": { "type": "string" },
             "minItems": 0,
             "uniqueItems": true
-        },
-        "task": {
-            "type": "string",
-            "description": "A short description of the task the dataset addresses."
         },
         "links": {
             "type": "array",
@@ -89,12 +96,12 @@
                 "additionalProperties": false
             }
         },
-        "paper":{ 
+        "paper": {
             "description": "The paper associated with the dataset.",
             "$ref": "paper.schema"
         },
         "citation_counts": {
-            "description": "Citation Count for the dataset.",
+            "description": "Citation count for the dataset.",
             "$ref": "citations.schema"
         },
         "dataset_properties": {
@@ -116,6 +123,27 @@
             "items": {
                 "type": "string"
             }
+        },
+        "referenced_papers": {
+            "type": "array",
+            "description": "Papers referenced by this dataset (that is, works that are older than this dataset and are cited by this dataset's article)",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "doi": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Digital Object Identifier (DOI) of the paper."
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false
+            }
         }
     },
     "dependentRequired": {
@@ -123,5 +151,6 @@
         "sensors": ["modality"],
         "other_sensors": ["modality"]
     },
-    "required": ["name", "year", "category", "modality"]
+    "required": ["name", "modality", "category", "year", "description"],
+    "additionalProperties": false
 }

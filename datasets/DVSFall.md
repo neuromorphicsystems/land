@@ -12,11 +12,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Fall Detection",
         "Surveillance"
     ],
-    "task": "Fall Detection",
+    "description": "Fall Detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

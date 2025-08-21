@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Human Pose Recognition",
         "Dance Recognition",
         "Human Action Recognition"
     ],
-    "task": "Dance pose tracking",
+    "description": "Dance pose tracking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

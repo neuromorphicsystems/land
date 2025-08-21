@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Data compression"
     ],
-    "task": "Spike data compression",
+    "description": "Spike data compression",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

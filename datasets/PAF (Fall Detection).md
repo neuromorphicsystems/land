@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Fall Detection"
     ],
-    "task": "Fall Detection",
+    "description": "Fall Detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,
@@ -261,12 +261,12 @@
   - Dataset: https://tongjieducn-my.sharepoint.com/:f:/g/personal/ziyang_tongji_edu_cn/EmKnh-QyvZREl3f1Xc_A4_sBhfi2yUesyMJF4-eHXqk17g?e=QMxX
 
 ```bibtex
-@article{miao2019neuromorphic, 
-  title={Neuromorphic Benchmark Datasets for Pedestrian Detection, Action Recognition, and Fall Detection}, 
-  author={Miao, Shu and Chen, Guang and Ning, Xiangyu and Zi, Yang and Ren, Kejia and Bing, Zhenshan and Knoll, Alois C}, 
-  journal={Frontiers in neurorobotics}, 
-  volume={13}, 
-  pages={38}, 
-  year={2019}, 
+@article{miao2019neuromorphic,
+  title={Neuromorphic Benchmark Datasets for Pedestrian Detection, Action Recognition, and Fall Detection},
+  author={Miao, Shu and Chen, Guang and Ning, Xiangyu and Zi, Yang and Ren, Kejia and Bing, Zhenshan and Knoll, Alois C},
+  journal={Frontiers in neurorobotics},
+  volume={13},
+  pages={38},
+  year={2019},
   publisher={Frontiers}}
 ```

@@ -15,12 +15,12 @@
         "UBlox ZED-F9P"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "SLAM",
         "Visual Odometry",
         "Driving Dataset"
     ],
-    "task": "Multi-robot, multi sensor dataset",
+    "description": "Multi-robot, multi sensor dataset",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

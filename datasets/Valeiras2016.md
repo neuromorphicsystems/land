@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Depth, Stereo, and 3D Reconstruction",
-    "subcategory": [
+    "tags": [
         "3D Reconstruction",
         "3D Pose Estimation"
     ],
-    "task": "3D Pose Estimation",
+    "description": "3D Pose Estimation",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

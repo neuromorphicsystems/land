@@ -13,11 +13,11 @@
         "Huawei P20 Pro"
     ],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "High-Speed Video Reconstruction",
         "Colour Sensors"
     ],
-    "task": "Image Reconstruction from events",
+    "description": "Image Reconstruction from events",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

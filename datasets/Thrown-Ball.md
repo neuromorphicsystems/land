@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "De-noising"
     ],
-    "task": "Flicker removal (Noise Filtering)",
+    "description": "Flicker removal (Noise Filtering)",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

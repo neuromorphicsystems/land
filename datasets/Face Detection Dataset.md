@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Face Detection",
         "Blink Detection"
     ],
-    "task": "Face Detection / Eye Blink detection",
+    "description": "Face Detection / Eye Blink detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

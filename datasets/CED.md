@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Colour Sensors"
     ],
-    "task": "Colour event based camera",
+    "description": "Colour event based camera",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

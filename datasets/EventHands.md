@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Hand Pose Detection",
         "Sign Language"
     ],
-    "task": "Hand Tracking",
+    "description": "Hand Tracking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,
@@ -119,10 +119,10 @@
 -
 
 ```bibtext
-@inproceedings{rudnev2021eventhands, 
-      title={EventHands: Real-Time Neural 3D Hand Pose Estimation from an Event Stream}, 
-      author={Viktor Rudnev and Vladislav Golyanik and Jiayi Wang and Hans-Peter Seidel and Franziska Mueller and Mohamed Elgharib and Christian Theobalt}, 
-      booktitle={International Conference on Computer Vision (ICCV)}, 
-      year={2021} 
+@inproceedings{rudnev2021eventhands,
+      title={EventHands: Real-Time Neural 3D Hand Pose Estimation from an Event Stream},
+      author={Viktor Rudnev and Vladislav Golyanik and Jiayi Wang and Hans-Peter Seidel and Franziska Mueller and Mohamed Elgharib and Christian Theobalt},
+      booktitle={International Conference on Computer Vision (ICCV)},
+      year={2021}
 }
 ```

@@ -13,11 +13,11 @@
         "Basler acA1300-200um"
     ],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Schlieren imaging",
         "Computation Imaging"
     ],
-    "task": "Schlieren Imaging",
+    "description": "Schlieren Imaging",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

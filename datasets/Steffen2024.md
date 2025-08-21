@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Gesture Recognition"
     ],
-    "task": "Gesture Recognition",
+    "description": "Gesture Recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

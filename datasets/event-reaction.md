@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Emotion Recognition",
         "Facial Expression"
     ],
-    "task": "Facial Expression Recognition",
+    "description": "Facial Expression Recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

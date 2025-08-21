@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Frame Reconstruction",
         "Video Interpolation",
         "Optical Flow"
     ],
-    "task": "Simulator Development",
+    "description": "Simulator Development",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

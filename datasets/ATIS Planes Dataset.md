@@ -13,10 +13,10 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Object Classification"
     ],
-    "task": "High-speed object detection and classification",
+    "description": "High-speed object detection and classification",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

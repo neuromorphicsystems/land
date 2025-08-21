@@ -16,11 +16,11 @@
         "Thorlabs CCM1BS013"
     ],
     "category": "Depth, Stereo, and 3D Reconstruction",
-    "subcategory": [
+    "tags": [
         "Beamsplitters",
         "Synthetic Aperture Imaging"
     ],
-    "task": "Synthetic Aperture Imaging",
+    "description": "Synthetic Aperture Imaging",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

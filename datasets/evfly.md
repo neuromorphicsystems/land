@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Flying Datasets",
         "Object Tracking"
     ],
-    "task": "Aerial Obstacle Avoidance",
+    "description": "Aerial Obstacle Avoidance",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

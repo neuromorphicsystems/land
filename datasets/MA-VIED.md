@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Driving Dataset",
         "SLAM",
         "Visual Odometry"
     ],
-    "task": "Visual Intertial Odometry and SLAM (driving dataset)",
+    "description": "Visual Intertial Odometry and SLAM (driving dataset)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

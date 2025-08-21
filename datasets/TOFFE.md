@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Optical Flow"
     ],
-    "task": "Object Flow",
+    "description": "Object Flow",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

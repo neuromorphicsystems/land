@@ -11,13 +11,13 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Pedestrian Detection",
         "Vehicle Detection",
         "Object Detection",
         "Flying Datasets"
     ],
-    "task": "Urban Aerial Object Detection",
+    "description": "Urban Aerial Object Detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

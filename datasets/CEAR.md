@@ -16,11 +16,11 @@
         "OptiTrack"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Object Tracking",
         "Robot Tracking"
     ],
-    "task": "Tracking of quadruped robots",
+    "description": "Tracking of quadruped robots",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

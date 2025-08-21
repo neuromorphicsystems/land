@@ -11,13 +11,13 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Autonomous Driving",
         "Object Detection",
         "Pedestrian Detection",
         "Vehicle Detection"
     ],
-    "task": "Driving Dataset",
+    "description": "Driving Dataset",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

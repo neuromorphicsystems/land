@@ -14,13 +14,13 @@
         "Photron IDP-Express R2000"
     ],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Frame Reconstruction",
         "HDR Video Reconstruction",
         "High-Speed Video Reconstruction",
         "Beamsplitters"
     ],
-    "task": "Frame/Event fusion (HDR and high temporal imaging)",
+    "description": "Frame/Event fusion (HDR and high temporal imaging)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

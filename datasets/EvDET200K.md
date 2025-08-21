@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Object Detection"
     ],
-    "task": "Object detection",
+    "description": "Object detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

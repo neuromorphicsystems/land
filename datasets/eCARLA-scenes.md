@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Autonomous Driving",
         "Optical Flow"
     ],
-    "task": "Autonomous Driving",
+    "description": "Autonomous Driving",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

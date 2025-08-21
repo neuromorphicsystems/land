@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Surveillance"
     ],
-    "task": "Long-time outdoor monitoring",
+    "description": "Long-time outdoor monitoring",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "Monitor Conversion",
         "De-noising",
         "Frame Reconstruction"
     ],
-    "task": "Noise to image extraction",
+    "description": "Noise to image extraction",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

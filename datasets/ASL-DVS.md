@@ -13,12 +13,12 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Sign Language",
         "Hand Pose Detection",
         "Human Action Recognition"
     ],
-    "task": "Sign Language Interpretation",
+    "description": "Sign Language Interpretation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

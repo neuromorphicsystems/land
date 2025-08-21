@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "Visual Odometry",
         "Camera Pose Estimation"
     ],
-    "task": "Visual Odometry in place of contrast maximisation",
+    "description": "Visual Odometry in place of contrast maximisation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

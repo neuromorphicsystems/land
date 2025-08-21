@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Eye Tracking",
         "Gaze Tracking"
     ],
-    "task": "Pupil tracking for AR/VR applications",
+    "description": "Pupil tracking for AR/VR applications",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

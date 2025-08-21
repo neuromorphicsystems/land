@@ -16,11 +16,11 @@
         "FLIRBlackFly S RGB GS"
     ],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "Beamsplitters",
         "De-blurring"
     ],
-    "task": "Non-uniform image deblurring",
+    "description": "Non-uniform image deblurring",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

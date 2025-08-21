@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Classification Datasets"
     ],
-    "task": "Object Recognition",
+    "description": "Object Recognition",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

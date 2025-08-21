@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Object Classification",
         "Object Detection"
     ],
-    "task": "Zero-shot object recognition",
+    "description": "Zero-shot object recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

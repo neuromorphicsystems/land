@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "LLM"
     ],
-    "task": "LLM-based event stream understanding",
+    "description": "LLM-based event stream understanding",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Monitor Conversion"
     ],
-    "task": "Object and Action Recognition",
+    "description": "Object and Action Recognition",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

@@ -17,11 +17,11 @@
         "Xsens-MTI-30 IMU"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Autonomous Driving",
         "SLAM"
     ],
-    "task": "Driving Task",
+    "description": "Driving Task",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

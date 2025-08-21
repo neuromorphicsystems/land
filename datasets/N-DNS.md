@@ -12,10 +12,10 @@
     ],
     "other_sensors": [],
     "category": "Other Modalities",
-    "subcategory": [
+    "tags": [
         "De-noising"
     ],
-    "task": "Applications of SNNs to Audio Signals",
+    "description": "Applications of SNNs to Audio Signals",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Gait Recognition"
     ],
-    "task": "Gait Recognition",
+    "description": "Gait Recognition",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

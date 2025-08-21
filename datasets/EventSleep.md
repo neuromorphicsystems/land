@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Sleep Monitoring",
         "Human Action Recognition"
     ],
-    "task": "Sleep Monitoring",
+    "description": "Sleep Monitoring",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

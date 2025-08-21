@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Object Tracking",
         "Track Any Point (TAP)"
     ],
-    "task": "Tracking Any Point",
+    "description": "Tracking Any Point",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

@@ -17,12 +17,12 @@
         "XSens MTi-30 AHRS"
     ],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "SLAM",
         "Visual Odometry",
         "Visual Place Recognition"
     ],
-    "task": "SLAM",
+    "description": "SLAM",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

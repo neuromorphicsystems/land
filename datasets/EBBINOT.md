@@ -14,11 +14,11 @@
         "ZED Stereo"
     ],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Traffic Monitoring",
         "Vehicle Detection"
     ],
-    "task": "Traffic monitoring",
+    "description": "Traffic monitoring",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

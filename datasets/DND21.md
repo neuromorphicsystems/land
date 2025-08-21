@@ -12,11 +12,11 @@
     ],
     "other_sensors": [],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "Benchmarking",
         "De-noising"
     ],
-    "task": "Testing De-noising algorithms",
+    "description": "Testing De-noising algorithms",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

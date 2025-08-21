@@ -16,11 +16,11 @@
         "Vicon"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Stereo Datasets",
         "Autonomous Driving"
     ],
-    "task": "Drone stereo vision",
+    "description": "Drone stereo vision",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

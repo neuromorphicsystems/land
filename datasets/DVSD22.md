@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Disdrometer"
     ],
-    "task": "Rain drop measurement",
+    "description": "Rain drop measurement",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

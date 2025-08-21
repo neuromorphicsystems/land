@@ -16,11 +16,11 @@
         "FLIR BlackFly S"
     ],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Frame Reconstruction",
         "SPAD"
     ],
-    "task": "Enhancing SPAD imaging with event cameras",
+    "description": "Enhancing SPAD imaging with event cameras",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

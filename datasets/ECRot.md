@@ -12,12 +12,12 @@
     ],
     "other_sensors": [],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "SLAM",
         "Contrast Maximization",
         "Visual Place Recognition"
     ],
-    "task": "Rotational motion estimation",
+    "description": "Rotational motion estimation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

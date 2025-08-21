@@ -13,11 +13,11 @@
         "FLIR Blackfly S"
     ],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Beamsplitters",
         "High-Speed Video Reconstruction"
     ],
-    "task": "Video frame interpolation",
+    "description": "Video frame interpolation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

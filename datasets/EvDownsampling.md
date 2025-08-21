@@ -12,10 +12,10 @@
     ],
     "other_sensors": [],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "Downsampling"
     ],
-    "task": "Validation dataset for downsampling techniques",
+    "description": "Validation dataset for downsampling techniques",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

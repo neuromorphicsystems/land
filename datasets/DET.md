@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Lane Extraction",
         "Autonomous Driving",
         "Driving Dataset"
     ],
-    "task": "Lane Extraction",
+    "description": "Lane Extraction",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

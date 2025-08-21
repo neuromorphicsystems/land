@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Adversarial Attacks"
     ],
-    "task": "SNN Backdoor attacks for DVS and SNNs",
+    "description": "SNN Backdoor attacks for DVS and SNNs",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -13,13 +13,13 @@
     ],
     "other_sensors": [],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "De-noising",
         "Upscaling Resolution",
         "Monitor Conversion",
         "Object Tracking"
     ],
-    "task": "De-noising and Upscaling",
+    "description": "De-noising and Upscaling",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

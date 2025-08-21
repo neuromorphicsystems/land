@@ -13,13 +13,13 @@
         "Logitech C930e"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Line segmentation",
         "Line Following",
         "Eye Tracking",
         "Driver Monitoring"
     ],
-    "task": "Line Following",
+    "description": "Line Following",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

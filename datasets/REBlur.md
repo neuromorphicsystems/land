@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "De-blurring"
     ],
-    "task": "Frame/Event fusion (Motion Deblurring)",
+    "description": "Frame/Event fusion (Motion Deblurring)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

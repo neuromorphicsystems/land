@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Face Detection"
     ],
-    "task": "Face Detection",
+    "description": "Face Detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -14,11 +14,11 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Shutter Control",
         "Beamsplitters"
     ],
-    "task": "Rolling shutter correction",
+    "description": "Rolling shutter correction",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

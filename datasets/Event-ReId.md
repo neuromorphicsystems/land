@@ -11,7 +11,7 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Person Detection",
         "Surveillance",
         "Human Pose Recognition",
@@ -19,7 +19,7 @@
         "Privacy Preservation",
         "First-person"
     ],
-    "task": "Human pose estimation",
+    "description": "Human pose estimation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,
@@ -347,14 +347,14 @@ python event_partition.py \
 You should get:
 
 ```bash
-	   +-- out_dir/Event_ReId/001/ 
+	   +-- out_dir/Event_ReId/001/
 	   | cam01/
-	   |       +-- 001_c1_001.txt 
-	   |       +-- 001_c1_002.txt 
+	   |       +-- 001_c1_001.txt
+	   |       +-- 001_c1_002.txt
 	   |       +-- 001_c1_002.txt
 	   | cam02/
-	   |       +-- 001_c2_001.txt 
-	   |       +-- 001_c2_002.txt 
+	   |       +-- 001_c2_001.txt
+	   |       +-- 001_c2_002.txt
 	   |       +-- 001_c2_002.txt
 	   | ...
 ```

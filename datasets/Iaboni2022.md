@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Object Tracking",
         "Drone Detection"
     ],
-    "task": "Multi-object quadcopter detection",
+    "description": "Multi-object quadcopter detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

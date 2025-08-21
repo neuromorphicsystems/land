@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Classification Datasets",
         "Monitor Conversion"
     ],
-    "task": "Object Classification",
+    "description": "Object Classification",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

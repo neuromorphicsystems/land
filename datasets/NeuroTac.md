@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Other Modalities",
-    "subcategory": [
+    "tags": [
         "Tactomorphics"
     ],
-    "task": "Tactile Sensing through an EBS",
+    "description": "Tactile Sensing through an EBS",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

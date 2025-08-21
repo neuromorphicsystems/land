@@ -14,11 +14,11 @@
         "OptiTrack V100:R2"
     ],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "Visual Place Recognition",
         "SLAM"
     ],
-    "task": "SLAM",
+    "description": "SLAM",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

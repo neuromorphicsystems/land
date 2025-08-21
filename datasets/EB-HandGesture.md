@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Hand Pose Detection",
         "Gesture Recognition"
     ],
-    "task": "Hand Gesture Recognition",
+    "description": "Hand Gesture Recognition",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

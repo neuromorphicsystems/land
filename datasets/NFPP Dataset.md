@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Depth, Stereo, and 3D Reconstruction",
-    "subcategory": [
+    "tags": [
         "3D Reconstruction"
     ],
-    "task": "3D reconstruction for Fringe Projection Profilometry (FFP)",
+    "description": "3D reconstruction for Fringe Projection Profilometry (FFP)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

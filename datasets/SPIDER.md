@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Pedestrian Detection"
     ],
-    "task": "Pedestrian detection, action recognition, fall detection",
+    "description": "Pedestrian detection, action recognition, fall detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,
@@ -73,7 +73,7 @@ Dataset has 3 different recordings from three different locations.
 • Location: https://goo.gl/maps/JaYGwaTaBHj5H6SL9
 • 50 kmh (urban) speed limit
 • Near the university campus with Pedestrians (people walking) and bicyclists (people biking, scooting, rolling, etc.)
-• Ideal Operating Environment\
+• Ideal Operating Environment\\
 
 **Dataset location 2**
 • 8 lanes (4 per direction) wide street

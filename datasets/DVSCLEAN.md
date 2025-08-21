@@ -12,10 +12,10 @@
     ],
     "other_sensors": [],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "De-noising"
     ],
-    "task": "SNN Training",
+    "description": "SNN Training",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

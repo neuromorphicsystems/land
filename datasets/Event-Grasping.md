@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Robotics",
         "Grasping"
     ],
-    "task": "Robotic grasping detection",
+    "description": "Robotic grasping detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -13,11 +13,11 @@
         "GoPro Hero+"
     ],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Emotion Recognition",
         "Head Pose Estimation"
     ],
-    "task": "Facial Expression Recognition",
+    "description": "Facial Expression Recognition",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

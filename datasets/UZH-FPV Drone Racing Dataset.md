@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Drone Racing"
     ],
-    "task": "Drone Racing dataset (aggressive motion estimation)",
+    "description": "Drone Racing dataset (aggressive motion estimation)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

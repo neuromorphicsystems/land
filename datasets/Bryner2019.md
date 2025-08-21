@@ -12,10 +12,10 @@
     ],
     "other_sensors": [],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "Camera Pose Estimation"
     ],
-    "task": "Camera Pose Estimation",
+    "description": "Camera Pose Estimation",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

@@ -12,10 +12,10 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Benchmarking"
     ],
-    "task": "Benchmarking event cameras",
+    "description": "Benchmarking event cameras",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Synthetic Aperture Imaging",
         "De-occlusion"
     ],
-    "task": "Image De-occlusion",
+    "description": "Image De-occlusion",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

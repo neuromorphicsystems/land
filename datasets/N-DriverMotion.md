@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Driver Monitoring",
         "Human Action Recognition"
     ],
-    "task": "Driver Monitoring Systems",
+    "description": "Driver Monitoring Systems",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

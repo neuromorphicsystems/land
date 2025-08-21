@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Sign Language",
         "Gesture Recognition"
     ],
-    "task": "Sign Language Interpretation (Hand detection)",
+    "description": "Sign Language Interpretation (Hand detection)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

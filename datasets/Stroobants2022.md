@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Non-visual data",
         "Flying Datasets"
     ],
-    "task": "Attitude estimation and control",
+    "description": "Attitude estimation and control",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

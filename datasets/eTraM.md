@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Autonomous Driving",
         "Traffic Monitoring",
         "Vehicle Detection"
     ],
-    "task": "Traffic monitoring",
+    "description": "Traffic monitoring",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

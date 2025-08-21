@@ -13,14 +13,14 @@
         "RealSense D435i"
     ],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Driver Monitoring",
         "Hand Pose Detection",
         "Gaze Tracking",
         "Eye Tracking",
         "Gesture Recognition"
     ],
-    "task": "Driver Monitoring Systems",
+    "description": "Driver Monitoring Systems",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

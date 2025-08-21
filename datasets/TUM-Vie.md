@@ -15,12 +15,12 @@
         "OptiTrack"
     ],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "SLAM",
         "Visual Odometry",
         "Visual Place Recognition"
     ],
-    "task": "Visual navigation dataset",
+    "description": "Visual navigation dataset",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

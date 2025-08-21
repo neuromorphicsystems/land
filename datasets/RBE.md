@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "De-blurring"
     ],
-    "task": "Image de-blurring",
+    "description": "Image de-blurring",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

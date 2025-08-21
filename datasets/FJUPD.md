@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Pedestrian Detection"
     ],
-    "task": "Pedestrian detection, action recognition, fall detection",
+    "description": "Pedestrian detection, action recognition, fall detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

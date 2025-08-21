@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Gesture Recognition",
         "De-noising",
         "Hand Pose Detection"
     ],
-    "task": "Corrupt dataset for noise robustness testing",
+    "description": "Corrupt dataset for noise robustness testing",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

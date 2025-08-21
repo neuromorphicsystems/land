@@ -11,14 +11,14 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "De-blurring",
         "High-speed Recognition",
         "Low-Light",
         "3D Reconstruction",
         "SLAM"
     ],
-    "task": "Frame/Event fusion (Motion Deblurring)",
+    "description": "Frame/Event fusion (Motion Deblurring)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,
@@ -115,7 +115,7 @@ def print_dataset_file_sizes(repo_id: str):
 	api = HfApi()
 	info = api.dataset_info(repo_id=repo_id, files_metadata=True)
 
-  
+
 total_bytes = 0
 print(f"Sizes for '{repo_id}':\n")
 for f in info.siblings:
@@ -128,7 +128,7 @@ gib = total_bytes/(1024**3)
 
 print(f"\nTotal: {mib:.2f} MiB ({gib:.2f} GiB)")
 
-  
+
 
 if __name__ == "__main__":
 	print_dataset_file_sizes("wengflow/deblur-e-nerf")

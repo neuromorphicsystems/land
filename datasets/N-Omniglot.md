@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Monitor Conversion",
         "Handwritten Characters",
         "One-shot Learning"
     ],
-    "task": "Few-shot learning Dataset (SNN training dataset)",
+    "description": "Few-shot learning Dataset (SNN training dataset)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -12,13 +12,13 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Object Detection",
         "3D Pose Estimation",
         "Visual Odometry",
         "SLAM"
     ],
-    "task": "Simulator Development",
+    "description": "Simulator Development",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

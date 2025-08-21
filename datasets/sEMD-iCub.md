@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Motion Detection"
     ],
-    "task": "Eccentric Motion Detection",
+    "description": "Eccentric Motion Detection",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

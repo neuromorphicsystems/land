@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Sim-to-Real",
         "Simulator",
         "Space Datasets"
     ],
-    "task": "Landing Trajectory Simulations",
+    "description": "Landing Trajectory Simulations",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

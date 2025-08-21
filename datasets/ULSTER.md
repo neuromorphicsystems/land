@@ -14,10 +14,10 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Object Tracking"
     ],
-    "task": "Object detection and tracking",
+    "description": "Object detection and tracking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

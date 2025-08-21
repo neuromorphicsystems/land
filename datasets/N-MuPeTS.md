@@ -13,13 +13,13 @@
         "Sony IMX477"
     ],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Pedestrian Detection",
         "Person Tracking",
         "Person Detection",
         "Object Tracking"
     ],
-    "task": "Multi-person tracking",
+    "description": "Multi-person tracking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

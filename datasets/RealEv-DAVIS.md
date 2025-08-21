@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Frame Reconstruction",
         "Camera Pose Estimation"
     ],
-    "task": "High-speed Scene Reconstruction",
+    "description": "High-speed Scene Reconstruction",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

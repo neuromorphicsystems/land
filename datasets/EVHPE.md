@@ -15,11 +15,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Head Pose Estimation",
         "Human Pose Recognition"
     ],
-    "task": "Head Pose Estimation",
+    "description": "Head Pose Estimation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

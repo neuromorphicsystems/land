@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Other Modalities",
-    "subcategory": [
+    "tags": [
         "None"
     ],
-    "task": "Audio digit recognition",
+    "description": "Audio digit recognition",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

@@ -11,13 +11,13 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Driver Monitoring",
         "Eye Tracking",
         "Head Pose Estimation",
         "Blink Detection"
     ],
-    "task": "Face Detection / Eye Blink detection",
+    "description": "Face Detection / Eye Blink detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

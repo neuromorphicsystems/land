@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Colour Sensors",
         "Object Tracking"
     ],
-    "task": "Single Object Tracking",
+    "description": "Single Object Tracking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -14,11 +14,11 @@
         "FLIR Blackfly S USB3"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Autonomous Driving",
         "Stereo Datasets"
     ],
-    "task": "Driving task",
+    "description": "Driving task",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

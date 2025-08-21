@@ -13,12 +13,12 @@
         "FLIR Duo R camera"
     ],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Emotion Recognition",
         "Facial Expression",
         "Micro-expressions"
     ],
-    "task": "Micro-expression recognition",
+    "description": "Micro-expression recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

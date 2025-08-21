@@ -13,11 +13,11 @@
         "Blickfeld Cube1 LiDAR"
     ],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "RGB",
         "Lidar"
     ],
-    "task": "Robust Perception for Assistive Robotics",
+    "description": "Robust Perception for Assistive Robotics",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

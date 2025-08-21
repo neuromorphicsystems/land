@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Sample Data"
     ],
-    "task": "DVS Sample Data",
+    "description": "DVS Sample Data",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

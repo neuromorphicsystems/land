@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Wildlife Monitoring",
         "Surveillance"
     ],
-    "task": "Penguin Tracking",
+    "description": "Penguin Tracking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

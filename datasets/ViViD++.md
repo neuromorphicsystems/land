@@ -18,12 +18,12 @@
         "Velodyne VLP-16"
     ],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "SLAM",
         "Visual Odometry",
         "Visual Place Recognition"
     ],
-    "task": "Alternative vision sensor dataset (SLAM in poor visibility)",
+    "description": "Alternative vision sensor dataset (SLAM in poor visibility)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

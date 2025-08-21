@@ -13,12 +13,12 @@
         "HIKVISION MV-CA050-12UC"
     ],
     "category": "Depth, Stereo, and 3D Reconstruction",
-    "subcategory": [
+    "tags": [
         "Beamsplitters",
         "Monitor Conversion",
         "Scene Segmentation"
     ],
-    "task": "Direct and Global Components Separation",
+    "description": "Direct and Global Components Separation",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

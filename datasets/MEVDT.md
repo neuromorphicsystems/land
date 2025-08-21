@@ -11,12 +11,12 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Traffic Monitoring",
         "Vehicle Detection",
         "Object Tracking"
     ],
-    "task": "Object Detection and Tracking on traffic dataset",
+    "description": "Object Detection and Tracking on traffic dataset",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

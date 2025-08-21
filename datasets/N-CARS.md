@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Object Classification",
         "Object Detection"
     ],
-    "task": "Driving Task",
+    "description": "Driving Task",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

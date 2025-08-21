@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Anomaly Detection",
         "Monitor Conversion"
     ],
-    "task": "Video Anomaly Detection",
+    "description": "Video Anomaly Detection",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

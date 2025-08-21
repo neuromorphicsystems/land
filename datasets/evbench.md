@@ -13,11 +13,11 @@
         "Kinect RGB-D camera"
     ],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "Visual Odometry",
         "Robotics"
     ],
-    "task": "Visual Navigation",
+    "description": "Visual Navigation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

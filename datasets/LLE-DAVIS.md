@@ -16,10 +16,10 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Object Segmentation"
     ],
-    "task": "Object Segmentation",
+    "description": "Object Segmentation",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

@@ -15,11 +15,11 @@
         "Vicon"
     ],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "Visual Odometry",
         "SLAM"
     ],
-    "task": "Indoor Localisation and Mapping",
+    "description": "Indoor Localisation and Mapping",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

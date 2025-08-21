@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Eye Tracking",
         "Blink Detection"
     ],
-    "task": "Eye and pupil tracking",
+    "description": "Eye and pupil tracking",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

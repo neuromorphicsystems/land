@@ -15,14 +15,14 @@
         "PointGrey Chameleon3"
     ],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "De-noising",
         "Beamsplitters",
         "Frame Prediction",
         "Motion Compensation",
         "Monitor Conversion"
     ],
-    "task": "Frame/Event Fusion (filtering and fusion)",
+    "description": "Frame/Event Fusion (filtering and fusion)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Filtering and De-noising",
-    "subcategory": [
+    "tags": [
         "Light Interference Removal"
     ],
-    "task": "Light interference removal",
+    "description": "Light interference removal",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

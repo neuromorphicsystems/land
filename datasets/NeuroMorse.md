@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Classification Datasets"
     ],
-    "task": "Morse Code Classification Task",
+    "description": "Morse Code Classification Task",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": false,

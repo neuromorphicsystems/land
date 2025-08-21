@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Structured Light",
         "Depth Estimation"
     ],
-    "task": "Event-based Structured Light (depth estimation)",
+    "description": "Event-based Structured Light (depth estimation)",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

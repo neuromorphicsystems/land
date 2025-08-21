@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "None"
     ],
-    "task": "Scene Context Classification",
+    "description": "Scene Context Classification",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

@@ -12,11 +12,11 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Low Light Reconstruction",
         "Object Segmentation"
     ],
-    "task": "Object Segmentation",
+    "description": "Object Segmentation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

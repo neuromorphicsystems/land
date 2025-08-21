@@ -11,13 +11,13 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Pedestrian Detection",
         "Object Detection",
         "Vehicle Detection",
         "Event Frame Fusion"
     ],
-    "task": "Multimodal object detection dataset",
+    "description": "Multimodal object detection dataset",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

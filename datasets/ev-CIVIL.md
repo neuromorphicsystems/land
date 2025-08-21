@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Anomaly Detection"
     ],
-    "task": "Detection of civil infrastructure defects",
+    "description": "Detection of civil infrastructure defects",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

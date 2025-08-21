@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
-    "subcategory": [
+    "tags": [
         "Bias Tuning"
     ],
-    "task": "Automatic Bias Tuning",
+    "description": "Automatic Bias Tuning",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

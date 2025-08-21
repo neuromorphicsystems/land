@@ -14,11 +14,11 @@
     ],
     "other_sensors": [],
     "category": "Depth, Stereo, and 3D Reconstruction",
-    "subcategory": [
+    "tags": [
         "Stereo Datasets",
         "Depth Estimation"
     ],
-    "task": "Real-Time Photometric Stereo",
+    "description": "Real-Time Photometric Stereo",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

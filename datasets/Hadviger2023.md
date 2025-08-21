@@ -14,13 +14,13 @@
         "OptiTrack"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Visual Odometry",
         "SLAM",
         "Autonomous Driving",
         "Stereo Datasets"
     ],
-    "task": "Stereo matching and Localisation",
+    "description": "Stereo matching and Localisation",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

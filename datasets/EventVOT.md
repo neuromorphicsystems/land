@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "subcategory": [
+    "tags": [
         "Drone Detection",
         "Object Tracking"
     ],
-    "task": "Object Tracking",
+    "description": "Object Tracking",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

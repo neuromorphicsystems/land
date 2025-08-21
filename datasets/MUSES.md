@@ -16,12 +16,12 @@
         "simpleRTK2B Fusion"
     ],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Autonomous Driving",
         "Pedestrian Detection",
         "Vehicle Detection"
     ],
-    "task": "Autonomous Driving",
+    "description": "Autonomous Driving",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

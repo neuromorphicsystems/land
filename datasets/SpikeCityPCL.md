@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "HDR Video Reconstruction",
         "High-speed Object Tracking"
     ],
-    "task": "High-speed object tracking and video reconstruction",
+    "description": "High-speed object tracking and video reconstruction",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

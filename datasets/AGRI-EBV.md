@@ -13,11 +13,11 @@
     ],
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
-    "subcategory": [
+    "tags": [
         "Visual Odometry",
         "Robotics"
     ],
-    "task": "Visual Odometry",
+    "description": "Visual Odometry",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

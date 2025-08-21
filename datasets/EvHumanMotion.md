@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
-    "subcategory": [
+    "tags": [
         "Video Generation"
     ],
-    "task": "Animation of human motion from static images",
+    "description": "Animation of human motion from static images",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

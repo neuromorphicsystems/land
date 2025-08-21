@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "Visual Place Recognition"
     ],
-    "task": "Visual Place Recognition",
+    "description": "Visual Place Recognition",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

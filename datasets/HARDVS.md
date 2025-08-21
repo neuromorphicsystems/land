@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Human Action Recognition"
     ],
-    "task": "Human Activity Recognition",
+    "description": "Human Activity Recognition",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": true,

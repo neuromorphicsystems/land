@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Visual Navigation",
-    "subcategory": [
+    "tags": [
         "Space Datasets",
         "Visual Odometry"
     ],
-    "task": "Visual Odometry",
+    "description": "Visual Odometry",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

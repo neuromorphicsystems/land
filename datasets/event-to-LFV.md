@@ -11,10 +11,10 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Light Field Reconstruction"
     ],
-    "task": "Light field reconstruction",
+    "description": "Light field reconstruction",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

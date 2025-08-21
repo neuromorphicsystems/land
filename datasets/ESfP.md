@@ -12,12 +12,12 @@
     ],
     "other_sensors": [],
     "category": "Domain Specific Application",
-    "subcategory": [
+    "tags": [
         "Polarization",
         "Shape Tracking",
         "3D Pose Estimation"
     ],
-    "task": "Shape from polarisation",
+    "description": "Shape from polarisation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

@@ -11,11 +11,11 @@
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Driver Monitoring",
         "Face Detection"
     ],
-    "task": "Driver Monitoring Systems",
+    "description": "Driver Monitoring Systems",
     "dataset_properties": {
         "available_online": false,
         "has_real_data": false,

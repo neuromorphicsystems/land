@@ -13,10 +13,10 @@
         "OptiTrack"
     ],
     "category": "Human-centric Recordings",
-    "subcategory": [
+    "tags": [
         "Human Pose Recognition"
     ],
-    "task": "Human Mesh Estimation",
+    "description": "Human Mesh Estimation",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,
