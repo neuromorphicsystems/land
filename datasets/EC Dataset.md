@@ -13,7 +13,7 @@
     "other_sensors": [],
     "category": "Human-centric Recordings",
     "tags": [
-        "Voice Activity\u00a0",
+        "Voice Activity",
         "Lip-reading"
     ],
     "description": "Voice Activity Detection",

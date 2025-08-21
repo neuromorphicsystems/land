@@ -14,7 +14,7 @@
     ],
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
-        "Line segmentation",
+        "Line Segmentation",
         "Line Following",
         "Eye Tracking",
         "Driver Monitoring"

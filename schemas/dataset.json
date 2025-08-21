@@ -64,7 +64,7 @@
         },
         "tags": {
             "type": "array",
-            "description": "Tags that further specify the dataset category or indicate the task that the dataset addresses.",
+            "description": "Tags that further specify the dataset category or indicate the task that the dataset addresses. Tags must be capitalized (each word must be capitalized if a tag consists of multiple words).",
             "items": { "type": "string" },
             "minItems": 0,
             "uniqueItems": true

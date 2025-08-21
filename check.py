@@ -162,6 +162,20 @@ def validate_dataset_file(
             schema=schema,
             show_errors=show_errors,
         )
+        if "tags" in dataset.metadata:
+            assert len(dataset.metadata["tags"]) == len(set(dataset.metadata["tags"]))  # type: ignore
+            for tag in dataset.metadata["tags"]:  # type: ignore
+                assert (
+                    tag.strip() == tag
+                ), f'tag "{tag}" must not start or end with spaces'
+                assert (
+                    " ".join(tag.split()) == tag
+                ), f'tag "{tag}" must not contain space-like characters or multiple spaces in a row'
+                for word in tag.split():
+                    if word[0].isalnum():
+                        assert (
+                            word[0].isupper() or word[0].isnumeric()
+                        ), f'"{word}" in tag "{tag}" must start with an uppercase character or a number'
         if quiet:
             return success
         if success:

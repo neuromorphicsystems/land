@@ -14,7 +14,7 @@
     ],
     "category": "Domain Specific Application",
     "tags": [
-        "Schlieren imaging",
+        "Schlieren Imaging",
         "Computation Imaging"
     ],
     "description": "Schlieren Imaging",

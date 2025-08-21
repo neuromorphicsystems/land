@@ -16,7 +16,7 @@
     "other_sensors": [],
     "category": "Depth, Stereo, and 3D Reconstruction",
     "tags": [
-        "Line segmentation"
+        "Line Segmentation"
     ],
     "description": "Line Segmentation",
     "dataset_properties": {
