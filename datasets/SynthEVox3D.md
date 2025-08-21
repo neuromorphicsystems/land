@@ -11,9 +11,7 @@
     ],
     "other_sensors": [],
     "category": "Depth, Stereo, and 3D Reconstruction",
-    "tags": [
-        "None"
-    ],
+    "tags": [],
     "description": "3D reconstruction",
     "dataset_properties": {
         "available_online": true,

@@ -167,15 +167,18 @@ def validate_dataset_file(
             for tag in dataset.metadata["tags"]:  # type: ignore
                 assert (
                     tag.strip() == tag
-                ), f'tag "{tag}" must not start or end with spaces'
+                ), f'tag "{tag}" ({target_path.name}) must not start or end with spaces'
                 assert (
                     " ".join(tag.split()) == tag
-                ), f'tag "{tag}" must not contain space-like characters or multiple spaces in a row'
+                ), f'tag "{tag}" ({target_path.name}) must not contain space-like characters or multiple spaces in a row'
+                assert (
+                    tag.lower() != "none"
+                ), f'tag "{tag}" ({target_path.name}) cannot be "None" (use an empty tag list instead)'
                 for word in tag.split():
                     if word[0].isalnum():
                         assert (
                             word[0].isupper() or word[0].isnumeric()
-                        ), f'"{word}" in tag "{tag}" must start with an uppercase character or a number'
+                        ), f'"{word}" in tag "{tag}" ({target_path.name}) must start with an uppercase character or a number'
         if quiet:
             return success
         if success:

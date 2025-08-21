@@ -11,9 +11,7 @@
     ],
     "other_sensors": [],
     "category": "Other Modalities",
-    "tags": [
-        "None"
-    ],
+    "tags": [],
     "description": "Audio digit recognition",
     "dataset_properties": {
         "available_online": true,

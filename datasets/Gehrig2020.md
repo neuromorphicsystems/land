@@ -11,9 +11,7 @@
     ],
     "other_sensors": [],
     "category": "Visual Navigation",
-    "tags": [
-        "None"
-    ],
+    "tags": [],
     "description": "3DOF angular velocity prediction for a rotating camera",
     "dataset_properties": {
         "available_online": true,

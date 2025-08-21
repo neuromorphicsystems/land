@@ -11,9 +11,7 @@
     ],
     "other_sensors": [],
     "category": "Other Modalities",
-    "tags": [
-        "None"
-    ],
+    "tags": [],
     "description": "Audio Classification",
     "dataset_properties": {
         "available_online": false,

@@ -11,9 +11,7 @@
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
-    "tags": [
-        "None"
-    ],
+    "tags": [],
     "description": "Object Recognition",
     "dataset_properties": {
         "available_online": true,
