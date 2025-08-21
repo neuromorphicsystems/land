@@ -11,6 +11,41 @@ from jsonschema.validators import validator_for
 from referencing import Registry, Specification
 
 
+# must have the same behaviour as `nameToUrl` in ui/build_standalone.js
+def name_to_url(name: str) -> str:
+    ALLOWED_CHARACTERS: set[str] = {"."}  # besides alphanumeric
+    SPLIT_CHARACTERS: set[str] = {"_", "-", " "}
+    REMOVE_CHARACTERS: set[str] = {"(", ")"}
+    REPLACE_CHARACTERS: dict[str, str] = {
+        "+": "p",
+    }
+    word_start = True
+    result = ""
+    for character in name:
+        if character.isalnum() or character in ALLOWED_CHARACTERS:
+            if character.isnumeric():
+                result += character
+                word_start = True
+            elif character.isupper():
+                if word_start:
+                    result += character.lower()
+                else:
+                    result += f"-{character.lower()}"
+                word_start = True
+            else:
+                result += character
+                word_start = False
+        elif character in REPLACE_CHARACTERS:
+            result += REPLACE_CHARACTERS[character]
+            word_start = False
+        elif character in SPLIT_CHARACTERS:
+            result += "-"
+            word_start = True
+        elif not character in REMOVE_CHARACTERS:
+            raise Exception(f'unsupported character "{character}" in "{name}"')
+    return result
+
+
 class Formatter:
     """
     A formatter inspired by https://github.com/butler54/mdformat-frontmatter,
@@ -109,35 +144,34 @@ def validate_dataset_file(
     quiet: bool,
     show_errors: bool,
     formatter: typing.Optional[Formatter],
+    names: list[str],
 ) -> bool:
     if target_path.is_file():
+        dataset_path = target_path.resolve()
+        names.append(dataset_path.stem)
         dataset = frontmatter.load(
-            str(target_path.resolve()),
+            str(dataset_path),
             handler=frontmatter.default_handlers.JSONHandler(
                 fm_boundary=re.compile(r"^(?:-{3}\n\{|\}\r?\n-{3}\n)$", re.MULTILINE)
             ),
         )
         assert dataset, f"Failed to load dataset from {target_path}"
-        result = validate_dataset_entry(
+        success = validate_dataset_entry(
             dataset_entry=dataset.metadata,
             schemas_dir=schemas_dir,
             schema=schema,
             show_errors=show_errors,
         )
         if quiet:
-            return result
-
-        if result:
-            # print(
-            #     f"\033[92m✔\033[0m {target_path.name} is valid according to the schema."
-            # )
+            return success
+        if success:
             if formatter is not None:
                 formatter.file(target_path)
         else:
             print(
                 f"\033[91m✘\033[0m {target_path.name} is invalid according to the schema."
             )
-        return result
+        return success
 
     elif target_path.is_dir():
         md_files = list(target_path.glob("*.md"))
@@ -149,49 +183,42 @@ def validate_dataset_file(
         elif len(md_files) == 0:
             return True
 
-        results = []
+        success = True
+        valid_datasets = []
+        invalid_datasets = []
         for md_file in md_files:
-            result = validate_dataset_file(
+            dataset_success = validate_dataset_file(
                 target_path=md_file,
                 schemas_dir=schemas_dir,
                 schema=schema,
                 show_errors=show_errors,
                 quiet=quiet,
                 formatter=formatter,
+                names=names,
             )
-            results.append((md_file.name, result))
+            success &= dataset_success
+            if dataset_success:
+                valid_datasets.append(md_file.stem)
+            else:
+                invalid_datasets.append(md_file.stem)
         if quiet:
-            return all(result[1] for result in results)
+            return success
 
-        valid_datasets = [file_name for file_name, is_valid in results if is_valid]
         if len(valid_datasets) > 0:
-
             print("Valid datasets:")
-            print(
-                f"\n".join(
-                    [f"\t\033[92m✔\033[0m {file_name}" for file_name in valid_datasets]
-                )
-            )
+            print(f"\n".join([f"\t\033[92m✔\033[0m {name}" for name in valid_datasets]))
         else:
             print("\033[91m✘\033[0m No valid datasets found according to the schema.")
 
-        invalid_datasets = [
-            file_name for file_name, is_valid in results if not is_valid
-        ]
         if len(invalid_datasets) > 0:
             print("Invalid datasets:")
             print(
-                f"\n".join(
-                    [
-                        f"\t\033[91m✘\033[0m {file_name}"
-                        for file_name in invalid_datasets
-                    ]
-                )
+                f"\n".join([f"\t\033[91m✘\033[0m {name}" for name in invalid_datasets])
             )
         else:
             print("\033[92m✔\033[0m All datasets are valid according to the schema.")
 
-        return all(result[1] for result in results)
+        return success
     else:
         raise FileNotFoundError(
             f"The target path {target_path} does not exist or is not a file."
@@ -249,15 +276,25 @@ if __name__ == "__main__":
     assert schema.exists(), f"Schema file {schema} does not exist."
     assert target_path.exists(), f"Target path {target_path} does not exist."
 
-    result = validate_dataset_file(
+    names: list[str] = []
+    success = validate_dataset_file(
         target_path=target_path,
         schemas_dir=schemas_dir,
         schema=schema,
         quiet=args.quiet,
         show_errors=not args.no_errors,
         formatter=Formatter() if args.format else None,
+        names=names,
     )
-    if args.quiet:
-        print(result)
+    if not success:
+        sys.exit(1)
 
-    sys.exit(0 if result else 1)
+    url_to_name: dict[str, str] = {}
+    for name in names:
+        url = name_to_url(name)
+        if url in url_to_name:
+            print(
+                f'\033[91m✘\033[0m "{name}" and "{url_to_name[url]}" have the same URL ({url}).'
+            )
+            sys.exit(1)
+        url_to_name[url] = name
