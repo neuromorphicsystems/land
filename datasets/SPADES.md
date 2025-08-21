@@ -14,7 +14,7 @@
     "category": "Domain Specific Application",
     "tags": [
         "Satellite Pose Estimation",
-        "Space Datasets"
+        "Space"
     ],
     "description": "Satellite Pose Estimation",
     "dataset_properties": {

@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Visual Navigation",
     "tags": [
-        "Space Datasets",
+        "Space",
         "Visual Odometry"
     ],
     "description": "Visual Odometry",

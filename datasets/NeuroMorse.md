@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Benchmarking, SNN Training Task, and SNN Training",
     "tags": [
-        "Classification Datasets"
+        "Classification"
     ],
     "description": "Morse Code Classification Task",
     "dataset_properties": {

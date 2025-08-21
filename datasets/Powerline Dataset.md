@@ -14,7 +14,7 @@
     ],
     "category": "Domain Specific Application",
     "tags": [
-        "Flying Datasets",
+        "Flying",
         "Line Segmentation"
     ],
     "description": "Powerline Tracking",

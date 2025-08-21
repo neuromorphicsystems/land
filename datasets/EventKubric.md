@@ -13,7 +13,7 @@
     "category": "Object Detection, Classification, and Tracking",
     "tags": [
         "Object Tracking",
-        "Track Any Point (TAP)"
+        "Track Any Point"
     ],
     "description": "Tracking Any Point",
     "dataset_properties": {

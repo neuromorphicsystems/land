@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Domain Specific Application",
     "tags": [
-        "Space Datasets"
+        "Space"
     ],
     "description": "Lunar Terrain Navigation",
     "dataset_properties": {

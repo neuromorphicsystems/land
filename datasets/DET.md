@@ -14,7 +14,7 @@
     "tags": [
         "Lane Extraction",
         "Autonomous Driving",
-        "Driving Dataset"
+        "Driving"
     ],
     "description": "Lane Extraction",
     "dataset_properties": {

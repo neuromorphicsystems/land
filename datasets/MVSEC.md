@@ -17,7 +17,7 @@
     ],
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
-        "Stereo Datasets",
+        "Stereo",
         "Autonomous Driving"
     ],
     "description": "Drone stereo vision",

@@ -18,7 +18,7 @@
         "Visual Odometry",
         "SLAM",
         "Autonomous Driving",
-        "Stereo Datasets"
+        "Stereo"
     ],
     "description": "Stereo matching and Localisation",
     "dataset_properties": {

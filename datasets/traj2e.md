@@ -14,7 +14,7 @@
     "tags": [
         "Sim-to-Real",
         "Simulator",
-        "Space Datasets"
+        "Space"
     ],
     "description": "Landing Trajectory Simulations",
     "dataset_properties": {

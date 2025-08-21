@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
-        "Driving Dataset",
+        "Driving",
         "SLAM",
         "Visual Odometry"
     ],

@@ -18,7 +18,7 @@
     "tags": [
         "SLAM",
         "Visual Odometry",
-        "Driving Dataset"
+        "Driving"
     ],
     "description": "Multi-robot, multi sensor dataset",
     "dataset_properties": {

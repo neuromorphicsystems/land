@@ -13,7 +13,7 @@
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
     "tags": [
-        "Space Datasets"
+        "Space"
     ],
     "description": "Object Detection and Tracking for SSA",
     "dataset_properties": {

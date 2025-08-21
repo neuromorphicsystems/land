@@ -16,7 +16,7 @@
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
         "Autonomous Driving",
-        "Stereo Datasets"
+        "Stereo"
     ],
     "description": "Driving task",
     "dataset_properties": {

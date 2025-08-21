@@ -16,7 +16,7 @@
     "tags": [
         "3D Tracking",
         "Object Tracking",
-        "Stereo Datasets"
+        "Stereo"
     ],
     "description": "3D feature tracking",
     "dataset_properties": {

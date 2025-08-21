@@ -13,9 +13,9 @@
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
         "Autonomous Driving",
-        "Classification Datasets"
+        "Classification"
     ],
-    "description": "Driving Dataset",
+    "description": "Driving",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

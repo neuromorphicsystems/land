@@ -16,7 +16,7 @@
     ],
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
-        "Flying Datasets",
+        "Flying",
         "Drone Detection"
     ],
     "description": "Flight perception",

@@ -14,7 +14,7 @@
     ],
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
-        "Flying Datasets"
+        "Flying"
     ],
     "description": "Landing Trajectory Simulations",
     "dataset_properties": {

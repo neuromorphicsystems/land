@@ -13,7 +13,7 @@
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
     "tags": [
         "De-blurring",
-        "Colour Sensors"
+        "Colour Sensor"
     ],
     "description": "Colour de-blurring",
     "dataset_properties": {

@@ -12,8 +12,8 @@
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
-        "Flying Datasets",
-        "Remote Sensing Dataset"
+        "Flying",
+        "Remote Sensing"
     ],
     "description": "Remote Sensing Dataset",
     "dataset_properties": {

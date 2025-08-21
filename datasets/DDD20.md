@@ -14,7 +14,7 @@
     "tags": [
         "Autonomous Driving"
     ],
-    "description": "Driving Dataset",
+    "description": "Driving",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

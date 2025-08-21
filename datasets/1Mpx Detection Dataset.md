@@ -17,7 +17,7 @@
         "Pedestrian Detection",
         "Vehicle Detection"
     ],
-    "description": "Driving Dataset",
+    "description": "Driving",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

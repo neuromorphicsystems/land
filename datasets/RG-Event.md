@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
-        "Transformers",
+        "Transformer",
         "Robotics"
     ],
     "description": "Robotic Gripper Force Measurement",

@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
     "tags": [
-        "Colour Sensors",
+        "Colour Sensor",
         "Object Tracking"
     ],
     "description": "Single Object Tracking",

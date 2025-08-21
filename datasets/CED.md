@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Domain Specific Application",
     "tags": [
-        "Colour Sensors"
+        "Colour Sensor"
     ],
     "description": "Colour event based camera",
     "dataset_properties": {

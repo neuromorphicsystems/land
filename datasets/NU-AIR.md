@@ -15,7 +15,7 @@
         "Pedestrian Detection",
         "Vehicle Detection",
         "Object Detection",
-        "Flying Datasets"
+        "Flying"
     ],
     "description": "Urban Aerial Object Detection",
     "dataset_properties": {

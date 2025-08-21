@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
-        "Flying Datasets",
+        "Flying",
         "Object Tracking"
     ],
     "description": "Aerial Obstacle Avoidance",

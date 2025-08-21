@@ -13,7 +13,7 @@
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
         "Non-visual Data",
-        "Flying Datasets"
+        "Flying"
     ],
     "description": "Attitude estimation and control",
     "dataset_properties": {

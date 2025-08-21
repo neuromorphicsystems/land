@@ -13,7 +13,7 @@
     "category": "Human-centric Recordings",
     "tags": [
         "Human Pose Recognition",
-        "Augmented Datasets"
+        "Augmented"
     ],
     "description": "Person localization and size estimation",
     "dataset_properties": {

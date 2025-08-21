@@ -17,7 +17,7 @@
     ],
     "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
-        "Stereo Datasets",
+        "Stereo",
         "SLAM"
     ],
     "description": "Indoor Localisation and Mapping",

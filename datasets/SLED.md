@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Depth, Stereo, and 3D Reconstruction",
     "tags": [
-        "Driving Dataset",
+        "Driving",
         "Depth Estimation",
         "Lidar"
     ],

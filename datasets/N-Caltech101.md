@@ -13,7 +13,7 @@
     "category": "Object Detection, Classification, and Tracking",
     "tags": [
         "Monitor Conversion",
-        "Classification Datasets"
+        "Classification"
     ],
     "description": "Character and Object Recognition",
     "dataset_properties": {

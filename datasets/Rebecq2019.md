@@ -15,7 +15,7 @@
     "category": "Intensity Reconstruction, Optical Flow, and Frame Fusion",
     "tags": [
         "High-Speed Video Reconstruction",
-        "Colour Sensors"
+        "Colour Sensor"
     ],
     "description": "Image Reconstruction from events",
     "dataset_properties": {

@@ -14,7 +14,7 @@
     "tags": [
         "Object Tracking",
         "Multiple Object Tracking",
-        "Annotated Dataset"
+        "Annotated"
     ],
     "description": "Multiple Object Tracking",
     "dataset_properties": {

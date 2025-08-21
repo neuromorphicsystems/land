@@ -13,7 +13,7 @@
     "other_sensors": [],
     "category": "Domain Specific Application",
     "tags": [
-        "Space Datasets",
+        "Space",
         "Satellite Pose Estimation"
     ],
     "description": "Satellite Pose Estimation",

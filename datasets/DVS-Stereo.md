@@ -14,7 +14,7 @@
     ],
     "category": "Depth, Stereo, and 3D Reconstruction",
     "tags": [
-        "Stereo Datasets",
+        "Stereo",
         "Depth Estimation"
     ],
     "description": "Stereo matching",

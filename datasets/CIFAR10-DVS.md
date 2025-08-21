@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",
     "tags": [
-        "Classification Datasets",
+        "Classification",
         "Monitor Conversion"
     ],
     "description": "Object Classification",

@@ -13,7 +13,7 @@
     "category": "Benchmarking, SNN Training Task, and SNN Training",
     "tags": [
         "Monitor Conversion",
-        "Classification Datasets"
+        "Classification"
     ],
     "description": "Bechmarking dataset for SNNs",
     "dataset_properties": {
@@ -42,7 +42,7 @@
         "size_type": "Compressed"
     },
     "paper": {
-        "title": "ES-ImageNet: A Million Event-Stream Classification Dataset for Spiking Neural Networks",
+        "title": "ES-ImageNet: A Million Event-Stream Classification for Spiking Neural Networks",
         "doi": "10.3389/fnins.2021.726582",
         "authors": [
             "Yihan Lin",
