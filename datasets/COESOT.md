@@ -3,7 +3,7 @@
     "name": "COESOT",
     "aliases": [],
     "year": 2023,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

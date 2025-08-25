@@ -3,7 +3,7 @@
     "name": "NE15-MNIST",
     "aliases": [],
     "year": 2016,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

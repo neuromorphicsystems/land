@@ -3,7 +3,7 @@
     "name": "DND21",
     "aliases": [],
     "year": 2021,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

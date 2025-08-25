@@ -5,7 +5,7 @@
         "https://arxiv.org/abs/1908.06648"
     ],
     "year": 2019,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

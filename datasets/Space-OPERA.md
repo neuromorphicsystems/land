@@ -3,7 +3,7 @@
     "name": "Space-OPERA",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

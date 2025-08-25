@@ -3,7 +3,7 @@
     "name": "NeuroTac",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Tactile"
     ],
     "sensors": [

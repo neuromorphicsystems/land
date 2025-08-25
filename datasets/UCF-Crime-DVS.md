@@ -3,7 +3,7 @@
     "name": "UCF-Crime-DVS",
     "aliases": [],
     "year": 2025,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

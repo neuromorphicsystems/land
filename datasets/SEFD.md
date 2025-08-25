@@ -3,7 +3,7 @@
     "name": "SEFD",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

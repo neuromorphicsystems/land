@@ -3,7 +3,7 @@
     "name": "THU-ACT-50-CHL",
     "aliases": [],
     "year": 2023,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

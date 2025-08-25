@@ -3,7 +3,7 @@
     "name": "Bullying10K",
     "aliases": [],
     "year": 2023,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

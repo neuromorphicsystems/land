@@ -3,7 +3,7 @@
     "name": "RGB-D",
     "aliases": [],
     "year": 2014,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

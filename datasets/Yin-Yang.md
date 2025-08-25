@@ -3,7 +3,7 @@
     "name": "Yin-Yang",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Spike"
     ],
     "sensors": [

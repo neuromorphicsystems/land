@@ -3,7 +3,7 @@
     "name": "3ET",
     "aliases": [],
     "year": 2023,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

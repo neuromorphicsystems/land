@@ -3,7 +3,7 @@
     "name": "N-CARS",
     "aliases": [],
     "year": 2018,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

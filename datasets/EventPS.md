@@ -5,7 +5,7 @@
         "DiLiGenT-Ev"
     ],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

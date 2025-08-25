@@ -3,7 +3,7 @@
     "name": "Event-ReId-v2",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

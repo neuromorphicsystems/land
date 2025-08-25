@@ -3,7 +3,7 @@
     "name": "ST-MNIST",
     "aliases": [],
     "year": 2020,
-    "modality": [
+    "modalities": [
         "Tactile"
     ],
     "sensors": [

@@ -7,7 +7,7 @@
     ],
     "full_name": "Neuromorphic MNIST",
     "year": 2015,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

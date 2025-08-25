@@ -3,7 +3,7 @@
     "name": "CIFAR10-DVS",
     "aliases": [],
     "year": 2017,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

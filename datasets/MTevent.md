@@ -3,7 +3,7 @@
     "name": "MTevent",
     "aliases": [],
     "year": 2025,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

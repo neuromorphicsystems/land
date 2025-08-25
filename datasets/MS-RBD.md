@@ -3,7 +3,7 @@
     "name": "MS-RBD",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

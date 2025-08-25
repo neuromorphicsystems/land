@@ -3,7 +3,7 @@
     "name": "Occlusion-400",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

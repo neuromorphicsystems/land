@@ -3,7 +3,7 @@
     "name": "SL-ANIMALS-DVS",
     "aliases": [],
     "year": 2021,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

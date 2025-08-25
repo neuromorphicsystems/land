@@ -3,7 +3,7 @@
     "name": "PIR2000-DAVIS",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

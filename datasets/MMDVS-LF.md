@@ -3,7 +3,7 @@
     "name": "MMDVS-LF",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

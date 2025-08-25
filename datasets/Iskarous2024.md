@@ -3,7 +3,7 @@
     "name": "Iskarous2024",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Tactile"
     ],
     "sensors": [

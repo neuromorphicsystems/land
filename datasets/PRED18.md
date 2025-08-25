@@ -5,7 +5,7 @@
         "PRED16"
     ],
     "year": 2018,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -3,7 +3,7 @@
     "name": "Blur-DVS",
     "aliases": [],
     "year": 2020,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -4,7 +4,7 @@
     "aliases": [],
     "full_name": "",
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

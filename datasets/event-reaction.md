@@ -3,7 +3,7 @@
     "name": "event-reaction",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -3,7 +3,7 @@
     "name": "DVS_Barrel",
     "aliases": [],
     "year": 2015,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

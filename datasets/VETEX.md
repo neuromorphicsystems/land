@@ -3,7 +3,7 @@
     "name": "VETEX",
     "aliases": [],
     "year": 2025,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

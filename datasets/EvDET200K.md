@@ -3,7 +3,7 @@
     "name": "EvDET200K",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

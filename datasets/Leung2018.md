@@ -3,7 +3,7 @@
     "name": "Leung2018",
     "aliases": [],
     "year": 2018,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -3,7 +3,7 @@
     "name": "DailyDVS-200",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

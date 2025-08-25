@@ -3,7 +3,7 @@
     "name": "N-AU-DR",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

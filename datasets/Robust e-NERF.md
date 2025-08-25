@@ -3,7 +3,7 @@
     "name": "Robust e-NERF",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

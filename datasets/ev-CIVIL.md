@@ -3,7 +3,7 @@
     "name": "ev-CIVIL",
     "aliases": [],
     "year": 2025,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

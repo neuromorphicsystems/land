@@ -3,7 +3,7 @@
     "name": "Tunnel Dataset",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -25,7 +25,7 @@
             "type": "string",
             "description": "The full name of the dataset (if provided)."
         },
-        "modality": {
+        "modalities": {
             "type": "array",
             "items": {
                 "type": "string",
@@ -38,7 +38,7 @@
                     "Other"
                 ]
             },
-            "description": "The modality of the specified dataset.",
+            "description": "The modalities (the physical phenomena captured by the sensors) of the specified dataset.",
             "minItems": 1
         },
         "year": {
@@ -148,9 +148,9 @@
     },
     "dependentRequired": {
         "subcategory": ["category"],
-        "sensors": ["modality"],
-        "other_sensors": ["modality"]
+        "sensors": ["modalities"],
+        "other_sensors": ["modalities"]
     },
-    "required": ["name", "modality", "category", "year", "description"],
+    "required": ["name", "modalities", "category", "year", "description"],
     "additionalProperties": false
 }

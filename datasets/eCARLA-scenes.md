@@ -3,7 +3,7 @@
     "name": "eCARLA-scenes",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

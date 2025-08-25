@@ -3,7 +3,7 @@
     "name": "Event-based Autofocus Dataset (EAD)",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

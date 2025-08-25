@@ -5,7 +5,7 @@
         "agri-ebv-winter-summer"
     ],
     "year": 2021,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -3,7 +3,7 @@
     "name": "Iaboni2022",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

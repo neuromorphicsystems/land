@@ -3,7 +3,7 @@
     "name": "E3NeRF",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

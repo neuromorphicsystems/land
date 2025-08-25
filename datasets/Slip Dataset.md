@@ -3,7 +3,7 @@
     "name": "Slip Dataset",
     "aliases": [],
     "year": 2020,
-    "modality": [
+    "modalities": [
         "Tactile",
         "Vision"
     ],

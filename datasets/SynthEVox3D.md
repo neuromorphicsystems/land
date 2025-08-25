@@ -3,7 +3,7 @@
     "name": "SynthEVox3D",
     "aliases": [],
     "year": 2023,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

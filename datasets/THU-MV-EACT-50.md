@@ -3,7 +3,7 @@
     "name": "THU-MV-EACT-50",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

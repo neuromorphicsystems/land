@@ -3,7 +3,7 @@
     "name": "PKU-DAVIS-SOD",
     "aliases": [],
     "year": 2023,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

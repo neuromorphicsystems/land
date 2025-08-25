@@ -3,7 +3,7 @@
     "name": "NeuroMorse",
     "aliases": [],
     "year": 2025,
-    "modality": [
+    "modalities": [
         "Spike"
     ],
     "sensors": [

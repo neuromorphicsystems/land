@@ -3,7 +3,7 @@
     "name": "DDD17",
     "aliases": [],
     "year": 2017,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -3,7 +3,7 @@
     "name": "EB-HandGesture",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

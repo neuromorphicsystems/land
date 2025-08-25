@@ -3,7 +3,7 @@
     "name": "ES-ImageNet",
     "aliases": [],
     "year": 2021,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

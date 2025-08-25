@@ -3,7 +3,7 @@
     "name": "Ev-Eye",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

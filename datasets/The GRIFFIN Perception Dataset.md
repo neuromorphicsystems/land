@@ -3,7 +3,7 @@
     "name": "The GRIFFIN Perception Dataset",
     "aliases": [],
     "year": 2021,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

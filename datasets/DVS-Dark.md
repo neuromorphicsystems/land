@@ -3,7 +3,7 @@
     "name": "DVS-Dark",
     "aliases": [],
     "year": 2020,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

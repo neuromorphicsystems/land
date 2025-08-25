@@ -3,7 +3,7 @@
     "name": "1Mpx Detection Dataset",
     "aliases": [],
     "year": 2020,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

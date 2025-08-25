@@ -3,7 +3,7 @@
     "name": "Gentil2024",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

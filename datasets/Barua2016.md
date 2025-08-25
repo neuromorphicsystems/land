@@ -3,7 +3,7 @@
     "name": "Barua2016",
     "aliases": [],
     "year": 2016,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

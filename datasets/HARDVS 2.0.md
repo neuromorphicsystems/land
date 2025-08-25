@@ -3,7 +3,7 @@
     "name": "HARDVS 2.0",
     "aliases": [],
     "year": 2025,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

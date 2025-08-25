@@ -3,7 +3,7 @@
     "name": "Mini N-ImageNet",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -3,7 +3,7 @@
     "name": "N-DNS",
     "aliases": [],
     "year": 2023,
-    "modality": [
+    "modalities": [
         "Spike",
         "Audio"
     ],

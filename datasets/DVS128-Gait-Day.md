@@ -3,7 +3,7 @@
     "name": "DVS128-Gait-Day",
     "aliases": [],
     "year": 2021,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

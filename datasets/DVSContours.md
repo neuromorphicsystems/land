@@ -3,7 +3,7 @@
     "name": "DVSContours",
     "aliases": [],
     "year": 2015,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

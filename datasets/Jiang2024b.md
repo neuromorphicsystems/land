@@ -3,7 +3,7 @@
     "name": "Jiang2024b",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

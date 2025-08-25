@@ -3,7 +3,7 @@
     "name": "WHISPER SET 1",
     "aliases": [],
     "year": 2020,
-    "modality": [
+    "modalities": [
         "Audio"
     ],
     "sensors": [

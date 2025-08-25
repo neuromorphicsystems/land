@@ -3,7 +3,7 @@
     "name": "SLOW-POKER-DVS",
     "aliases": [],
     "year": 2015,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

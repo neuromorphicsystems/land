@@ -3,7 +3,7 @@
     "name": "YeLan-R",
     "aliases": [],
     "year": 2023,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -3,7 +3,7 @@
     "name": "The Event-Based Camera Dataset",
     "aliases": [],
     "year": 2017,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

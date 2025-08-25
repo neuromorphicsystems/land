@@ -3,7 +3,7 @@
     "name": "DVS Gesture-C",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

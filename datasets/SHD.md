@@ -3,7 +3,7 @@
     "name": "SHD",
     "aliases": [],
     "year": 2020,
-    "modality": [
+    "modalities": [
         "Audio"
     ],
     "sensors": [

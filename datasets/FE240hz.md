@@ -3,7 +3,7 @@
     "name": "FE240hz",
     "aliases": [],
     "year": 2021,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

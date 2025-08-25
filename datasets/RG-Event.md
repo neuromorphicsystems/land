@@ -3,7 +3,7 @@
     "name": "RG-Event",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

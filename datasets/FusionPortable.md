@@ -3,7 +3,7 @@
     "name": "FusionPortable",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

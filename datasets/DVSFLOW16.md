@@ -3,7 +3,7 @@
     "name": "DVSFLOW16",
     "aliases": [],
     "year": 2016,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -3,7 +3,7 @@
     "name": "Cladera2020",
     "aliases": [],
     "year": 2020,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

@@ -3,7 +3,7 @@
     "name": "Iaboni2021",
     "aliases": [],
     "year": 2021,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

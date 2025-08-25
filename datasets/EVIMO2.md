@@ -3,7 +3,7 @@
     "name": "EVIMO2",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

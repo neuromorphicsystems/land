@@ -3,7 +3,7 @@
     "name": "Stroobants2022",
     "aliases": [],
     "year": 2022,
-    "modality": [
+    "modalities": [
         "Spike"
     ],
     "sensors": [

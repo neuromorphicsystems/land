@@ -3,7 +3,7 @@
     "name": "Thrown-Ball",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

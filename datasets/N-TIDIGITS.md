@@ -3,7 +3,7 @@
     "name": "N-TIDIGITS",
     "aliases": [],
     "year": 2018,
-    "modality": [
+    "modalities": [
         "Audio"
     ],
     "sensors": [

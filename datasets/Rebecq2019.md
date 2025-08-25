@@ -3,7 +3,7 @@
     "name": "Rebecq2019",
     "aliases": [],
     "year": 2019,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

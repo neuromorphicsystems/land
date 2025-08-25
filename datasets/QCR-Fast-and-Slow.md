@@ -3,7 +3,7 @@
     "name": "QCR-Fast-and-Slow",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

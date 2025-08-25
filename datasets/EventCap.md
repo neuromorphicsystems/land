@@ -3,7 +3,7 @@
     "name": "EventCap",
     "aliases": [],
     "year": 2020,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

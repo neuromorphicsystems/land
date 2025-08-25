@@ -3,7 +3,7 @@
     "name": "N-HAR",
     "aliases": [],
     "year": 2019,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

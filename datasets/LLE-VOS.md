@@ -3,7 +3,7 @@
     "name": "LLE-VOS",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

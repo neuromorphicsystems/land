@@ -3,7 +3,7 @@
     "name": "EROAM",
     "aliases": [],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

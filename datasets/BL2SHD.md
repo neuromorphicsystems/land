@@ -8,7 +8,7 @@
         "BL2SHD-Rcomplex"
     ],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

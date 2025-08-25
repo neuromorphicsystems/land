@@ -5,7 +5,7 @@
         "DVS_Planes"
     ],
     "year": 2019,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

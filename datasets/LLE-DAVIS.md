@@ -7,7 +7,7 @@
         "LLE-vas"
     ],
     "year": 2024,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [

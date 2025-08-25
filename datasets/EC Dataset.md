@@ -3,7 +3,7 @@
     "name": "EC Dataset",
     "aliases": [],
     "year": 2018,
-    "modality": [
+    "modalities": [
         "Audio",
         "Vision"
     ],

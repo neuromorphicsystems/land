@@ -3,7 +3,7 @@
     "name": "N-Caltech101",
     "aliases": [],
     "year": 2015,
-    "modality": [
+    "modalities": [
         "Vision"
     ],
     "sensors": [
