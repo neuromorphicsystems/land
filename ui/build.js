@@ -1,36 +1,18 @@
-import * as esbuild from "esbuild";
 import * as fs from "fs";
-import matter from "gray-matter";
-import markdownit from "markdown-it";
-import mustache from "mustache";
 import * as path from "path";
-import { fileURLToPath } from "url";
 import * as process from "node:process";
+import * as zlib from "node:zlib";
+
+import * as esbuild from "esbuild";
+import mustache from "mustache";
 import sveltePlugin from "esbuild-svelte";
+
+import { loadDatasets, generateKeyToNameToColor } from "./data.js";
 
 fs.mkdirSync("build", { recursive: true });
 
-const datasets = [];
-const datasetsDirectory = path.join(
-    path.dirname(path.dirname(fileURLToPath(import.meta.url))),
-    "datasets",
-);
-const renderer = markdownit();
-for (const name of fs.readdirSync(datasetsDirectory).sort()) {
-    if (name.endsWith(".md")) {
-        try {
-            const dataset = matter(
-                fs.readFileSync(path.join(datasetsDirectory, name)),
-            );
-            datasets.push({
-                data: dataset.data,
-                html: renderer.render(dataset.content),
-            });
-        } catch (error) {
-            console.error(`\x1b[31m✘\x1b[0m Parsing ${name} failed: ${error}`);
-        }
-    }
-}
+const datasets = loadDatasets();
+const keyToNameToColor = generateKeyToNameToColor(datasets);
 
 console.log("Initialize esbuild");
 const context = await esbuild.context({
@@ -42,13 +24,25 @@ const context = await esbuild.context({
     conditions: ["svelte", "browser"],
     outdir: "build",
     bundle: true,
-    loader: { ".ttf": "dataurl" },
+    loader: { ".ttf": "dataurl", ".woff2": "dataurl" },
     target: ["es2022"],
     format: "esm",
     write: false,
     minify: process.env.MODE === "production",
     define: {
-        "process.env.DATASETS": JSON.stringify(datasets),
+        "process.env.DATA": `"${Buffer.from(
+            zlib.deflateRawSync(
+                JSON.stringify({
+                    datasets,
+                    keyToNameToColor,
+                }),
+                {
+                    level: 9,
+                    memLevel: 9,
+                    windowBits: 15,
+                },
+            ),
+        ).toString("base64")}"`,
     },
     plugins: [
         sveltePlugin({

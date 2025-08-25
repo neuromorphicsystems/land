@@ -1,5 +1,5 @@
 import { mount } from "svelte";
 
-import App from "./app.svelte";
+import AppLoader from "./appLoader.svelte";
 
-export default mount(App, { target: document.body });
+export default mount(AppLoader, { target: document.body });

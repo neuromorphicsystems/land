@@ -1,18 +1,20 @@
 <script lang="ts">
     import type { ArrayColumn, Column, Dataset } from "./dataset";
 
-    import { updateUrl } from "./appState.svelte";
     import { Datasets, linkSuffix, datasetLinkSuffix } from "./dataset";
+    import { snakeEncode } from "./state";
 
     const {
         datasets,
         dataset,
         width,
+        updateUrl,
         datasetDetail = $bindable(),
     }: {
         datasets: Datasets;
         dataset: Dataset;
         width: string;
+        updateUrl: () => void;
         datasetDetail: {
             index: number;
             open: boolean;
@@ -27,12 +29,19 @@
     ): string | null {
         if (column.type === "boolean") {
             const value = column.accessor(data);
-            if (
-                value == null ||
-                value.length === 0 ||
-                value.endsWith("?</span>")
-            ) {
+            if (value == null || value.length === 0) {
                 return null;
+            }
+            if (column.filter != null) {
+                let href = column.filter[1] ? "#a&" : "#";
+                href += `f.${snakeEncode(column.filter[0])}=${value.endsWith("&#10003;</span>") ? "yes" : "no"}&`;
+                href += `c.${snakeEncode(column.name)}`;
+                return value
+                    .replace("</span>", "</a>")
+                    .replace(
+                        "<span",
+                        `<a href=${href} target="_blank" class="detail-boolean"`,
+                    );
             }
             return value;
         }
@@ -41,6 +50,13 @@
             if (value == null || value.length === 0) {
                 return null;
             }
+            // for non-boolean columns, guarantees that column.name is in datasets.keyToNameToColor
+            if (column.filter != null) {
+                let href = column.filter[1] ? "#a&" : "#";
+                href += `f.${snakeEncode(column.filter[0])}=${snakeEncode(value)}&`;
+                href += `c.${snakeEncode(column.name)}`;
+                return `<a href="${href}" target="_blank" class="detail-tag" style="background-color: ${datasets.keyToNameToColor[column.name][value]}">${value}</span>`;
+            }
             return value;
         }
         if (column.type === "stringArray" || column.type === "numericalArray") {
@@ -48,11 +64,19 @@
             if (values == null || values.length === 0) {
                 return null;
             }
+            // for non-boolean columns, guarantees that column.name is in datasets.keyToNameToColor
+            if (column.filter != null) {
+                return `<div class="detail-array-item">${values
+                    .map(item => {
+                        let href = column.filter[1] ? "#a&" : "#";
+                        href += `f.${snakeEncode(column.filter[0])}=${snakeEncode(item)}&`;
+                        href += `c.${snakeEncode(column.name)}`;
+                        return `<a href="${href}" target="_blank" class="detail-tag" style="background-color: ${datasets.keyToNameToColor[column.name][item]}">${item}</a>`;
+                    })
+                    .join("")}</div>`;
+            }
             return `<div class="detail-array-item">${values
-                .map(
-                    item =>
-                        `<div style="background-color: ${datasets.arrayColumnToNameToColor.get(column.name).get(item)}">${item}</div>`,
-                )
+                .map(item => `<span>${item}</span>`)
                 .join("")}</div>`;
         }
         throw new Error(
@@ -67,7 +91,10 @@
                 columnToContents(column, dataset.data),
             ])
             .filter(
-                ([name, contents]) => name !== "Name" && contents != null,
+                ([name, contents]) =>
+                    name !== "Name" &&
+                    name !== "Description" &&
+                    contents != null,
             ) as [string, string][],
     );
     const bibtex = $derived.by(() => {
@@ -86,61 +113,45 @@
             "}",
         ].join("<br />");
     });
-
-    interface Link {
-        url: string;
-        suffix: string;
-        color: string;
+    const linksHaveFormat = $derived(
+        dataset.data.dataset_properties?.dataset_links.some(
+            link => link.format != null && link.format.length > 0,
+        ),
+    );
+    const linksHaveDoi = $derived(
+        dataset.data.dataset_properties?.dataset_links.some(
+            link => link.doi != null && link.doi.length > 0,
+        ),
+    );
+    const linksHaveAvailable = $derived(
+        dataset.data.dataset_properties?.dataset_links.some(
+            link => link.available != null,
+        ),
+    );
+    const linksHaveComment = $derived(
+        dataset.data.dataset_properties?.dataset_links.some(
+            link => link.comment != null && link.comment.length > 0,
+        ),
+    );
+    function linkTypeToName(linkType: string): string {
+        const lowercase = linkType.replace("_", " ");
+        return lowercase.charAt(0).toUpperCase() + lowercase.slice(1);
     }
-
-    const datasetLinks: Link[] = $derived.by(() => {
-        if (
-            dataset.data.dataset_properties == null ||
-            dataset.data.dataset_properties.dataset_links == null
-        ) {
-            return null;
-        }
-        const result = dataset.data.dataset_properties.dataset_links
-            .filter(link => link.available)
-            .map(link => {
-                const suffix = datasetLinkSuffix(link);
-                return {
-                    url: link.url,
-                    suffix,
-                    color: datasets.datasetLinkSuffixToColor.get(suffix),
-                };
-            });
-        if (result.length === 0) {
-            return null;
-        }
-        return result;
-    });
-    const links: Link[] = $derived.by(() => {
-        if (dataset.data.links == null || dataset.data.links.length === 0) {
-            return null;
-        }
-        return dataset.data.links.map(link => {
-            const suffix = linkSuffix(link);
-            return {
-                url: link.url,
-                suffix,
-                color: datasets.linkSuffixToColor.get(suffix),
-            };
-        });
-    });
 </script>
 
 <div class="detail" style="width: {width}">
-    <div class="title">
-        <div class="label">{dataset.data.name}</div>
-
+    <div class="header">
+        <div class="label">
+            <div class="title">{dataset.data.name}</div>
+            <div class="description">{dataset.data.description}</div>
+        </div>
         <div class="buttons">
             <div
                 class="button"
                 role="none"
                 onclick={() => {
                     window.open(
-                        `https://github.com/gcohen/neuromorphic_datasets/tree/main/datasets/${dataset.data.name}.md`,
+                        `http://github.com/neuromorphicsystems/land/tree/main/datasets/${dataset.data.name}.md`,
                     );
                 }}
             >
@@ -172,7 +183,7 @@
     </div>
     <div class="contents-wrapper">
         <div class="frontmatter">
-            <table>
+            <table class="properties">
                 <tbody>
                     {#each namesAndContents as nameAndContents}
                         <tr>
@@ -200,47 +211,92 @@
                             </td>
                         </tr>
                     {/if}
-                    {#if datasetLinks != null}
-                        <tr>
-                            <td>Dataset links</td>
-                            <td>
-                                <div class="links">
-                                    {#each datasetLinks as link}
-                                        <div
-                                            style="background-color: {link.color}"
-                                        >
-                                            <a href={link.url} target="_blank"
-                                                >{link.url}</a
-                                            ><span>{link.suffix}</span>
-                                        </div>
-                                    {/each}
-                                </div>
-                            </td>
-                        </tr>
-                    {/if}
-                    {#if links != null}
-                        <tr>
-                            <td>Links</td>
-                            <td>
-                                <div class="links">
-                                    {#each links as link}
-                                        <div
-                                            style="background-color: {link.color}"
-                                        >
-                                            <a href={link.url} target="_blank"
-                                                >{link.url}</a
-                                            ><span>{link.suffix}</span>
-                                        </div>
-                                    {/each}
-                                </div>
-                            </td>
-                        </tr>
-                    {/if}
                 </tbody>
             </table>
+
+            {#if dataset.data.dataset_properties?.dataset_links != null && dataset.data.dataset_properties.dataset_links.length > 0}
+                <div class="section">
+                    <div class="section-title">Dataset links</div>
+                    <table class="links">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>URL</th>
+                                {#if linksHaveFormat}
+                                    <th>Format</th>
+                                {/if}
+                                {#if linksHaveDoi}
+                                    <th>DOI</th>
+                                {/if}
+                                {#if linksHaveAvailable}
+                                    <th>Available</th>
+                                {/if}
+                                {#if linksHaveComment}
+                                    <th>Comment</th>
+                                {/if}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {#each dataset.data.dataset_properties.dataset_links as link}
+                                <tr>
+                                    <td>{link.name}</td>
+                                    <td
+                                        ><a href={link.url} target="_blank"
+                                            >{link.url}</a
+                                        ></td
+                                    >
+                                    {#if linksHaveFormat}
+                                        <td>{link.format}</td>
+                                    {/if}
+                                    {#if linksHaveDoi}
+                                        <td>{link.doi}</td>
+                                    {/if}
+                                    {#if linksHaveAvailable}
+                                        {#if link.available}
+                                            <td
+                                                style="color: #B4DEC6; font-weight: bold"
+                                                >&#10003;</td
+                                            >
+                                        {:else}
+                                            <td
+                                                style="color: #874037; font-weight: bold"
+                                                >&#10007;</td
+                                            >
+                                        {/if}
+                                    {/if}
+                                    {#if linksHaveComment}
+                                        <td>{link.comment}</td>
+                                    {/if}
+                                </tr>
+                            {/each}
+                        </tbody>
+                    </table>
+                </div>
+            {/if}
+
+            {#if dataset.data.links != null && dataset.data.links.length > 0}
+                <div class="section">
+                    <div class="section-title">Other links</div>
+                    <table class="links other">
+                        <tbody>
+                            {#each dataset.data.links as link}
+                                <tr>
+                                    <td>{linkTypeToName(link.type)}</td>
+                                    <td
+                                        ><a href={link.url} target="_blank"
+                                            >{link.url}</a
+                                        ></td
+                                    >
+                                </tr>
+                            {/each}
+                        </tbody>
+                    </table>
+                </div>
+            {/if}
+
             {#if dataset.data.paper != null}
-                <div class="paper">
-                    <div class="header">Paper</div>
+                <div class="section paper">
+                    <div class="section-title">Paper</div>
                     <div class="authors">
                         {#if dataset.data.paper.authors.length === 1}
                             {dataset.data.paper.authors[0]},
@@ -284,8 +340,8 @@
                 </div>
             {/if}
             {#if bibtex != null}
-                <div class="bibtex">
-                    <div class="header">BibTeX</div>
+                <div class="section">
+                    <div class="section-title">BibTeX</div>
                     <div class="bibtex-contents">{@html bibtex}</div>
                 </div>
             {/if}
@@ -305,20 +361,31 @@
         flex-direction: column;
     }
 
-    .title {
+    .header {
         display: flex;
         padding: 20px;
-        line-height: 25px;
+        gap: 20px;
         justify-content: space-between;
-        font-size: 16px;
+        align-items: center;
     }
 
-    .buttons {
+    .header .label .title {
+        font-size: 16px;
+        color: var(--content-0);
+        margin-bottom: 5px;
+    }
+
+    .header .label .description {
+        font-size: 14px;
+        color: var(--content-1);
+    }
+
+    .header .buttons {
         display: flex;
         gap: 20px;
     }
 
-    .title .button {
+    .header .buttons .button {
         flex-grow: 0;
         flex-shrink: 0;
         width: 25px;
@@ -326,12 +393,17 @@
         cursor: pointer;
     }
 
-    .title .button svg path {
+    .header .buttons .button svg path {
         fill: var(--content-2);
     }
 
-    .title .button:hover svg path {
+    .header .buttons .button:hover svg path {
         fill: var(--content-1);
+    }
+
+    .section {
+        max-width: 100%;
+        overflow-x: auto;
     }
 
     .contents-wrapper {
@@ -357,54 +429,83 @@
         font-size: 14px;
     }
 
-    .frontmatter table tr td {
+    .frontmatter table.properties tr td {
         padding-bottom: 5px;
-    }
-
-    .frontmatter table tr td:first-of-type {
-        text-align: right;
-        padding-right: 10px;
-        color: var(--content-2);
     }
 
     .frontmatter table tr td:last-of-type {
         padding-left: 10px;
     }
 
-    .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
+    .frontmatter table.properties tr td:first-of-type {
+        display: inline-block;
+        text-align: right;
+        padding-right: 10px;
+        color: var(--content-1);
     }
 
-    .links div {
-        padding-left: 4px;
-        padding-right: 4px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        border-radius: 4px;
-        color: var(--background-0);
+    .frontmatter table.links tr td {
+        vertical-align: top;
     }
 
-    .links div a {
-        padding-right: 5px;
-        word-break: break-word;
+    .frontmatter table.links a {
+        display: inline-block;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: var(--blue-1);
     }
 
-    .links div a:link {
-        color: var(--background-0);
+    .frontmatter table.links.other a {
+        max-width: 300px;
     }
 
-    .links div a:visited {
-        color: var(--background-0);
+    .frontmatter table.links a:hover {
+        color: var(--blue-0);
     }
 
-    .links div a:hover {
-        color: var(--background-2);
+    .frontmatter table.links a:visited {
+        color: var(--purple-1);
     }
 
-    .links div a:active {
-        color: var(--background-2);
+    .frontmatter table.links a:visited:hover {
+        color: var(--purple-0);
+    }
+
+    .frontmatter table.links {
+        white-space: nowrap;
+    }
+
+    .frontmatter table.links thead tr th {
+        font-weight: normal;
+        color: var(--content-1);
+    }
+
+    .frontmatter table.links thead tr th {
+        text-align: left;
+    }
+
+    .frontmatter table.links tr th:not(:first-of-type) {
+        padding-left: 10px;
+    }
+
+    .frontmatter table.links tr th:not(:last-of-type) {
+        padding-right: 10px;
+    }
+
+    .frontmatter table.links tr td:not(:first-of-type) {
+        padding-left: 10px;
+    }
+
+    .frontmatter table.links tr td:not(:last-of-type) {
+        padding-right: 10px;
+    }
+
+    .frontmatter .section-title {
+        padding-top: 20px;
+        font-size: 14px;
+        color: var(--content-2);
+        padding-bottom: 10px;
     }
 
     :global(.detail-array-item) {
@@ -413,20 +514,34 @@
         gap: 5px;
     }
 
-    :global(.detail-array-item div) {
+    :global(.detail-array-item span, a.detail-tag) {
         padding-left: 4px;
         padding-right: 4px;
         padding-top: 2px;
         padding-bottom: 2px;
         border-radius: 4px;
+    }
+
+    :global(a.detail-tag) {
+        text-decoration: none;
         color: var(--background-0);
     }
 
-    .header {
-        padding-top: 20px;
-        font-size: 14px;
-        color: var(--content-2);
-        padding-bottom: 10px;
+    :global(a.detail-tag:hover) {
+        opacity: 0.7;
+    }
+
+    :global(.detail-array-item span) {
+        border: 1px solid var(--content-2);
+        color: var(--content-1);
+    }
+
+    :global(a.detail-boolean) {
+        text-decoration: none;
+    }
+
+    :global(a.detail-boolean:hover) {
+        opacity: 0.7;
     }
 
     .paper .authors {
@@ -448,27 +563,27 @@
 
     .paper .doi .paper-label {
         font-size: 14px;
-        color: var(--content-2);
+        color: var(--content-1);
     }
 
     .paper .doi a {
         font-size: 14px;
     }
 
-    .paper .doi a:link {
-        color: var(--content-0);
-    }
-
-    .paper .doi a:visited {
-        color: var(--content-0);
+    .paper .doi a {
+        color: var(--blue-1);
     }
 
     .paper .doi a:hover {
-        color: var(--content-1);
+        color: var(--blue-0);
     }
 
-    .paper .doi a:active {
-        color: var(--content-1);
+    .paper .doi a:visited {
+        color: var(--purple-1);
+    }
+
+    .paper .doi a:visited:hover {
+        color: var(--purple-0);
     }
 
     .paper .open-access {
@@ -479,7 +594,7 @@
 
     .paper .open-access .paper-label {
         font-size: 14px;
-        color: var(--content-2);
+        color: var(--content-1);
     }
 
     .paper .open-access span {

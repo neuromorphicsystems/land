@@ -103,7 +103,6 @@
 
     .popover {
         position: absolute;
-        background-color: #0000BB;
         top: 46px;
         right: 0;
         z-index: 11;
@@ -113,6 +112,7 @@
         font-size: 12px;
         max-height: 300px;
         overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .choice {

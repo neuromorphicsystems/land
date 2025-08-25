@@ -1,5 +1,3 @@
-import * as colormaps from "./colormaps";
-
 export interface Dataset {
     data: {
         [key: string]: any;
@@ -325,6 +323,7 @@ export interface Column {
     name: string;
     accessor: (data: { [key: string]: any }) => string;
     default: boolean;
+    filter: [string, boolean] | null;
 }
 
 export interface ArrayColumn {
@@ -332,6 +331,7 @@ export interface ArrayColumn {
     name: string;
     accessor: (data: { [key: string]: any }) => string[];
     default: boolean;
+    filter: [string, boolean] | null;
 }
 
 export function linkSuffix(link: { [key: string]: any }): string {
@@ -345,14 +345,23 @@ export function datasetLinkSuffix(link: { [key: string]: any }): string {
 export class Datasets {
     inner: Dataset[];
     filters: Filter[];
+    advancedFilters: Filter[];
     yearsBounds: [number, number];
     columns: (Column | ArrayColumn)[];
-    arrayColumnToNameToColor: Map<string, Map<string, string>>;
-    linkSuffixToColor: Map<string, string>;
-    datasetLinkSuffixToColor: Map<string, string>;
-
-    constructor(datasets: Dataset[]) {
-        this.inner = datasets.sort(
+    keyToNameToColor: {
+        [key: string]: {
+            [key: string]: string;
+        };
+    };
+    constructor(data: {
+        datasets: Dataset[];
+        keyToNameToColor: {
+            [key: string]: {
+                [key: string]: string;
+            };
+        };
+    }) {
+        this.inner = data.datasets.sort(
             (a, b) =>
                 a.data.year - b.data.year ||
                 a.data.name.localeCompare(b.data.name),
@@ -364,7 +373,7 @@ export class Datasets {
             new StaticFilterArray(
                 "Modality",
                 50,
-                data => data.modality,
+                data => data.modalities,
                 this.inner,
             ),
             new StaticFilter(
@@ -374,14 +383,16 @@ export class Datasets {
                 this.inner,
             ),
             new DynamicFilterArray(
-                "Subcategory",
+                "Tag",
                 150,
-                data => data.subcategory,
+                data => data.tags,
                 "Category",
                 data => data.category,
                 this.inner,
             ),
-            new StaticFilter("Task", 150, data => data.task, this.inner),
+        ];
+        this.advancedFilters = [
+            ...this.filters,
             new StaticFilterArray(
                 "Sensor",
                 100,
@@ -466,60 +477,70 @@ export class Datasets {
                 name: "Name",
                 accessor: data => data.name,
                 default: true,
-            },
-            {
-                type: "stringArray",
-                name: "Aliases",
-                accessor: data => data.aliases,
-                default: false,
-            },
-            {
-                type: "string",
-                name: "Full name",
-                accessor: data => data.full_name,
-                default: false,
-            },
-            {
-                type: "string",
-                name: "Modality",
-                accessor: data => data.modality,
-                default: false,
+                filter: null,
             },
             {
                 type: "numerical",
                 name: "Year",
                 accessor: data => data.year,
                 default: true,
+                filter: null,
             },
             {
-                type: "stringArray",
-                name: "Sensors",
-                accessor: data => data.sensors,
+                type: "string",
+                name: "Description",
+                accessor: data => data.description,
                 default: true,
+                filter: null,
             },
             {
                 type: "stringArray",
-                name: "Other sensors",
-                accessor: data => data.other_sensors,
-                default: false,
+                name: "Modalities",
+                accessor: data => data.modalities,
+                default: true,
+                filter: ["Modality", false],
             },
             {
                 type: "string",
                 name: "Category",
                 accessor: data => data.category,
                 default: true,
+                filter: ["Category", false],
             },
             {
                 type: "stringArray",
-                name: "Subcategories",
-                accessor: data => data.subcategory,
+                name: "Tags",
+                accessor: data => data.tags,
                 default: true,
+                filter: ["Tag", false],
+            },
+            {
+                type: "stringArray",
+                name: "Aliases",
+                accessor: data => data.aliases,
+                default: false,
+                filter: null,
             },
             {
                 type: "string",
-                name: "Task",
-                accessor: data => data.task,
+                name: "Full name",
+                accessor: data => data.full_name,
                 default: false,
+                filter: null,
+            },
+            {
+                type: "stringArray",
+                name: "Sensors",
+                accessor: data => data.sensors,
+                default: false,
+                filter: ["Sensor", true],
+            },
+            {
+                type: "stringArray",
+                name: "Other sensors",
+                accessor: data => data.other_sensors,
+                default: false,
+                filter: ["Other sensor", true],
             },
             {
                 type: "numericalArray",
@@ -529,62 +550,70 @@ export class Datasets {
                         citation => `${citation.count} (${citation.source})`,
                     ),
                 default: false,
+                filter: null,
             },
             {
-                type: "string",
+                type: "boolean",
                 name: "Available online",
                 accessor: data =>
                     optionalBooleanTable(
                         data.dataset_properties?.available_online,
                     ),
-                default: true,
+                default: false,
+                filter: ["Available online", true],
             },
             {
-                type: "string",
+                type: "boolean",
                 name: "Ground truth",
                 accessor: data =>
                     optionalBooleanTable(
                         data.dataset_properties?.has_ground_truth,
                     ),
                 default: false,
+                filter: ["Ground truth", true],
             },
             {
-                type: "string",
+                type: "boolean",
                 name: "Real data",
                 accessor: data =>
                     optionalBooleanTable(
                         data.dataset_properties?.has_real_data,
                     ),
                 default: false,
+                filter: ["Real data", true],
             },
             {
-                type: "string",
+                type: "boolean",
                 name: "Simulated data",
                 accessor: data =>
                     optionalBooleanTable(
                         data.dataset_properties?.has_simulated_data,
                     ),
                 default: false,
+                filter: ["Simulated data", true],
             },
             {
-                type: "string",
+                type: "boolean",
                 name: "Frames",
                 accessor: data =>
                     optionalBooleanTable(data.dataset_properties?.has_frames),
                 default: false,
+                filter: ["Frames", true],
             },
             {
-                type: "string",
+                type: "boolean",
                 name: "Biases",
                 accessor: data =>
                     optionalBooleanTable(data.dataset_properties?.has_biases),
                 default: false,
+                filter: ["Biases", true],
             },
             {
                 type: "stringArray",
                 name: "Related",
                 accessor: data => data.connected_datasets,
                 default: false,
+                filter: null,
             },
         ];
         const additionalFieldToType: Map<
@@ -648,123 +677,86 @@ export class Datasets {
         for (const [key, type] of Array.from(
             additionalFieldToType.entries(),
         ).sort()) {
-            const name = key.replace(/_/g, " ");
-            let accessor;
+            const lowercaseName = key.replace(/_/g, " ");
+            const name = `${lowercaseName.charAt(0).toUpperCase()}${lowercaseName.slice(1)}`;
             if (type === "numericalArray" || type === "stringArray") {
-                accessor = data =>
-                    data.additional_metadata?.[key].map(value => `${value}`);
-            } else if (type === "boolean") {
-                accessor = data =>
-                    optionalBooleanTable(data.additional_metadata?.[key]);
+                this.columns.push({
+                    type,
+                    name,
+                    accessor: data =>
+                        data.additional_metadata?.[key].map(
+                            value => `${value}`,
+                        ),
+                    default: false,
+                    filter: null,
+                });
             } else {
-                accessor = data => `${data.additional_metadata?.[key] ?? ""}`;
+                if (type === "boolean") {
+                    this.columns.push({
+                        type,
+                        name: `${name.charAt(0).toUpperCase()}${name.slice(1)}`,
+                        accessor: data =>
+                            optionalBooleanTable(
+                                data.additional_metadata?.[key],
+                            ),
+                        default: false,
+                        filter: null,
+                    });
+                } else {
+                    this.columns.push({
+                        type,
+                        name: `${name.charAt(0).toUpperCase()}${name.slice(1)}`,
+                        accessor: data =>
+                            `${data.additional_metadata?.[key] ?? ""}`,
+                        default: false,
+                        filter: null,
+                    });
+                }
             }
-            this.columns.push({
-                type,
-                name: `${name.charAt(0).toUpperCase()}${name.slice(1)}`,
-                accessor,
-                default: false,
-            });
         }
         this.columns.push({
             type: "stringArray",
             name: "Distribution",
             accessor: data => data.dataset_properties?.distribution_methods,
-            default: true,
+            default: false,
+            filter: ["Distribution", true],
         });
         this.columns.push({
             type: "stringArray",
             name: "Format",
             accessor: data => data.dataset_properties?.file_formats,
-            default: true,
+            default: false,
+            filter: ["Format", true],
         });
-        this.arrayColumnToNameToColor = new Map();
+        this.keyToNameToColor = data.keyToNameToColor;
         for (const column of this.columns) {
             if (
-                column.type === "numericalArray" ||
-                column.type === "stringArray"
+                column.filter != null &&
+                column.type != "boolean" &&
+                !this.keyToNameToColor.hasOwnProperty(column.name)
             ) {
-                const namesSet: Set<string> = new Set();
-                for (const dataset of this.inner) {
-                    const names = column.accessor(dataset.data);
-                    if (names != null) {
-                        for (const name of column.accessor(dataset.data)) {
-                            namesSet.add(name);
-                        }
-                    }
-                }
-                const names = Array.from(namesSet);
-                if (column.type === "stringArray") {
-                    names.sort();
-                } else {
-                    names.sort((a, b) => parseFloat(a) - parseFloat(b));
-                }
-                const colormap =
-                    column.type === "stringArray"
-                        ? colormaps.ROMAO.slice(20, 236)
-                        : colormaps.ROMAO.slice(128, 236).reverse();
-                this.arrayColumnToNameToColor.set(
-                    column.name,
-                    new Map(
-                        names.map((name, index) => [
-                            name,
-                            colormaps.rgbToHex(
-                                colormap[
-                                    Math.floor(
-                                        (index / names.length) *
-                                            colormap.length,
-                                    )
-                                ],
-                            ),
-                        ]),
-                    ),
+                throw new Error(
+                    `the column \"${column.name}\" has a filter but it is not listed in generateKeyToNameToColor (data.js)`,
                 );
             }
         }
-        const linkSuffixesSet: Set<string> = new Set();
-        const datasetLinkSuffixesSet: Set<string> = new Set();
-        for (const dataset of this.inner) {
-            if (dataset.data.links != null) {
-                for (const link of dataset.data.links) {
-                    linkSuffixesSet.add(linkSuffix(link));
+        for (const key of Object.keys(this.keyToNameToColor)) {
+            let found = false;
+            for (const column of this.columns) {
+                if (
+                    column.filter != null &&
+                    column.name === key &&
+                    column.type !== "boolean"
+                ) {
+                    found = true;
+                    break;
                 }
             }
-            if (dataset.data.dataset_properties?.dataset_links != null) {
-                for (const datasetLink of dataset.data.dataset_properties
-                    .dataset_links) {
-                    datasetLinkSuffixesSet.add(datasetLinkSuffix(datasetLink));
-                }
+            if (!found) {
+                throw new Error(
+                    `\"${key}\" listed in generateKeyToNameToColor (data.js) has no column`,
+                );
             }
         }
-        const linksColormap = colormaps.ROMAO.slice(30, 108);
-        const datasetLinksColormap = colormaps.ROMAO.slice(148, 226).reverse();
-        const linkSuffixes = Array.from(linkSuffixesSet).sort();
-        const datasetLinkSuffixes = Array.from(datasetLinkSuffixesSet).sort();
-        this.linkSuffixToColor = new Map(
-            linkSuffixes.map((linkSuffix, index) => [
-                linkSuffix,
-                colormaps.rgbToHex(
-                    linksColormap[
-                        Math.floor(
-                            (index / linkSuffixes.length) *
-                                linksColormap.length,
-                        )
-                    ],
-                ),
-            ]),
-        );
-        this.datasetLinkSuffixToColor = new Map(
-            datasetLinkSuffixes.map((datasetLinkSuffix, index) => [
-                datasetLinkSuffix,
-                colormaps.rgbToHex(
-                    datasetLinksColormap[
-                        Math.floor(
-                            (index / datasetLinkSuffixes.length) *
-                                datasetLinksColormap.length,
-                        )
-                    ],
-                ),
-            ]),
-        );
     }
 }

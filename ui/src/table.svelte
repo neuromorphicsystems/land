@@ -1,18 +1,19 @@
 <script lang="ts">
+    import type { AppState } from "./state";
     import type { ArrayColumn, Dataset, Datasets, Column } from "./dataset";
-
-    import { updateUrl } from "./appState.svelte";
 
     const {
         datasets,
         selectedDatasets,
         columnsSelection,
+        updateUrl,
         sort = $bindable(),
         datasetDetail = $bindable(),
     }: {
         datasets: Datasets;
         selectedDatasets: Dataset[];
         columnsSelection: boolean[];
+        updateUrl: () => void;
         sort: { columnIndex: number; ascending: boolean };
         datasetDetail: {
             index: number;
@@ -26,11 +27,14 @@
             [key: string]: any;
         },
     ): string {
-        if (
-            column.type === "boolean" ||
-            column.type === "string" ||
-            column.type === "numerical"
-        ) {
+        if (column.type === "boolean" || column.type === "numerical") {
+            return column.accessor(data) ?? "";
+        }
+        if (column.type === "string") {
+            if (datasets.keyToNameToColor.hasOwnProperty(column.name)) {
+                const item = column.accessor(data);
+                return `<div class="table-tag-wrapper"><span class="table-tag" style="background-color: ${datasets.keyToNameToColor[column.name][item]}">${item}</span></div>`;
+            }
             return column.accessor(data) ?? "";
         }
         if (column.type === "stringArray" || column.type === "numericalArray") {
@@ -38,11 +42,16 @@
             if (values == null || values.length === 0) {
                 return '<div class="table-array-item"></div>';
             }
+            if (datasets.keyToNameToColor.hasOwnProperty(column.name)) {
+                return `<div class="table-array-item">${values
+                    .map(
+                        item =>
+                            `<span class="table-tag" style="background-color: ${datasets.keyToNameToColor[column.name][item]}">${item}</span>`,
+                    )
+                    .join("")}</div>`;
+            }
             return `<div class="table-array-item">${values
-                .map(
-                    item =>
-                        `<div style="background-color: ${datasets.arrayColumnToNameToColor.get(column.name).get(item)}">${item}</div>`,
-                )
+                .map(item => `<span class="table-tag table-tag-nocolor">${item}</span>`)
                 .join("")}</div>`;
         }
         throw new Error(
@@ -95,7 +104,7 @@
             >
                 {#each datasets.columns as column, index}
                     {#if columnsSelection[index]}
-                        <td>{@html columnToContents(column, dataset.data)}</td>
+                        <td><div class="td-content">{@html columnToContents(column, dataset.data)}</div></td>
                     {/if}
                 {/each}
             </tr>
@@ -153,18 +162,38 @@
         background-color: var(--background-2);
     }
 
+    .td-content {
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    :global(.td-content .table-tag-wrapper) {
+        display: flex;
+    }
+
+    :global(.td-content span) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     :global(.table-array-item) {
         display: flex;
         gap: 5px;
     }
 
-    :global(.table-array-item div) {
+    :global(.table-tag) {
         padding-left: 4px;
         padding-right: 4px;
         padding-top: 2px;
         padding-bottom: 2px;
         border-radius: 4px;
         color: var(--background-0);
+    }
+
+    :global(.table-tag.table-tag-nocolor) {
+        border: 1px solid var(--content-2);
+        color: var(--content-1);
     }
 
     :global(.table-array-triangle) {

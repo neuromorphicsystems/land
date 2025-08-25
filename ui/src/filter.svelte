@@ -113,8 +113,8 @@
     .count {
         flex-grow: 0;
         flex-shrink: 0;
-        width: 30px;
-        padding-right: 10px;
+        width: 40px;
+        padding-right: 20px;
         text-align: right;
         line-height: 14px;
         color: var(--content-0);

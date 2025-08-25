@@ -1,9 +1,9 @@
 <script lang="ts">
-    import { updateUrl } from "./appState.svelte";
-
     let {
+        updateUrl,
         activeTab = $bindable(),
     }: {
+        updateUrl: () => void;
         activeTab: number;
     } = $props();
 </script>
@@ -61,7 +61,7 @@
         <div
             class="url-button"
             onclick={() => {
-                window.open("https://github.com/gcohen/neuromorphic_datasets");
+                window.open("http://github.com/neuromorphicsystems/land");
             }}
             role="none"
         >

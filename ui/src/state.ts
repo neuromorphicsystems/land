@@ -1,10 +1,44 @@
 import { Datasets } from "./dataset";
 
-// @ts-ignore
-export const datasets: Datasets = new Datasets(process.env.DATASETS);
+export async function decompressDatasets(): Promise<Datasets> {
+    // @ts-ignore
+    const rawData = process.env.DATA;
+    const bytes = Uint8Array.from(window.atob(rawData), character =>
+        character.charCodeAt(0),
+    );
+    const stream = new ReadableStream({
+        start(controller) {
+            controller.enqueue(bytes);
+            controller.close();
+        },
+    });
+    const decompressionStream = new DecompressionStream("deflate-raw");
+    const decompressedStream = stream.pipeThrough(decompressionStream);
+    const reader = decompressedStream.getReader();
+    const chunks: Uint8Array<ArrayBuffer>[] = [];
+    let totalLength = 0;
+    while (true) {
+        const { done, value } = await reader.read();
+        if (done) {
+            break;
+        }
+        totalLength += value.length;
+        chunks.push(value);
+    }
+    const decompressed = new Uint8Array(totalLength);
+    let offset = 0;
+    for (const chunk of chunks) {
+        decompressed.set(chunk, offset);
+        offset += chunk.length;
+    }
+    const text = new TextDecoder().decode(decompressed);
+    const data = JSON.parse(text);
+    return new Datasets(data);
+}
 
 export interface AppState {
     yearsValues: [number, number];
+    advancedSearch: boolean;
     filtersSelection: { [key: string]: number };
     columnsSelection: boolean[];
     sort: { columnIndex: number; ascending: boolean };
@@ -15,46 +49,44 @@ export interface AppState {
     activeTab: number;
 }
 
-const defaultAppState: AppState = {
-    yearsValues: datasets.yearsBounds,
-    filtersSelection: Object.fromEntries(
-        datasets.filters.map(filter => [filter.name, 0]),
-    ),
-    columnsSelection: datasets.columns.map(column => column.default),
-    sort: {
-        columnIndex: 4,
-        ascending: false,
-    },
-    datasetDetail: {
-        index: 0,
-        open: false,
-    },
-    activeTab: 0,
-};
+export function getDefaultAppState(datasets: Datasets): AppState {
+    return {
+        yearsValues: datasets.yearsBounds,
+        advancedSearch: false,
+        filtersSelection: Object.fromEntries(
+            datasets.advancedFilters.map(filter => [filter.name, 0]),
+        ),
+        columnsSelection: datasets.columns.map(column => column.default),
+        sort: {
+            columnIndex: 1,
+            ascending: false,
+        },
+        datasetDetail: {
+            index: 0,
+            open: false,
+        },
+        activeTab: 0,
+    };
+}
 
 function clamp(value: number, minimum: number, maximum: number): number {
     return Math.min(Math.max(value, minimum), maximum);
 }
 
-function snakeEncode(key: string): string {
+export function snakeEncode(key: string): string {
     return key
         .replace(/[\s-]/g, "_")
-        .replace(/,\(\)/g, "")
+        .replace(/[\,\(\)]/g, "")
         .replace(/\+/g, "p")
         .toLowerCase();
 }
 
-function hashToState(hash: string): AppState {
-    const state: AppState = {
-        yearsValues: [...defaultAppState.yearsValues],
-        filtersSelection: { ...defaultAppState.filtersSelection },
-        columnsSelection: [...defaultAppState.columnsSelection],
-        sort: { ...defaultAppState.sort },
-        datasetDetail: {
-            ...defaultAppState.datasetDetail,
-        },
-        activeTab: defaultAppState.activeTab,
-    };
+export function hashToState(
+    hash: string,
+    defaultAppState: AppState,
+    datasets: Datasets,
+): AppState {
+    const state = getDefaultAppState(datasets);
     for (const [key, value] of new URLSearchParams(hash.slice(1)).entries()) {
         switch (key.slice(0, 2)) {
             case "y.": {
@@ -90,7 +122,7 @@ function hashToState(hash: string): AppState {
             case "f.": {
                 const snakeName = key.slice(2);
                 let found = false;
-                for (const filter of datasets.filters) {
+                for (const filter of datasets.advancedFilters) {
                     const filterName = snakeEncode(filter.name);
                     if (filterName === snakeName) {
                         if (value === "any") {
@@ -122,6 +154,10 @@ function hashToState(hash: string): AppState {
                         `parsing "${key}=${value}" failed (no match found)`,
                     );
                 }
+                break;
+            }
+            case "a": {
+                state.advancedSearch = !defaultAppState.advancedSearch;
                 break;
             }
             case "c.": {
@@ -235,7 +271,11 @@ function hashToState(hash: string): AppState {
     return state;
 }
 
-function stateToUrl(state: AppState): string {
+function stateToUrl(
+    state: AppState,
+    defaultAppState: AppState,
+    datasets: Datasets,
+): string {
     let prefix = "#";
     let url = "";
     if (
@@ -247,7 +287,7 @@ function stateToUrl(state: AppState): string {
     }
     for (const [name, selection] of Object.entries(state.filtersSelection)) {
         if (selection > 0) {
-            for (const filter of datasets.filters) {
+            for (const filter of datasets.advancedFilters) {
                 if (filter.name === name) {
                     url += `${prefix}f.${snakeEncode(name)}=${snakeEncode(filter.choices(state.filtersSelection)[selection - 1])}`;
                     prefix = "&";
@@ -255,6 +295,10 @@ function stateToUrl(state: AppState): string {
                 }
             }
         }
+    }
+    if (state.advancedSearch !== defaultAppState.advancedSearch) {
+        url += `${prefix}a`;
+        prefix = "&";
     }
     for (
         let columnIndex = 0;
@@ -297,32 +341,29 @@ function stateToUrl(state: AppState): string {
     return url;
 }
 
-// @ts-ignore
-export const appState: AppState = $state(hashToState(window.location.hash));
+export function initialAppState(defaultAppState: AppState, datasets: Datasets) {
+    return hashToState(window.location.hash, defaultAppState, datasets);
+}
 
 let lastPush = window.performance.now();
-export function updateUrl() {
+export function updateUrlWithState(
+    appState,
+    defaultAppState,
+    datasets: Datasets,
+) {
     const now = window.performance.now();
     if (now - lastPush < 5000) {
         window.history.replaceState(
             undefined,
             "",
-            `${location.pathname}${stateToUrl(appState)}`,
+            `${location.pathname}${stateToUrl(appState, defaultAppState, datasets)}`,
         );
     } else {
         window.history.pushState(
             undefined,
             "",
-            `${location.pathname}${stateToUrl(appState)}`,
+            `${location.pathname}${stateToUrl(appState, defaultAppState, datasets)}`,
         );
         lastPush = now;
     }
 }
-updateUrl();
-window.addEventListener("hashchange", () => {
-    for (const [key, value] of Object.entries(
-        hashToState(window.location.hash),
-    )) {
-        appState[key] = value;
-    }
-});
