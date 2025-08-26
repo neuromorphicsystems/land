@@ -6,6 +6,8 @@ The `json` metadata is validated using a schema, the definitions of which can be
 
 The datasets themselves are stored in the /datasets/ directory, with a separate file for each dataset.
 
+Browse datasets with the web app https://neuromorphicsystems.github.io/land/
+
 # Local development
 
 ```sh
