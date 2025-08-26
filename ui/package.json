@@ -3,6 +3,7 @@
     "type": "module",
     "dependencies": {
         "chart.js": "4.4.9",
+        "commander": "14.0.0",
         "esbuild": "0.25.3",
         "esbuild-svelte": "0.9.2",
         "gray-matter": "4.0.3",
