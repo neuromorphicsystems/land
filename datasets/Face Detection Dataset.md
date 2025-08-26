@@ -72,7 +72,6 @@
         "num_blinks": "248",
         "recording_methodology": "static camera",
         "size_uncompressed": "1.8 Gb",
-        "file_format": "EventStream",
         "event_format": "(x, y, t, p)",
         "polarity_range": "(0, 1)",
         "time_resolution": "us",

@@ -82,7 +82,6 @@
     "full_name": "",
     "additional_metadata": {
         "num_recordings": "7",
-        "file_format": "Matlab",
         "stereo": false
     },
     "bibtex": {

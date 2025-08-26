@@ -84,8 +84,7 @@
     "full_name": "Event-based Autofocus Dataset (EAD)",
     "additional_metadata": {
         "optic": "Fujifilm D17x7.5B-YN1",
-        "num_recordings": "28",
-        "file_format": "aedat"
+        "num_recordings": "28"
     },
     "bibtex": {
         "pages": "16323--16332",

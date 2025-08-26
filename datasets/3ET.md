@@ -88,7 +88,6 @@
         "v2e_method": "constant time-bin count representation",
         "sensor_resolution": "240x180",
         "resolution": "80\u00d760",
-        "file_format": "h5 files",
         "num_subjects": "22",
         "size_uncompressed": "3.7 Gb",
         "size_compressed": "3.7 Gb",

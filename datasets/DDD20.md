@@ -83,8 +83,7 @@
     "additional_metadata": {
         "total_duration": "51 hours",
         "total_distance": "4000 km",
-        "location": "USA",
-        "file_format": "HDF5 format"
+        "location": "USA"
     },
     "bibtex": {
         "pages": "1--6",

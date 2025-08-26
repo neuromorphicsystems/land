@@ -81,7 +81,6 @@
         "location": "Brookfield and Kenmore Hills (Brisbane)",
         "route_length": "8km",
         "num_loops": "6",
-        "file_format": "rosbags",
         "stereo": false
     },
     "bibtex": {

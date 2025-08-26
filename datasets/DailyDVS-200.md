@@ -95,8 +95,7 @@
         "num_classes": "200",
         "num_subjects": "47",
         "num_recordings": "22046",
-        "sensor_resolution": "320x240",
-        "file_format": "aedat4"
+        "sensor_resolution": "320x240"
     },
     "bibtex": {
         "pages": "55--72",

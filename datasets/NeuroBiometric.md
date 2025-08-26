@@ -79,8 +79,7 @@
     "full_name": "",
     "additional_metadata": {
         "num_subjects": "45",
-        "size_compressed": "11.8 Gb",
-        "file_format": "aedat"
+        "size_compressed": "11.8 Gb"
     },
     "bibtex": {
         "pages": "206--218",

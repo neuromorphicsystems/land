@@ -77,8 +77,7 @@
     ],
     "full_name": "",
     "additional_metadata": {
-        "num_recordings": "4",
-        "file_format": "binary"
+        "num_recordings": "4"
     },
     "bibtex": {
         "pages": "884--892",

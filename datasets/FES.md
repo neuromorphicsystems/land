@@ -74,8 +74,7 @@
         "num_female": "31",
         "num_male": "42",
         "size_uncompressed": "629.2 Gb",
-        "total_duration": "689 min",
-        "file_format": "Prophesee .raw"
+        "total_duration": "689 min"
     },
     "bibtex": {
         "pages": "1409",

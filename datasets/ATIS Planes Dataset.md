@@ -86,7 +86,6 @@
     "additional_metadata": {
         "num_classes": "4",
         "num_recordings": "802",
-        "file_format": "Matlab",
         "stereo": false
     },
     "bibtex": {

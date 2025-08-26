@@ -25,7 +25,9 @@
         "distribution_methods": [
             "Other"
         ],
-        "file_formats": [],
+        "file_formats": [
+            "HDF5"
+        ],
         "availability_comment": "Original dataset is no longer available. Superseded by DDD20",
         "dataset_links": [],
         "size_gb": 432.2,
@@ -75,7 +77,6 @@
         "num_days": "6",
         "total_distance": "1000 km",
         "location": "Switzerland and Germany",
-        "file_format": "HDF5",
         "num_categories": "5"
     },
     "connected_datasets": [

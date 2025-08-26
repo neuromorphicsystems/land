@@ -78,7 +78,6 @@
     "full_name": "",
     "additional_metadata": {
         "sl_type": "Spanish",
-        "file_format": "aedat",
         "sensor_resolution": "128 x 128",
         "num_recordings": "1100",
         "num_subjects": "58",

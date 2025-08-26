@@ -82,8 +82,7 @@
     "additional_metadata": {
         "num_subjects": "25",
         "num_recordings": "10000",
-        "num_classes": "10",
-        "file_format": "numpy"
+        "num_classes": "10"
     },
     "bibtex": {
         "pages": "1923--1937",
