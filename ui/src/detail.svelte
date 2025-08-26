@@ -451,8 +451,8 @@
         height: 25px;
         line-height: 25px;
         text-decoration: none;
-        color: var(--content-2);
-        border: 1px solid var(--content-2);
+        color: var(--content-1);
+        border: 1px solid var(--content-1);
         border-radius: 4px;
         padding-left: 10px;
         padding-right: 10px;
@@ -460,7 +460,8 @@
     }
 
     a.more:hover {
-        color: var(--content-1);
+        color: var(--content-0);
+        border: 1px solid var(--content-0);
     }
 
     .section {
