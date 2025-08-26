@@ -1,5 +1,5 @@
-import { mount } from "svelte";
+import { render } from "svelte/server";
 
 import AppStandalone from "./appStandalone.svelte";
 
-export default mount(AppStandalone, { target: document.body });
+const result = render(AppStandalone);

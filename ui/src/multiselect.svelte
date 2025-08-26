@@ -38,9 +38,13 @@
     </div>
     <div class="popover" style="display: {open ? 'block' : 'none'}">
         {#each choices as choice, index}
-            <div class="choice" onclick={() => {
-                selection[index] = !selection[index];
-            }} role="none">
+            <div
+                class="choice"
+                onclick={() => {
+                    selection[index] = !selection[index];
+                }}
+                role="none"
+            >
                 <div class="tick">
                     {#if selection[index]}
                         &#10003;

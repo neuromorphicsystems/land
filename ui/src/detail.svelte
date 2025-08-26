@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { ArrayColumn, Column, Dataset } from "./dataset";
 
-    import { Datasets, linkSuffix, datasetLinkSuffix } from "./dataset";
+    import { Datasets } from "./dataset";
     import { snakeEncode } from "./state";
 
     const {
@@ -14,8 +14,8 @@
         datasets: Datasets;
         dataset: Dataset;
         width: string;
-        updateUrl: () => void;
-        datasetDetail: {
+        updateUrl?: () => void;
+        datasetDetail?: {
             index: number;
             open: boolean;
         };
@@ -40,7 +40,7 @@
                     .replace("</span>", "</a>")
                     .replace(
                         "<span",
-                        `<a href=${href} target="_blank" class="detail-boolean"`,
+                        `<a href="${href}" target="_blank" class="detail-boolean"`,
                     );
             }
             return value;
@@ -146,14 +146,12 @@
             <div class="description">{dataset.data.description}</div>
         </div>
         <div class="buttons">
-            <div
+            <a
                 class="button"
-                role="none"
-                onclick={() => {
-                    window.open(
-                        `http://github.com/neuromorphicsystems/land/tree/main/datasets/${dataset.data.name}.md`,
-                    );
-                }}
+                href="http://github.com/neuromorphicsystems/land/tree/main/datasets/{dataset
+                    .data.name}.md"
+                target="_blank"
+                aria-label="GitHub"
             >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
                     ><path
@@ -162,13 +160,17 @@
                         d="M50.0413725,1 C22.3697862,1 -5.68434189e-14,23.5346992 -5.68434189e-14,51.4131951 C-5.68434189e-14,73.697964 14.333093,92.5615558 34.2168922,99.2379726 C36.7028792,99.7398819 37.6134859,98.1532342 37.6134859,96.8185654 C37.6134859,95.6498339 37.5315416,91.643779 37.5315416,87.4697381 C23.6112433,90.4750476 20.7124615,81.4601436 20.7124615,81.4601436 C18.4753804,75.6175106 15.1607311,74.1158802 15.1607311,74.1158802 C10.6046246,71.0276021 15.4926057,71.0276021 15.4926057,71.0276021 C20.5465242,71.3615254 23.1984485,76.2023885 23.1984485,76.2023885 C27.6715863,83.8805751 34.8796172,81.7110982 37.7794232,80.3754051 C38.1932423,77.1201654 39.5197166,74.8666954 40.9281353,73.6149953 C29.8256987,72.4462639 18.1445301,68.1062857 18.1445301,48.7418089 C18.1445301,43.2330993 20.1316808,38.7261594 23.2803929,35.2209894 C22.7836052,33.9692893 21.0433119,28.7934786 23.7782049,21.8661072 C23.7782049,21.8661072 28.003461,20.5304141 37.5305172,27.0408936 C41.6093888,25.937372 45.815863,25.3760037 50.0413725,25.3712772 C54.2666286,25.3712772 58.5738291,25.9561551 62.5512035,27.0408936 C72.0792841,20.5304141 76.3045402,21.8661072 76.3045402,21.8661072 C79.0394332,28.7934786 77.2981155,33.9692893 76.8013279,35.2209894 C80.0330086,38.7261594 81.938215,43.2330993 81.938215,48.7418089 C81.938215,68.1062857 70.2570463,72.3622709 59.0716411,73.6149953 C60.8949031,75.2006187 62.4682348,78.2049038 62.4682348,82.9627983 C62.4682348,89.723208 62.3862905,95.148949 62.3862905,96.8175411 C62.3862905,98.1532342 63.2979215,99.7398819 65.7828842,99.2389969 C85.6666834,92.5605315 100,73.697964 100,51.4131951 C100.081721,23.5346992 77.6299902,1 50.0413725,1 Z"
                     /></svg
                 >
-            </div>
+            </a>
             <div
                 class="button"
                 role="none"
                 onclick={() => {
-                    datasetDetail.open = false;
-                    updateUrl();
+                    if (datasetDetail != null) {
+                        datasetDetail.open = false;
+                        if (updateUrl != null) {
+                            updateUrl();
+                        }
+                    }
                 }}
             >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
@@ -386,6 +388,7 @@
     }
 
     .header .buttons .button {
+        display: block;
         flex-grow: 0;
         flex-shrink: 0;
         width: 25px;

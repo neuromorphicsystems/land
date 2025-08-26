@@ -5,8 +5,8 @@
         initialAppState,
         getDefaultAppState,
         hashToState,
-        updateUrlWithState,
         stateToUrl,
+        UrlUpdater,
     } from "./state";
     import { datasetsToCsv } from "./csv";
     import Detail from "./detail.svelte";
@@ -25,10 +25,7 @@
 
     const defaultAppState = getDefaultAppState(datasets);
     const appState = $state(initialAppState(defaultAppState, datasets));
-
-    function updateUrl() {
-        updateUrlWithState(appState, defaultAppState, datasets);
-    }
+    const urlUpdater = new UrlUpdater(appState, defaultAppState, datasets);
 
     const filters = $derived(
         appState.advancedSearch ? datasets.advancedFilters : datasets.filters,
@@ -168,14 +165,19 @@
 
 <main>
     <div class="navbar">
-        <Navbar {updateUrl} bind:activeTab={appState.activeTab}></Navbar>
+        <Navbar
+            updateUrl={() => {
+                urlUpdater.update();
+            }}
+            bind:activeTab={appState.activeTab}
+        ></Navbar>
     </div>
     <div class="contents">
         <Switch
             label="Advanced search"
             onChange={newValue => {
                 appState.advancedSearch = newValue;
-                updateUrl();
+                urlUpdater.update();
             }}
             checked={appState.advancedSearch}
         ></Switch>
@@ -226,7 +228,7 @@
                             }
                             changes.length = 0;
                         }
-                        updateUrl();
+                        urlUpdater.update();
                     }}
                 ></Filter>
             {/each}
@@ -236,7 +238,7 @@
                 bounds={datasets.yearsBounds}
                 onChange={values => {
                     appState.yearsValues = values;
-                    updateUrl();
+                    urlUpdater.update();
                 }}
                 values={appState.yearsValues}
             ></Range>
@@ -266,7 +268,9 @@
         </div>
         <div class="visualiser">
             <Table
-                {updateUrl}
+                updateUrl={() => {
+                    urlUpdater.update();
+                }}
                 {datasets}
                 selectedDatasets={tableDatasets}
                 columnsSelection={appState.columnsSelection}
@@ -276,13 +280,15 @@
         </div>
     </div>
     <div
-        class="detail"
+        class="detail-wrapper"
         style="width: {appState.datasetDetail.open
             ? 'calc(50vw - 56px / 2)'
             : '0'}"
     >
         <Detail
-            {updateUrl}
+            updateUrl={() => {
+                urlUpdater.update();
+            }}
             {datasets}
             dataset={datasets.inner[appState.datasetDetail.index]}
             width="calc(50vw - 56px / 2)"
@@ -339,7 +345,7 @@
         flex-shrink: 1;
     }
 
-    .detail {
+    .detail-wrapper {
         flex-grow: 0;
         flex-shrink: 0;
         overflow: hidden;

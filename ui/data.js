@@ -29,7 +29,7 @@ export function loadDatasets() {
             }
         }
     }
-    return datasets;
+    return [datasets, datasetsDirectory];
 }
 
 function rgbToHex(rgb) {

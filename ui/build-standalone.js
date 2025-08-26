@@ -1,12 +1,14 @@
-import * as esbuild from "esbuild";
-import * as fs from "fs";
-import matter from "gray-matter";
-import markdownit from "markdown-it";
-import mustache from "mustache";
-import * as path from "path";
-import { fileURLToPath } from "url";
+import * as fs from "node:fs";
+import * as path from "node:path";
 import * as process from "node:process";
+import * as vm from "node:vm";
+
+import * as commander from "commander";
+import * as esbuild from "esbuild";
+import mustache from "mustache";
 import sveltePlugin from "esbuild-svelte";
+
+import { loadDatasets, generateKeyToNameToColor } from "./data.js";
 
 // must have the same behaviour as `name_to_url` in check.py
 const nameToUrl = name => {
@@ -49,104 +51,135 @@ const nameToUrl = name => {
     return result;
 };
 
+const command = new commander.Command("build-standalone.js").argument(
+    "[dataset...]",
+    "Name of the dataset to build (defaults to all datasets)",
+);
+command.parse();
+
 fs.mkdirSync("build", { recursive: true });
 
-const renderer = markdownit();
-const dataset = {
-    data: null,
-    html: null,
-};
-
-if (process.argv.length !== 3 && process.argv.length !== 4) {
-    console.error(
-        `\x1b[31m✘\x1b[0m Syntax: node build-standalone.js dataset [--watch] (for example \`node build-standalone.js "ATIS Planes Dataset"\`)`,
-    );
-    process.exit(1);
-}
-const datasetsDirectory = path.join(
-    path.dirname(path.dirname(fileURLToPath(import.meta.url))),
-    "datasets",
+const [datasets, datasetsDirectory] = loadDatasets();
+const nameToDataset = new Map(
+    datasets.map(dataset => [dataset.data.name, dataset]),
 );
-let name;
-if (
-    process.argv.length === 3 ||
-    (process.argv.length === 4 && process.argv[2] === "--watch")
-) {
-    name = process.argv[2];
+const datasetsNames = [];
+if (command.args.length === 0) {
+    datasetsNames.push(...nameToDataset.keys());
 } else {
-    name = process.argv[3];
+    for (const name of command.args) {
+        if (!nameToDataset.has(name)) {
+            console.error(
+                `\x1b[31m✘\x1b[0m Unknown dataset "${name}" (the file ${path.join(datasetsDirectory, `${name}.md`)} does not exist)`,
+            );
+            process.exit(1);
+        }
+        datasetsNames.push(name);
+    }
 }
-const mdPath = path.join(datasetsDirectory, `${name}.md`);
-if (!fs.existsSync(mdPath)) {
-    console.error(`\x1b[31m✘\x1b[0m The file \"${mdPath}\" does not exist`);
-    process.exit(1);
-}
-try {
-    const matterDataset = matter(fs.readFileSync(mdPath));
-    dataset.data = matterDataset.data;
-    dataset.html = renderer.render(matterDataset.content);
-} catch (error) {
-    console.error(`\x1b[31m✘\x1b[0m Parsing ${name} failed: ${error}`);
-    process.exit(1);
-}
+const keyToNameToColor = generateKeyToNameToColor(datasets);
 
-console.log("Initialize esbuild");
-const context = await esbuild.context({
-    entryPoints: [
-        { in: path.join("src", "mainStandalone.ts"), out: "main" },
-        { in: path.join("src", "styles.css"), out: "styles" },
-    ],
-    mainFields: ["svelte", "browser", "module", "main"],
-    conditions: ["svelte", "browser"],
-    outdir: "build",
-    bundle: true,
-    loader: { ".ttf": "dataurl" },
-    target: ["es2022"],
-    format: "esm",
-    write: false,
-    minify: process.env.MODE === "production",
-    define: {
-        "process.env.DATASET": JSON.stringify(dataset),
-    },
-    plugins: [
-        sveltePlugin({
-            compilerOptions: { css: "injected", runes: true },
-        }),
-        {
-            name: "bundle",
-            setup(build) {
-                build.onEnd(result => {
-                    if (result.errors.length === 0) {
-                        fs.writeFileSync(
-                            path.join("build", `${nameToUrl(name)}.html`),
-                            mustache.render(
-                                fs
-                                    .readFileSync(
-                                        path.join("src", "index.mustache"),
-                                    )
-                                    .toString(),
-                                {
-                                    title: "LAND",
-                                    script: result.outputFiles[0].text,
-                                    styles: result.outputFiles[1].text,
-                                },
-                            ),
-                        );
-                        if (process.argv.includes("--watch")) {
-                            console.log(
-                                `\x1b[32m✓\x1b[0m ${new Date().toLocaleString()}`,
+for (const name of datasetsNames) {
+    const dataset = nameToDataset.get(name);
+    console.log(name);
+    const context = await esbuild.context({
+        entryPoints: [
+            { in: path.join("src", "mainStandalone.ts"), out: "main" },
+            { in: path.join("src", "styles.css"), out: "styles" },
+        ],
+        mainFields: ["svelte", "browser", "module", "main"],
+        conditions: ["svelte", "browser"],
+        outdir: "build",
+        bundle: true,
+        loader: { ".woff2": "copy" },
+        target: ["node24"],
+        format: "esm",
+        write: false,
+        define: {
+            "process.env.DATA": JSON.stringify({
+                datasets: [dataset],
+                keyToNameToColor,
+            }),
+        },
+        plugins: [
+            sveltePlugin({
+                compilerOptions: {
+                    css: "external",
+                    cssHash: ({ hash, css, name, filename }) => `s${hash(css)}`,
+                    runes: true,
+                    generate: "server",
+                    hmr: false,
+                    discloseVersion: process.env.MODE !== "production",
+                    dev: process.env.MODE !== "production",
+                },
+            }),
+            {
+                name: "bundle",
+                setup(build) {
+                    build.onEnd(async result => {
+                        if (result.errors.length === 0) {
+                            const context = vm.createContext({ result: null });
+                            vm.runInContext(
+                                result.outputFiles.find(file =>
+                                    file.path.endsWith("main.js"),
+                                ).text,
+                                context,
+                            );
+                            if (context.result == null) {
+                                throw new Error("HTML generation failed");
+                            }
+                            const minify = async (code, loader) => {
+                                if (process.env.MODE === "production") {
+                                    return (
+                                        await esbuild.transform(code, {
+                                            minify: true,
+                                            loader,
+                                        })
+                                    ).code;
+                                }
+                                return code;
+                            };
+                            fs.writeFileSync(
+                                path.join("build", `${nameToUrl(name)}.html`),
+                                mustache.render(
+                                    fs
+                                        .readFileSync(
+                                            path.join(
+                                                "src",
+                                                "indexStandalone.mustache",
+                                            ),
+                                        )
+                                        .toString(),
+                                    {
+                                        title: name,
+                                        styles: await minify(
+                                            result.outputFiles.find(file =>
+                                                file.path.endsWith(
+                                                    "styles.css",
+                                                ),
+                                            ).text,
+                                            "css",
+                                        ),
+                                        svelteStyles: await minify(
+                                            result.outputFiles.find(file =>
+                                                file.path.endsWith("main.css"),
+                                            ).text,
+                                            "css",
+                                        ),
+                                        head: context.result.head,
+                                        body: context.result.body.replace(
+                                            /<\!--.*?-->/g,
+                                            "",
+                                        ),
+                                    },
+                                ),
                             );
                         }
-                    }
-                });
+                    });
+                },
             },
-        },
-    ],
-});
-
-if (process.argv.includes("--watch")) {
-    await context.watch();
-} else {
+        ],
+    });
     await context.rebuild();
     await context.dispose();
 }

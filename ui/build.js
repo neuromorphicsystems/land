@@ -1,17 +1,25 @@
-import * as fs from "fs";
-import * as path from "path";
+import * as fs from "node:fs";
+import * as path from "node:path";
 import * as process from "node:process";
 import * as zlib from "node:zlib";
 
+import * as commander from "commander";
 import * as esbuild from "esbuild";
 import mustache from "mustache";
 import sveltePlugin from "esbuild-svelte";
 
 import { loadDatasets, generateKeyToNameToColor } from "./data.js";
 
+const command = new commander.Command("build.js").option(
+    "--watch",
+    "Rebuild the app when a file changes",
+);
+command.parse();
+const options = command.opts();
+
 fs.mkdirSync("build", { recursive: true });
 
-const datasets = loadDatasets();
+const [datasets, _] = loadDatasets();
 const keyToNameToColor = generateKeyToNameToColor(datasets);
 
 console.log("Initialize esbuild");
@@ -24,7 +32,7 @@ const context = await esbuild.context({
     conditions: ["svelte", "browser"],
     outdir: "build",
     bundle: true,
-    loader: { ".ttf": "dataurl", ".woff2": "dataurl" },
+    loader: { ".woff2": "dataurl" },
     target: ["es2022"],
     format: "esm",
     write: false,
@@ -46,7 +54,13 @@ const context = await esbuild.context({
     },
     plugins: [
         sveltePlugin({
-            compilerOptions: { css: "injected", runes: true },
+            compilerOptions: {
+                css: "injected",
+                runes: true,
+                hmr: false,
+                discloseVersion: process.env.MODE !== "production",
+                dev: process.env.MODE !== "production",
+            },
         }),
         {
             name: "bundle",
@@ -68,7 +82,7 @@ const context = await esbuild.context({
                                 },
                             ),
                         );
-                        if (process.argv.includes("--watch")) {
+                        if (options.watch) {
                             console.log(
                                 `\x1b[32m✓\x1b[0m ${new Date().toLocaleString()}`,
                             );
@@ -80,7 +94,7 @@ const context = await esbuild.context({
     ],
 });
 
-if (process.argv.includes("--watch")) {
+if (options.watch) {
     await context.watch();
 } else {
     await context.rebuild();

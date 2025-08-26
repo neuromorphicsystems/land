@@ -2,7 +2,7 @@ import { Datasets } from "./dataset";
 
 export async function decompressDatasets(): Promise<Datasets> {
     // @ts-ignore
-    const rawData = process.env.DATA;
+    const rawData: string = process.env.DATA;
     const bytes = Uint8Array.from(window.atob(rawData), character =>
         character.charCodeAt(0),
     );
@@ -348,25 +348,38 @@ export function initialAppState(defaultAppState: AppState, datasets: Datasets) {
     return hashToState(window.location.hash, defaultAppState, datasets);
 }
 
-let lastPush = window.performance.now();
-export function updateUrlWithState(
-    appState,
-    defaultAppState,
-    datasets: Datasets,
-) {
-    const now = window.performance.now();
-    if (now - lastPush < 5000) {
-        window.history.replaceState(
-            undefined,
-            "",
-            `${location.pathname}${stateToUrl(appState, defaultAppState, datasets, false)}`,
-        );
-    } else {
-        window.history.pushState(
-            undefined,
-            "",
-            `${location.pathname}${stateToUrl(appState, defaultAppState, datasets, false)}`,
-        );
-        lastPush = now;
+export class UrlUpdater {
+    appState: AppState;
+    defaultAppState: AppState;
+    datasets: Datasets;
+    lastPush: number;
+
+    constructor(
+        appState: AppState,
+        defaultAppState: AppState,
+        datasets: Datasets,
+    ) {
+        this.appState = appState;
+        this.defaultAppState = defaultAppState;
+        this.datasets = datasets;
+        this.lastPush = window.performance.now();
+    }
+
+    update() {
+        const now = window.performance.now();
+        if (now - this.lastPush < 5000) {
+            window.history.replaceState(
+                undefined,
+                "",
+                `${location.pathname}${stateToUrl(this.appState, this.defaultAppState, this.datasets, false)}`,
+            );
+        } else {
+            window.history.pushState(
+                undefined,
+                "",
+                `${location.pathname}${stateToUrl(this.appState, this.defaultAppState, this.datasets, false)}`,
+            );
+            this.lastPush = now;
+        }
     }
 }

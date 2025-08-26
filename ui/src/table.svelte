@@ -1,5 +1,4 @@
 <script lang="ts">
-    import type { AppState } from "./state";
     import type { ArrayColumn, Dataset, Datasets, Column } from "./dataset";
 
     const {
@@ -51,7 +50,10 @@
                     .join("")}</div>`;
             }
             return `<div class="table-array-item">${values
-                .map(item => `<span class="table-tag table-tag-nocolor">${item}</span>`)
+                .map(
+                    item =>
+                        `<span class="table-tag table-tag-nocolor">${item}</span>`,
+                )
                 .join("")}</div>`;
         }
         throw new Error(
@@ -104,7 +106,11 @@
             >
                 {#each datasets.columns as column, index}
                     {#if columnsSelection[index]}
-                        <td><div class="td-content">{@html columnToContents(column, dataset.data)}</div></td>
+                        <td
+                            ><div class="td-content">
+                                {@html columnToContents(column, dataset.data)}
+                            </div></td
+                        >
                     {/if}
                 {/each}
             </tr>
