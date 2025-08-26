@@ -226,8 +226,7 @@ export function hashToState(
                     ++datasetIndex
                 ) {
                     if (
-                        snakeEncode(datasets.inner[datasetIndex].data.name) ===
-                        snakeName
+                        datasets.inner[datasetIndex].urlName === snakeName
                     ) {
                         state.datasetDetail = {
                             index: datasetIndex,
@@ -323,7 +322,7 @@ export function stateToUrl(
             prefix = "&";
         }
         if (state.datasetDetail.open) {
-            url += `${prefix}d.${snakeEncode(datasets.inner[state.datasetDetail.index].data.name)}`;
+            url += `${prefix}d.${datasets.inner[state.datasetDetail.index].urlName}`;
             prefix = "&";
         }
         if (state.activeTab > 0) {
