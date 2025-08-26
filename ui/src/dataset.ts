@@ -408,27 +408,27 @@ export class Datasets {
             ),
             new StaticFilter(
                 "Available online",
-                30,
+                40,
                 data =>
                     optionalBoolean(data.dataset_properties?.available_online),
                 this.inner,
             ),
             new StaticFilter(
                 "Ground truth",
-                30,
+                40,
                 data =>
                     optionalBoolean(data.dataset_properties?.has_ground_truth),
                 this.inner,
             ),
             new StaticFilter(
                 "Real data",
-                30,
+                40,
                 data => optionalBoolean(data.dataset_properties?.has_real_data),
                 this.inner,
             ),
             new StaticFilter(
                 "Simulated data",
-                30,
+                40,
                 data =>
                     optionalBoolean(
                         data.dataset_properties?.has_simulated_data,
@@ -437,13 +437,13 @@ export class Datasets {
             ),
             new StaticFilter(
                 "Frames",
-                30,
+                40,
                 data => optionalBoolean(data.dataset_properties?.has_frames),
                 this.inner,
             ),
             new StaticFilter(
                 "Biases",
-                30,
+                40,
                 data => optionalBoolean(data.dataset_properties?.has_biases),
                 this.inner,
             ),
