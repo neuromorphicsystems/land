@@ -1,6 +1,6 @@
 ---
 {
-    "name": "Event-based Autofocus Dataset (EAD)",
+    "name": "EAD",
     "aliases": [],
     "year": 2022,
     "modalities": [

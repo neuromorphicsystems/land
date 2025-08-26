@@ -1,6 +1,6 @@
 ---
 {
-    "name": "TemMAt",
+    "name": "TemMat",
     "aliases": [],
     "year": 2024,
     "modalities": [

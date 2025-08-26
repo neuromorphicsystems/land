@@ -147,6 +147,7 @@ def validate_dataset_file(
     names: list[str],
 ) -> bool:
     if target_path.is_file():
+        assert target_path.suffix == ".md"
         dataset_path = target_path.resolve()
         names.append(dataset_path.stem)
         dataset = frontmatter.load(
@@ -162,6 +163,10 @@ def validate_dataset_file(
             schema=schema,
             show_errors=show_errors,
         )
+        if success:
+            assert (
+                dataset.metadata["name"] == dataset_path.stem
+            ), f'the dataset name "{dataset.metadata["name"]}" and the file name "{dataset_path.stem}" do not match'
         if "tags" in dataset.metadata:
             assert len(dataset.metadata["tags"]) == len(set(dataset.metadata["tags"]))  # type: ignore
             for tag in dataset.metadata["tags"]:  # type: ignore

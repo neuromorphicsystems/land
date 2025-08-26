@@ -1,6 +1,6 @@
 ---
 {
-    "name": "PAF",
+    "name": "PAF (Fall Detection)",
     "aliases": [],
     "year": 2019,
     "modalities": [

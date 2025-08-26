@@ -1,6 +1,6 @@
 ---
 {
-    "name": "PRED18 (Formerly PRED16)",
+    "name": "PRED18",
     "aliases": [
         "PRED16"
     ],

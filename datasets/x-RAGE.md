@@ -1,6 +1,6 @@
 ---
 {
-    "name": "x-Rage",
+    "name": "x-RAGE",
     "aliases": [],
     "year": 2024,
     "modalities": [
