@@ -148,6 +148,9 @@ def validate_dataset_file(
 ) -> bool:
     if target_path.is_file():
         assert target_path.suffix == ".md"
+        assert (
+            target_path.stem != "index"
+        ), 'the name "index" is reserved for the UI app'
         dataset_path = target_path.resolve()
         names.append(dataset_path.stem)
         dataset = frontmatter.load(

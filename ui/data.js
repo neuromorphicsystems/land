@@ -5,6 +5,47 @@ import * as url from "url";
 import matter from "gray-matter";
 import markdownit from "markdown-it";
 
+// must have the same behaviour as `name_to_url` in check.py
+export function nameToUrl(name) {
+    const ALLOWED_CHARACTERS = /[a-zA-Z0-9.]/;
+    const SPLIT_CHARACTERS = /[_\- ]/;
+    const REMOVE_CHARACTERS = /[()]/;
+    const REPLACE_CHARACTERS = {
+        "+": "p",
+    };
+    let wordStart = true;
+    let result = "";
+    for (const character of name) {
+        if (ALLOWED_CHARACTERS.test(character)) {
+            if (/[0-9]/.test(character)) {
+                result += character;
+                wordStart = true;
+            } else if (/[A-Z]/.test(character)) {
+                if (wordStart) {
+                    result += character.toLowerCase();
+                } else {
+                    result += `-${character.toLowerCase()}`;
+                }
+                wordStart = true;
+            } else {
+                result += character;
+                wordStart = false;
+            }
+        } else if (character in REPLACE_CHARACTERS) {
+            result += REPLACE_CHARACTERS[character];
+            wordStart = false;
+        } else if (SPLIT_CHARACTERS.test(character)) {
+            result += "-";
+            wordStart = true;
+        } else if (!REMOVE_CHARACTERS.test(character)) {
+            throw new Error(
+                `unsupported character "${character}" in "${name}"`,
+            );
+        }
+    }
+    return result;
+}
+
 export function loadDatasets() {
     const datasets = [];
     const datasetsDirectory = path.join(
@@ -21,6 +62,7 @@ export function loadDatasets() {
                 datasets.push({
                     data: dataset.data,
                     html: renderer.render(dataset.content),
+                    urlName: nameToUrl(dataset.data.name),
                 });
             } catch (error) {
                 console.error(

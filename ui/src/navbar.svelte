@@ -1,9 +1,11 @@
 <script lang="ts">
     let {
         updateUrl,
+        githubUrl,
         activeTab = $bindable(),
     }: {
         updateUrl: () => void;
+        githubUrl: string;
         activeTab: number;
     } = $props();
 </script>
@@ -61,7 +63,7 @@
         <div
             class="url-button"
             onclick={() => {
-                window.open("http://github.com/neuromorphicsystems/land");
+                window.open(githubUrl);
             }}
             role="none"
         >

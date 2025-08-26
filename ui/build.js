@@ -51,6 +51,12 @@ const context = await esbuild.context({
                 },
             ),
         ).toString("base64")}"`,
+        "process.env.BASE_URL": JSON.stringify(
+            "https://neuromorphicsystems.github.io/land/",
+        ),
+        "process.env.GITHUB_URL": JSON.stringify(
+            "http://github.com/neuromorphicsystems/land/",
+        ),
     },
     plugins: [
         sveltePlugin({

@@ -8,48 +8,7 @@ import * as esbuild from "esbuild";
 import mustache from "mustache";
 import sveltePlugin from "esbuild-svelte";
 
-import { loadDatasets, generateKeyToNameToColor } from "./data.js";
-
-// must have the same behaviour as `name_to_url` in check.py
-const nameToUrl = name => {
-    const ALLOWED_CHARACTERS = /[a-zA-Z0-9\.]/;
-    const SPLIT_CHARACTERS = /[_\- ]/;
-    const REMOVE_CHARACTERS = /[\(\)]/;
-    const REPLACE_CHARACTERS = {
-        "+": "p",
-    };
-    let wordStart = true;
-    let result = "";
-    for (const character of name) {
-        if (ALLOWED_CHARACTERS.test(character)) {
-            if (/[0-9]/.test(character)) {
-                result += character;
-                wordStart = true;
-            } else if (/[A-Z]/.test(character)) {
-                if (wordStart) {
-                    result += character.toLowerCase();
-                } else {
-                    result += `-${character.toLowerCase()}`;
-                }
-                wordStart = true;
-            } else {
-                result += character;
-                wordStart = false;
-            }
-        } else if (character in REPLACE_CHARACTERS) {
-            result += REPLACE_CHARACTERS[character];
-            wordStart = false;
-        } else if (SPLIT_CHARACTERS.test(character)) {
-            result += "-";
-            wordStart = true;
-        } else if (!REMOVE_CHARACTERS.test(character)) {
-            throw new Error(
-                `unsupported character "${character}" in "${name}"`,
-            );
-        }
-    }
-    return result;
-};
+import { generateKeyToNameToColor, loadDatasets, nameToUrl } from "./data.js";
 
 const command = new commander.Command("build-standalone.js").argument(
     "[dataset...]",
@@ -79,6 +38,7 @@ if (command.args.length === 0) {
 }
 const keyToNameToColor = generateKeyToNameToColor(datasets);
 
+const writtenFontFiles = new Set();
 for (const name of datasetsNames) {
     const dataset = nameToDataset.get(name);
     console.log(name);
@@ -100,12 +60,19 @@ for (const name of datasetsNames) {
                 datasets: [dataset],
                 keyToNameToColor,
             }),
+            "process.env.BASE_URL": JSON.stringify(
+                "https://neuromorphicsystems.github.io/land/",
+            ),
+            "process.env.GITHUB_URL": JSON.stringify(
+                "http://github.com/neuromorphicsystems/land/",
+            ),
         },
         plugins: [
             sveltePlugin({
                 compilerOptions: {
                     css: "external",
-                    cssHash: ({ hash, css, name, filename }) => `s${hash(css)}`,
+                    cssHash: ({ hash, css, _name, _filename }) =>
+                        `s${hash(css)}`,
                     runes: true,
                     generate: "server",
                     hmr: false,
@@ -139,6 +106,17 @@ for (const name of datasetsNames) {
                                 }
                                 return code;
                             };
+                            for (const file of result.outputFiles) {
+                                if (file.path.endsWith(".woff2")) {
+                                    if (!writtenFontFiles.has(file.path)) {
+                                        fs.writeFileSync(
+                                            file.path,
+                                            file.contents,
+                                        );
+                                        writtenFontFiles.add(file.path);
+                                    }
+                                }
+                            }
                             fs.writeFileSync(
                                 path.join("build", `${nameToUrl(name)}.html`),
                                 mustache.render(
@@ -168,7 +146,7 @@ for (const name of datasetsNames) {
                                         ),
                                         head: context.result.head,
                                         body: context.result.body.replace(
-                                            /<\!--.*?-->/g,
+                                            /<!--.*?-->/g,
                                             "",
                                         ),
                                     },

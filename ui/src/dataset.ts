@@ -3,6 +3,7 @@ export interface Dataset {
         [key: string]: any;
     };
     html: string;
+    urlName: string;
     index: number;
 }
 

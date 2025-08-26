@@ -3,12 +3,26 @@
     import Detail from "./detail.svelte";
 
     // @ts-ignore
-    export const datasets = new Datasets(process.env.DATA);
+    const datasets = new Datasets(process.env.DATA);
+
+    // @ts-ignore
+    const baseUrl = process.env.BASE_URL;
+
+    // @ts-ignore
+    const githubUrl = process.env.GITHUB_URL;
 </script>
 
 <main>
     <div class="detail-wrapper">
-        <Detail {datasets} dataset={datasets.inner[0]} width="100vw"></Detail>
+        <Detail
+            {baseUrl}
+            baseUrlForTags={baseUrl}
+            {githubUrl}
+            {datasets}
+            dataset={datasets.inner[0]}
+            width="100vw"
+            standalone={true}
+        ></Detail>
     </div>
 </main>
 

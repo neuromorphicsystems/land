@@ -17,6 +17,12 @@
     import Switch from "./switch.svelte";
     import Table from "./table.svelte";
 
+    // @ts-ignore
+    const baseUrl = process.env.BASE_URL;
+
+    // @ts-ignore
+    const githubUrl = process.env.GITHUB_URL;
+
     const {
         datasets,
     }: {
@@ -169,6 +175,7 @@
             updateUrl={() => {
                 urlUpdater.update();
             }}
+            {githubUrl}
             bind:activeTab={appState.activeTab}
         ></Navbar>
     </div>
@@ -289,9 +296,13 @@
             updateUrl={() => {
                 urlUpdater.update();
             }}
+            {baseUrl}
+            baseUrlForTags=""
+            {githubUrl}
             {datasets}
             dataset={datasets.inner[appState.datasetDetail.index]}
             width="calc(50vw - 56px / 2)"
+            standalone={false}
             bind:datasetDetail={appState.datasetDetail}
         ></Detail>
     </div>

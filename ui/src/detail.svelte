@@ -9,12 +9,20 @@
         dataset,
         width,
         updateUrl,
+        baseUrl,
+        baseUrlForTags,
+        githubUrl,
+        standalone,
         datasetDetail = $bindable(),
     }: {
         datasets: Datasets;
         dataset: Dataset;
         width: string;
         updateUrl?: () => void;
+        baseUrl: string;
+        baseUrlForTags: string;
+        githubUrl: string;
+        standalone: boolean;
         datasetDetail?: {
             index: number;
             open: boolean;
@@ -33,7 +41,8 @@
                 return null;
             }
             if (column.filter != null) {
-                let href = column.filter[1] ? "#a&" : "#";
+                let href = `${baseUrlForTags}`;
+                href += column.filter[1] ? "#a&" : "#";
                 href += `f.${snakeEncode(column.filter[0])}=${value.endsWith("&#10003;</span>") ? "yes" : "no"}&`;
                 href += `c.${snakeEncode(column.name)}`;
                 return value
@@ -52,7 +61,8 @@
             }
             // for non-boolean columns, guarantees that column.name is in datasets.keyToNameToColor
             if (column.filter != null) {
-                let href = column.filter[1] ? "#a&" : "#";
+                let href = `${baseUrlForTags}`;
+                href += column.filter[1] ? "#a&" : "#";
                 href += `f.${snakeEncode(column.filter[0])}=${snakeEncode(value)}&`;
                 href += `c.${snakeEncode(column.name)}`;
                 return `<a href="${href}" target="_blank" class="detail-tag" style="background-color: ${datasets.keyToNameToColor[column.name][value]}">${value}</span>`;
@@ -68,7 +78,8 @@
             if (column.filter != null) {
                 return `<div class="detail-array-item">${values
                     .map(item => {
-                        let href = column.filter[1] ? "#a&" : "#";
+                        let href = `${baseUrlForTags}`;
+                        href += column.filter[1] ? "#a&" : "#";
                         href += `f.${snakeEncode(column.filter[0])}=${snakeEncode(item)}&`;
                         href += `c.${snakeEncode(column.name)}`;
                         return `<a href="${href}" target="_blank" class="detail-tag" style="background-color: ${datasets.keyToNameToColor[column.name][item]}">${item}</a>`;
@@ -142,14 +153,21 @@
 <div class="detail" style="width: {width}">
     <div class="header">
         <div class="label">
-            <div class="title">{dataset.data.name}</div>
+            {#if standalone}
+                <div class="title">{dataset.data.name}</div>
+            {:else}
+                <a
+                    class="title"
+                    href="{baseUrl}{dataset.urlName}"
+                    target="_blank">{dataset.data.name}</a
+                >
+            {/if}
             <div class="description">{dataset.data.description}</div>
         </div>
         <div class="buttons">
             <a
                 class="button"
-                href="http://github.com/neuromorphicsystems/land/tree/main/datasets/{dataset
-                    .data.name}.md"
+                href="{githubUrl}tree/main/datasets/{dataset.data.name}.md"
                 target="_blank"
                 aria-label="GitHub"
             >
@@ -161,26 +179,40 @@
                     /></svg
                 >
             </a>
-            <div
-                class="button"
-                role="none"
-                onclick={() => {
-                    if (datasetDetail != null) {
-                        datasetDetail.open = false;
-                        if (updateUrl != null) {
-                            updateUrl();
-                        }
-                    }
-                }}
-            >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
-                    ><path
-                        fill-rule="evenodd"
-                        d="M50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 Z M50,20 C47.790861,20 46,21.790861 46,24 L46,46 L24,46 C21.8578046,46 20.1089211,47.6839685 20.0048953,49.8003597 L20,50 C20,52.209139 21.790861,54 24,54 L46,54 L46,76 C46,78.1421954 47.6839685,79.8910789 49.8003597,79.9951047 L50,80 C52.209139,80 54,78.209139 54,76 L54,54 L76,54 C78.1421954,54 79.8910789,52.3160315 79.9951047,50.1996403 L80,50 C80,47.790861 78.209139,46 76,46 L54,46 L54,24 C54,21.8578046 52.3160315,20.1089211 50.1996403,20.0048953 Z"
-                        transform="rotate(45 50 50)"
-                    /></svg
+            {#if standalone}
+                <a
+                    class="more"
+                    href="{baseUrlForTags}#f.category={snakeEncode(
+                        dataset.data.category,
+                    )}"
+                    target="_blank"
                 >
-            </div>
+                    Similar datasets
+                </a>
+            {:else}
+                <div
+                    class="button"
+                    role="none"
+                    onclick={() => {
+                        if (datasetDetail != null) {
+                            datasetDetail.open = false;
+                            if (updateUrl != null) {
+                                updateUrl();
+                            }
+                        }
+                    }}
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 100 100"
+                        ><path
+                            fill-rule="evenodd"
+                            d="M50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 Z M50,20 C47.790861,20 46,21.790861 46,24 L46,46 L24,46 C21.8578046,46 20.1089211,47.6839685 20.0048953,49.8003597 L20,50 C20,52.209139 21.790861,54 24,54 L46,54 L46,76 C46,78.1421954 47.6839685,79.8910789 49.8003597,79.9951047 L50,80 C52.209139,80 54,78.209139 54,76 L54,54 L76,54 C78.1421954,54 79.8910789,52.3160315 79.9951047,50.1996403 L80,50 C80,47.790861 78.209139,46 76,46 L54,46 L54,24 C54,21.8578046 52.3160315,20.1089211 50.1996403,20.0048953 Z"
+                            transform="rotate(45 50 50)"
+                        /></svg
+                    >
+                </div>
+            {/if}
         </div>
     </div>
     <div class="contents-wrapper">
@@ -372,9 +404,18 @@
     }
 
     .header .label .title {
+        display: inline-block;
         font-size: 16px;
         color: var(--content-0);
         margin-bottom: 5px;
+    }
+
+    .header .label a.title {
+        text-decoration: none;
+    }
+
+    .header .label a.title:hover {
+        color: var(--content-1);
     }
 
     .header .label .description {
@@ -384,6 +425,7 @@
 
     .header .buttons {
         display: flex;
+        align-items: center;
         gap: 20px;
     }
 
@@ -402,6 +444,23 @@
 
     .header .buttons .button:hover svg path {
         fill: var(--content-1);
+    }
+
+    a.more {
+        display: block;
+        height: 25px;
+        line-height: 25px;
+        text-decoration: none;
+        color: var(--content-2);
+        border: 1px solid var(--content-2);
+        border-radius: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    a.more:hover {
+        color: var(--content-1);
     }
 
     .section {
