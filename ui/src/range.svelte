@@ -9,7 +9,7 @@
         onChange?: (values: [number, number]) => void;
     } = $props();
 
-    const sliderWidth = 200;
+    const sliderWidth = 180;
     const handleShadowSize = 22;
     const handleSize = 16;
     const left = $derived((values[0] - bounds[0]) / (bounds[1] - bounds[0]));

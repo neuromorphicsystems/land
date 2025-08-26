@@ -271,10 +271,11 @@ export function hashToState(
     return state;
 }
 
-function stateToUrl(
+export function stateToUrl(
     state: AppState,
     defaultAppState: AppState,
     datasets: Datasets,
+    filtersOnly: boolean,
 ): string {
     let prefix = "#";
     let url = "";
@@ -296,46 +297,48 @@ function stateToUrl(
             }
         }
     }
-    if (state.advancedSearch !== defaultAppState.advancedSearch) {
-        url += `${prefix}a`;
-        prefix = "&";
-    }
-    for (
-        let columnIndex = 0;
-        columnIndex < defaultAppState.columnsSelection.length;
-        ++columnIndex
-    ) {
-        if (
-            state.columnsSelection[columnIndex] !==
-            defaultAppState.columnsSelection[columnIndex]
-        ) {
-            url += `${prefix}c.${state.columnsSelection[columnIndex] ? "" : "~"}${snakeEncode(datasets.columns[columnIndex].name)}`;
+    if (!filtersOnly) {
+        if (state.advancedSearch !== defaultAppState.advancedSearch) {
+            url += `${prefix}a`;
             prefix = "&";
         }
-    }
-    if (
-        state.sort.ascending !== defaultAppState.sort.ascending ||
-        state.sort.columnIndex !== defaultAppState.sort.columnIndex
-    ) {
-        url += `${prefix}s.${state.sort.ascending ? "" : "-"}${snakeEncode(datasets.columns[state.sort.columnIndex].name)}`;
-        prefix = "&";
-    }
-    if (state.datasetDetail.open) {
-        url += `${prefix}d.${snakeEncode(datasets.inner[state.datasetDetail.index].data.name)}`;
-        prefix = "&";
-    }
-    if (state.activeTab > 0) {
-        switch (state.activeTab) {
-            case 1:
-                url += `${prefix}t.tiles`;
+        for (
+            let columnIndex = 0;
+            columnIndex < defaultAppState.columnsSelection.length;
+            ++columnIndex
+        ) {
+            if (
+                state.columnsSelection[columnIndex] !==
+                defaultAppState.columnsSelection[columnIndex]
+            ) {
+                url += `${prefix}c.${state.columnsSelection[columnIndex] ? "" : "~"}${snakeEncode(datasets.columns[columnIndex].name)}`;
                 prefix = "&";
-                break;
-            case 2:
-                url += `${prefix}t.graph`;
-                prefix = "&";
-                break;
-            default:
-                throw new Error(`unexpected active tab ${state.activeTab}`);
+            }
+        }
+        if (
+            state.sort.ascending !== defaultAppState.sort.ascending ||
+            state.sort.columnIndex !== defaultAppState.sort.columnIndex
+        ) {
+            url += `${prefix}s.${state.sort.ascending ? "" : "-"}${snakeEncode(datasets.columns[state.sort.columnIndex].name)}`;
+            prefix = "&";
+        }
+        if (state.datasetDetail.open) {
+            url += `${prefix}d.${snakeEncode(datasets.inner[state.datasetDetail.index].data.name)}`;
+            prefix = "&";
+        }
+        if (state.activeTab > 0) {
+            switch (state.activeTab) {
+                case 1:
+                    url += `${prefix}t.tiles`;
+                    prefix = "&";
+                    break;
+                case 2:
+                    url += `${prefix}t.graph`;
+                    prefix = "&";
+                    break;
+                default:
+                    throw new Error(`unexpected active tab ${state.activeTab}`);
+            }
         }
     }
     return url;
@@ -356,13 +359,13 @@ export function updateUrlWithState(
         window.history.replaceState(
             undefined,
             "",
-            `${location.pathname}${stateToUrl(appState, defaultAppState, datasets)}`,
+            `${location.pathname}${stateToUrl(appState, defaultAppState, datasets, false)}`,
         );
     } else {
         window.history.pushState(
             undefined,
             "",
-            `${location.pathname}${stateToUrl(appState, defaultAppState, datasets)}`,
+            `${location.pathname}${stateToUrl(appState, defaultAppState, datasets, false)}`,
         );
         lastPush = now;
     }

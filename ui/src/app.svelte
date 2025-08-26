@@ -6,7 +6,9 @@
         getDefaultAppState,
         hashToState,
         updateUrlWithState,
+        stateToUrl,
     } from "./state";
+    import { datasetsToCsv } from "./csv";
     import Detail from "./detail.svelte";
     import Filter from "./filter.svelte";
     import Multiselect from "./multiselect.svelte";
@@ -243,6 +245,24 @@
                 choices={datasets.columns.map(column => column.name)}
                 selection={appState.columnsSelection}
             ></Multiselect>
+            <div
+                class="download-csv"
+                onclick={() => {
+                    const a = document.createElement("a");
+                    a.href = `data:text/plain;base64,${window.btoa(datasetsToCsv(datasets, tableDatasets))}`;
+                    const stateAsUrl = stateToUrl(
+                        appState,
+                        defaultAppState,
+                        datasets,
+                        true,
+                    ).replace(/#/g, "");
+                    a.download = `land${stateAsUrl.length > 0 ? "_" : ""}${stateAsUrl}.csv`;
+                    a.click();
+                }}
+                role="none"
+            >
+                Download as CSV
+            </div>
         </div>
         <div class="visualiser">
             <Table
@@ -357,5 +377,28 @@
         border: 1px solid var(--border);
         border-radius: 8px;
         overflow: auto;
+    }
+
+    .download-csv {
+        background-color: var(--background-0);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        position: relative;
+        user-select: none;
+        -webkit-user-select: none;
+        text-wrap: nowrap;
+    }
+
+    .download-csv:hover {
+        background-color: var(--background-1);
     }
 </style>
