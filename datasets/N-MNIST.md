@@ -50,7 +50,7 @@
             "Dropbox"
         ],
         "file_formats": [
-            "Binary File"
+            "Binary"
         ],
         "availability_comment": "Available across multiple online sharing platforms.",
         "size_gb": 1.1,

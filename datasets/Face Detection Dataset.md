@@ -25,7 +25,7 @@
         "has_biases": false,
         "distribution_methods": [],
         "file_formats": [
-            "Event Stream"
+            "Binary"
         ],
         "availability_comment": "",
         "dataset_links": [],

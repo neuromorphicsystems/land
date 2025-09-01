@@ -30,7 +30,7 @@
             "Direct Download"
         ],
         "file_formats": [
-            "TSV"
+            "CSV"
         ],
         "availability_comment": "Datasets compressed using 7zip.",
         "dataset_links": [
