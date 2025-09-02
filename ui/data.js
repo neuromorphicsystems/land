@@ -38,9 +38,10 @@ export function nameToUrl(name) {
             result += "-";
             wordStart = true;
         } else if (!REMOVE_CHARACTERS.test(character)) {
-            throw new Error(
-                `unsupported character "${character}" in "${name}"`,
+            console.error(
+                `\x1b[31m✘\x1b[0m Unsupported character "${character}" in "${name}"`,
             );
+            process.exit(1);
         }
     }
     return result;
@@ -68,6 +69,7 @@ export function loadDatasets() {
                 console.error(
                     `\x1b[31m✘\x1b[0m Parsing ${name} failed: ${error}`,
                 );
+                process.exit(1);
             }
         }
     }
