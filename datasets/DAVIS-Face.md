@@ -10,7 +10,7 @@
         "DAVIS240"
     ],
     "other_sensors": [],
-    "category": "Human-Centric Recordings",
+    "category": "Human-centric Recordings",
     "tags": [
         "Face Detection"
     ],
