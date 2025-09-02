@@ -86,7 +86,6 @@
         }
     ],
     "full_name": "",
-    "additional_metadata": {},
     "referenced_papers": [
         {
             "doi": "10.1109/MGRS.2019.2912563",
