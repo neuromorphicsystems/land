@@ -30,14 +30,14 @@
             "Zenodo"
         ],
         "file_formats": [
-            "Custom"
+            "Other"
         ],
         "availability_comment": "",
         "dataset_links": [
             {
                 "name": "Zenodo",
                 "url": "https://zenodo.org/records/10359770",
-                "format": "Custom",
+                "format": "Other",
                 "doi": "10.5281/zenodo.10359770",
                 "available": true
             }

@@ -29,7 +29,7 @@
             "Zenodo"
         ],
         "file_formats": [
-            "Event Stream"
+            "Binary"
         ],
         "availability_comment": "",
         "dataset_links": [
@@ -37,7 +37,7 @@
                 "name": "Zenodo",
                 "url": "https://zenodo.org/records/10835753",
                 "doi": "10.5281/zenodo.10835753",
-                "format": "Event Stream",
+                "format": "Binary",
                 "available": true
             }
         ],
