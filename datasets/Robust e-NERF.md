@@ -14,7 +14,7 @@
     "tags": [
         "De-blurring",
         "High-speed Recognition",
-        "Low-Light",
+        "Low-Light Reconstruction",
         "3D Reconstruction",
         "SLAM"
     ],
