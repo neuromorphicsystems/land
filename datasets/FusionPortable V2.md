@@ -15,7 +15,7 @@
         "STIM300 IMU",
         "3DM-GQ7-GNSS/INS"
     ],
-    "category": "",
+    "category": "Robotic and Moving Vehicle Datasets",
     "tags": [
         "Stereo",
         "SLAM"
