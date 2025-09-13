@@ -33,20 +33,20 @@
             "Baidu"
         ],
         "file_formats": [
-            "RosBag"
+            "ROSbag"
         ],
         "availability_comment": "Datasets compressed using 7zip. ",
         "dataset_links": [
             {
                 "name": "Google Drive",
                 "url": "https://drive.google.com/drive/folders/1PYhnf3PlY5r0hbyzWDGTUTPxRMl6SYa-?usp=sharing",
-                "format": "RosBag",
+                "format": "ROSbag",
                 "available": true
             },
             {
                 "name": "Baidu",
                 "url": "https://pan.baidu.com/s/1lZwK-TNrCyoyC9oWEs8jUg?pwd=byj8",
-                "format": "RosBag",
+                "format": "ROSbag",
                 "available": true
             }
         ],

@@ -30,7 +30,7 @@
         "has_biases": false,
         "distribution_methods": [],
         "file_formats": [],
-        "availability_comment": "No download link in paper. No assosciated project page or Github repository.",
+        "availability_comment": "No download link in paper. No associated project page or Github repository.",
         "dataset_links": [],
         "size_gb": 0.0,
         "size_type": "Compressed"

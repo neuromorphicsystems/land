@@ -33,20 +33,20 @@
             "Zenodo"
         ],
         "file_formats": [
-            "RosBag"
+            "ROSbag"
         ],
         "availability_comment": "",
         "dataset_links": [
             {
                 "name": "Google Drive",
                 "url": "https://drive.google.com/drive/folders/1J1UYTTc1QpppRGbNRrx2UDFV04-78vi4",
-                "format": "RosBag",
+                "format": "ROSbag",
                 "available": true
             },
             {
                 "name": "Zenodo",
                 "url": "https://zenodo.org/records/6948960",
-                "format": "RosBag",
+                "format": "ROSbag",
                 "available": true
             }
         ],
