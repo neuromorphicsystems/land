@@ -10,7 +10,7 @@
         "Other"
     ],
     "other_sensors": [],
-    "category": "Other modalities",
+    "category": "Other Modalities",
     "tags": [
         "Cochlea"
     ],
