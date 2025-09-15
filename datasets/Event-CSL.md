@@ -12,7 +12,7 @@
     "other_sensors": [],
     "category": "Human-centric Recordings",
     "tags": [
-        "Sign Languge",
+        "Sign Language",
         "Hand Pose Detection"
     ],
     "description": "Sign Language Translation Dataset",
