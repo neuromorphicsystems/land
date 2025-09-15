@@ -10,7 +10,7 @@
         "DAVIS346"
     ],
     "other_sensors": [],
-    "category": "",
+    "category": "Human-centric Recordings",
     "tags": [
         "Sign Language",
         "Hand Pose Detection"
