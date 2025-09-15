@@ -24,7 +24,9 @@
         "has_frames": false,
         "has_biases": true,
         "distribution_methods": [
-            "Google Drive"
+            "Google Drive",
+            "Dropbox",
+            "OneDrive"
         ],
         "file_formats": [
             "Binary"

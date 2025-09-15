@@ -29,9 +29,11 @@
         "has_frames": true,
         "has_biases": true,
         "distribution_methods": [
+            "Direct Download",
             "Google Drive"
         ],
         "file_formats": [
+            "HDF5",
             "ROSbag"
         ],
         "availability_comment": "",
