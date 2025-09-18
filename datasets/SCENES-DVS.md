@@ -7,7 +7,7 @@
         "Vision"
     ],
     "sensors": [
-        "Sensitive DVS"
+        "S-DVS"
     ],
     "other_sensors": [],
     "category": "Object Detection, Classification, and Tracking",

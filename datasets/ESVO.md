@@ -8,7 +8,7 @@
     ],
     "sensors": [
         "DAVIS346",
-        "DAVIS240C"
+        "DAVIS240"
     ],
     "other_sensors": [],
     "category": "Visual Navigation",

@@ -7,7 +7,7 @@
         "Vision"
     ],
     "sensors": [
-        "v2e"
+        "V2E"
     ],
     "other_sensors": [],
     "category": "Depth, Stereo, and 3D Reconstruction",

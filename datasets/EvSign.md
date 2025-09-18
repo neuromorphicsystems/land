@@ -7,7 +7,7 @@
         "Vision"
     ],
     "sensors": [
-        "DVExplorer"
+        "DVXplorer"
     ],
     "other_sensors": [],
     "category": "Human-centric Recordings",
