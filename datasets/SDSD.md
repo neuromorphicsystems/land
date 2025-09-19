@@ -34,7 +34,7 @@
             {
                 "name": "OneDrive",
                 "url": "https://hkustgz-my.sharepoint.com/:f:/g/personal/gliang041_connect_hkust-gz_edu_cn/EsrS4qhMC_lFv3JgaGQ0nM8BG2GYHII_mBn2rYLhOpmN3g",
-                "format": "",
+                "format": "Numpy",
                 "available": true
             },
             {

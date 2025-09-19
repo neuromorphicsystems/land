@@ -37,7 +37,7 @@
             {
                 "name": "Direct Download",
                 "url": "http://ci.nst.ei.tum.de/EBSLAM3D/dataset/",
-                "format": "TSV",
+                "format": "CSV",
                 "available": true
             }
         ],
