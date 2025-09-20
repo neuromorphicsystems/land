@@ -466,3 +466,5 @@
 The dataset contains a total of 689 min of event-based data, containing 1.6 million annotated faces from 73 participants, comprising 31 female and 42 male subjects. Data was collected in two scenarios: wild and controlled.
 
 Total size is 629.2 Gb of raw event data, and 76.6 Gb of processed data.
+
+Note: There is a list of recordings that have been identified as mislabelled on https://github.com/Paul-Kielty/FES_dataset_revised. 
