@@ -20,7 +20,7 @@
         "Stereo",
         "SLAM"
     ],
-    "description": "",
+    "description": "Indoor Localisation and Mapping",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

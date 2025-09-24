@@ -14,7 +14,7 @@
     "tags": [
         "Face Detection"
     ],
-    "description": "",
+    "description": "Face Detection Dataset",
     "dataset_properties": {
         "available_online": true,
         "has_real_data": true,

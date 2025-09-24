@@ -7,7 +7,7 @@
         "Vision"
     ],
     "sensors": [
-        "Prophesee Gen4"
+        "eDVS"
     ],
     "other_sensors": [
         "Basler acA1300-200um",
@@ -71,7 +71,7 @@
     "links": [
         {
             "type": "preprint",
-            "url": "https://ebvds.neurocomputing.systems/EBSLAM3D/index.html"
+            "url": "https://scholar.archive.org/work/biudkm7x7vhn7jbblhkau7gy6m/access/wayback/https://vision.in.tum.de/_media/spezial/bib/weikersdorfer_et_al_icra14.pdf"
         },
         {
             "type": "paper",

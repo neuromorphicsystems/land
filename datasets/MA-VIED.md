@@ -16,6 +16,7 @@
         "SLAM",
         "Visual Odometry"
     ],
+    "full_name": "A Multisensor Automotive Visual Inertial Event Dataset (MA-VIED)",
     "description": "Visual Intertial Odometry and SLAM (driving dataset)",
     "dataset_properties": {
         "available_online": true,
