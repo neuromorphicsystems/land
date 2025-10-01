@@ -79,7 +79,6 @@
             "url": "https://github.com/isarlab-department-engineering/MA-VIED"
         }
     ],
-    "full_name": "",
     "additional_metadata": {
         "num_recordings": "13",
         "stereo": false
